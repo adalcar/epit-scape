@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour {
     private bool _isLoadGameMenu = false;
     private string title;
     public string gameTitle = "Name This Game";
-    public Texture background1, background2;
+    public Texture background1;
     public GUISkin myskin;
 
 
