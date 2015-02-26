@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Player GUI.cs" />
+     <Compile Include="Assets\Scripts\interaction.cs" />
+     <Compile Include="Assets\Scripts\other_imputs.cs" />
+     <Compile Include="Assets\interaction.cs" />
      <Compile Include="Assets\other_imputs.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
