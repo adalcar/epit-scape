@@ -1,7 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Shoot.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\destru.js">
     <Files>
+      <File FileName="Assets\Scripts\destru.js" Line="5" Column="26" />
       <File FileName="Assets\Scripts\Shoot.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
