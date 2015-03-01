@@ -10,3 +10,15 @@ C:\Users\Tancrede\Documents\New Unity Project\Temp\bin\Debug\ICSharpCode.NRefact
 C:\Users\Tancrede\Documents\New Unity Project\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\Tancrede\Documents\New Unity Project\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Tancrede\Documents\New Unity Project\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
