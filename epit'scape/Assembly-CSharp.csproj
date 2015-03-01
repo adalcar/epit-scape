@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\interaction.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
+     <Compile Include="Assets\Scripts\viser.cs" />
      <Compile Include="Assets\inGameGui.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
