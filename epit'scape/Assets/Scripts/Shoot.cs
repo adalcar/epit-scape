@@ -20,7 +20,7 @@ public class Shoot : MonoBehaviour {
 
 			Transform balle;
 			balle = Instantiate(bullet,posCanon.transform.position,posCanon.transform.rotation) as Transform;
-			balle.rigidbody.AddForce(transform.forward * 1200);
+			balle.rigidbody.AddForce(posCanon.transform.forward * 1200);
 			monArme = false;
 			StartCoroutine(StartWait());
 
