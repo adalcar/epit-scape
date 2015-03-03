@@ -7,7 +7,7 @@ public class Viser : MonoBehaviour {
 	public GameObject lieuArrivee;
 	bool enVisee = true;
 	float vitesseVisee = 0.65f;
-	//float tps = 2.0f;
+	float tps = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -17,17 +17,25 @@ public class Viser : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 			
-			if (Input.GetKey ("v") && enVisee) {
-			   arme.transform.position = Vector3.Lerp(arme.transform.position, lieuArrivee.transform.position, vitesseVisee);
-
-			}
-			if (Input.GetKey("b")&& enVisee == false)
-			{
+		if (Input.GetKey ("v")) {
+			if (enVisee) {
+				arme.transform.position = Vector3.Lerp (arme.transform.position, lieuArrivee.transform.position, vitesseVisee);
 				enVisee = !enVisee;
-			    arme.transform.position = Vector3.Lerp (arme.transform.position, lieuDepart.transform.position, vitesseVisee);
-
-					}
+				StartCoroutine (StartWait());
+			} else {
+				enVisee = !enVisee;
+				arme.transform.position = Vector3.Lerp (arme.transform.position, lieuDepart.transform.position, vitesseVisee);
+				StartCoroutine (StartWait());
+			}
 	
+		}
+	}
+		IEnumerator StartWait()
+		{   
+			yield return new WaitForSeconds(tps);
+			
+		}
+
 	}
 
-}
+
