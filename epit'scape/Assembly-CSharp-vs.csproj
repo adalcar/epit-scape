@@ -50,10 +50,12 @@
      <Compile Include="Assets\Scripts\Player GUI.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\Viser.cs" />
+     <Compile Include="Assets\Scripts\bullet.cs" />
      <Compile Include="Assets\Scripts\gametime.cs" />
      <Compile Include="Assets\Scripts\inGameGui.cs" />
      <Compile Include="Assets\Scripts\interaction.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
+     <Compile Include="Assets\Scripts\zombie.cs" />
      <Compile Include="Assets\doorscript.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

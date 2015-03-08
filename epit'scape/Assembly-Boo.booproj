@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}</ProjectGuid>
+	<ProjectGuid>{E414DDD9-0B94-EAC5-7B66-E12414437A73}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-Boo</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,17 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Player GUI.cs" />
-     <Compile Include="Assets\Scripts\Shoot.cs" />
-     <Compile Include="Assets\Scripts\Viser.cs" />
-     <Compile Include="Assets\Scripts\bullet.cs" />
-     <Compile Include="Assets\Scripts\gametime.cs" />
-     <Compile Include="Assets\Scripts\inGameGui.cs" />
-     <Compile Include="Assets\Scripts\interaction.cs" />
-     <Compile Include="Assets\Scripts\other_imputs.cs" />
-     <Compile Include="Assets\Scripts\zombie.cs" />
-     <Compile Include="Assets\doorscript.cs" />
+     <Compile Include="Assets\Scripts\NewBehaviourScript.boo" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
