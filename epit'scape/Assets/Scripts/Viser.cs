@@ -6,12 +6,13 @@ public class Viser : MonoBehaviour {
 	public GameObject lieuDepart;
 	public GameObject lieuArrivee;
 	bool enVisee = false;
-	float vitesseVisee = 0.65f;
-	float tps = 1.0f;
+	float vitesseVisee = 0.1f;
+	float tps = 0.1f;
 	
 	
 	// Update is called once per frame
 	void Update () {
+
 		
 		if (Input.GetKey ("v")) {
 			enVisee = !enVisee;

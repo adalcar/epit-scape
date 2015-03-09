@@ -1,8 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\zombie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AdvancedAI.js">
     <Files>
-      <File FileName="Assets\Scripts\zombie.cs" Line="5" Column="2" />
+      <File FileName="Temp\ParsedCombinations-Normal-Diffuse.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AdvancedAI.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\zombie.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EnemyHealth.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Joueur.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
