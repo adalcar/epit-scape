@@ -27,18 +27,35 @@ public class Shoot : MonoBehaviour {
 		}
 
 
+
+
 	}
 
+	void OnCollisionEnter (Collision col)
+	{
+		if(col.gameObject.name == "Zomb")
+		{
+			Destroy(this.gameObject);
+		}
+	}
 
-
-
-    IEnumerator StartWait()
+	IEnumerator StartWait()
 	{   
 		yield return new WaitForSeconds(cadence);
 		monArme = true;
-
-
+		
+		
 	}
+
+	void OnGUI () {
+
+		GUI.Box(new Rect(0, 0, 90, 20), "Munitions: " + minutions);
+	}
+
+
+
+
+    
 
 
 

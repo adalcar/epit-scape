@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class bullet : MonoBehaviour { 
-	public GameObject balle;
 	private int degats = 20;
 
 	// Use this for initialization
@@ -16,5 +15,11 @@ public class bullet : MonoBehaviour {
 	
 	}
 
-
+	void OnCollisionEnter (Collision col)
+	{
+		if(col.gameObject.name == "Zomb")
+		{
+			Destroy(this.gameObject);
+		}
+	}
 }

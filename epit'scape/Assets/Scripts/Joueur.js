@@ -19,5 +19,5 @@ function Dead()
 
 function OnGUI()
 {
-	GUI.Box(Rect(60, 50, 90, 20), "Vie:" + Health);
+	GUI.Box(Rect(100,0,100,20), "Vie:" + Health);
 }
