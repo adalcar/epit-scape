@@ -1,0 +1,42 @@
+Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     1052 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.093 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
+UnloadTime: 0.331580 ms
+The AnimationClip 'MachineGun_open' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+The AnimationClip 'MachineGun_reload' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 8344.
+Total: 2.357777 ms (FindLiveObjects: 0.547898 ms CreateObjectMapping: 0.103421 ms MarkObjects: 0.691977 ms  DeleteObjects: 0.031973 ms)
+
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Boo.Lang.dll (this message is harmless)
