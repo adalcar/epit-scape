@@ -15,11 +15,5 @@ public class bullet : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter (Collision col)
-	{
-		if(col.gameObject.name == "Zomb")
-		{
-			Destroy(this.gameObject);
-		}
-	}
+
 }
