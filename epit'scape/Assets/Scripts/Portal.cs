@@ -15,7 +15,7 @@ public class Portal : MonoBehaviour
     {
 
     }
-    void onTriggerEnter(Collider c)
+    void OnTriggerEnter(Collider c)
     {
         Debug.Log("contact");
         if (c.tag == "Player")
