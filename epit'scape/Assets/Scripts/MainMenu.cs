@@ -53,25 +53,28 @@ public class MainMenu : MonoBehaviour {
             {
                 Application.LoadLevel("Level 01");
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 45, 300, 50), "Load Game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 50), "Load Game"))
             {
                 gameTitle = "Load game";
                 _isFirstMenu = false;
                 _isLoadGameMenu = true;
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 10, 300, 50), "Level Select"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2, 300, 50), "Level Select"))
             {
                 gameTitle = "Select a level";
                 _isFirstMenu = false;
                 _isLevelSelectMenu = true;
+            } if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 50), "Multiplayer"))
+            {
+
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 65, 300, 50), "Options"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 50), "Options"))
             {
                 gameTitle = "Options";
                 _isFirstMenu = false;
                 _isOptionMenu = true;
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 110, 300, 50), "Quit game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 50), "Quit game"))
             {
                 Application.Quit();
             }
@@ -105,7 +108,10 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isOptionMenu)
         {
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), "Language"))
+            {
 
+            }
         }
     }
 }
