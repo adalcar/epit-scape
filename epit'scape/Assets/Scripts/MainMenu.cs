@@ -91,7 +91,14 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isLevelSelectMenu)
         {
-
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 30, 300, 50), "Level 1"))
+            {
+                Application.LoadLevel("Level 01");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 60, 300, 50), "Level 0"))
+            {
+                Application.LoadLevel("level 0");
+            }
         }
     }
     void OptionMenu()
