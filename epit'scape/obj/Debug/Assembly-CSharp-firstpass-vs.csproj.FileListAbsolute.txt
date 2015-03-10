@@ -22,3 +22,6 @@ C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\bin\Debug\ICSharpC
 C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
+F:\Projet\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+F:\Projet\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
+F:\Projet\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
