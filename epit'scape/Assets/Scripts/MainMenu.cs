@@ -51,7 +51,7 @@ public class MainMenu : MonoBehaviour {
         {
             if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 100, 300, 50), "New Game"))
             {
-                Application.LoadLevel("Level 01");
+                Application.LoadLevel("level 0");
             }
             if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 50), "Load Game"))
             {

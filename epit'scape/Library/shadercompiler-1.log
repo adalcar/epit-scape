@@ -1,41 +1,33 @@
-Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-2056
+Base path: H:/logiciels evo/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-4920
 Cmd: getPlatforms
-Cmd: compileSnippet
-  api=8 type=0 insize=6009 outsize=5948 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=6009 outsize=194 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=6009 outsize=1076 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=6009 outsize=321 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=8 type=0 insize=6009 outsize=2665 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=8 type=0 insize=6009 outsize=8694 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=6009 outsize=1100 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=6009 outsize=1030 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=6009 outsize=1021 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=6009 outsize=370 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=3852 outsize=1314 kw=POINT ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=3852 outsize=1351 kw=SPOT ok=1
-Cmd: compileSnippet
-  api=8 type=0 insize=3852 outsize=5330 kw=SPOT ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3852 outsize=734 kw=DIRECTIONAL_COOKIE ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=3852 outsize=1227 kw=POINT ok=1
-Cmd: compileSnippet
-  api=8 type=1 insize=3852 outsize=4014 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3852 outsize=1161 kw=POINT_COOKIE ok=1
-Cmd: compileSnippet
-  api=0 type=1 insize=3852 outsize=1131 kw=DIRECTIONAL_COOKIE ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3852 outsize=1019 kw=DIRECTIONAL_COOKIE ok=1
+Cmd: preprocess
+  insize=447 outsize=447 ok=1
+Cmd: preprocess
+  insize=818 outsize=818 ok=1
+Cmd: preprocess
+  insize=1048 outsize=887 ok=1
+Cmd: preprocess
+  insize=472 outsize=472 ok=1
+Cmd: preprocess
+  insize=835 outsize=835 ok=1
+Cmd: preprocess
+  insize=730 outsize=730 ok=1
+Cmd: preprocess
+  insize=608 outsize=608 ok=1
+Cmd: preprocess
+  insize=1576 outsize=991 ok=1
+Cmd: preprocess
+  insize=1189 outsize=403 ok=1
+Cmd: preprocess
+  insize=1153 outsize=392 ok=1
+Cmd: preprocess
+  insize=1355 outsize=1355 ok=1
+Cmd: preprocess
+  insize=316 outsize=316 ok=1
+Cmd: preprocess
+  insize=1500 outsize=667 ok=1
+Cmd: preprocess
+  insize=634 outsize=634 ok=1
+Cmd: preprocess
+  insize=963 outsize=963 ok=1
