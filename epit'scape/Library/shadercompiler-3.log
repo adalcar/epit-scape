@@ -1,36 +1,10 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-3-4640
+Pipe name: \\.\pipe\UnityShaderCompiler-3-4796
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=8 type=0 insize=6009 outsize=5948 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
+  api=0 type=0 insize=6009 outsize=1534 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
 Cmd: compileSnippet
-  api=8 type=0 insize=6009 outsize=2665 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=6009 outsize=5702 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=6009 outsize=964 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=8 type=1 insize=6009 outsize=1503 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=6009 outsize=3167 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=1
-Cmd: compileSnippet
-  api=0 type=0 insize=3852 outsize=1023 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3852 outsize=622 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3852 outsize=799 kw=SPOT ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=3852 outsize=3630 kw=POINT_COOKIE ok=1
-Cmd: compileSnippet
-  api=1 type=0 insize=3852 outsize=734 kw=DIRECTIONAL_COOKIE ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3852 outsize=1100 kw=POINT ok=1
-Cmd: compileSnippet
-  api=8 type=1 insize=3852 outsize=4014 kw=DIRECTIONAL ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=3852 outsize=3151 kw=POINT_COOKIE ok=1
-Cmd: compileSnippet
-  api=1 type=1 insize=3852 outsize=1019 kw=DIRECTIONAL_COOKIE ok=1
+  api=0 type=1 insize=6009 outsize=454 kw=DIRECTIONAL SHADOWS_SCREEN LIGHTMAP_ON DIRLIGHTMAP_OFF ok=1
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
 

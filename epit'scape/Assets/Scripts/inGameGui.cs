@@ -6,9 +6,12 @@ public class inGameGui : MonoBehaviour {
     bool infoLabel;
     public GameObject terrain;
     string infoLabelText;
+    public GameObject enemy;
 	// Use this for initialization
 	void Start () {
         infoLabel = false;
+        Screen.showCursor = false;
+        Screen.lockCursor = true;
 	}
 	
 	// Update is called once per frame

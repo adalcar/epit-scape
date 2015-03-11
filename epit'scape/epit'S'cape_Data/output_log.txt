@@ -1,30 +1,26 @@
-Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x162)
     Vendor:   Intel
-    VRAM:     1052 MB
+    VRAM:     64 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.061 seconds
-desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+desktop: 1680x1050 59Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1783)
-
-UnloadTime: 0.569213 ms
+UnloadTime: 0.208275 ms
 The AnimationClip 'MachineGun_open' used by the Animation component 'MachineGun_00' must be marked as Legacy.
  
 (Filename:  Line: 1998)
@@ -39,7 +35,37 @@ Default clip could not be found in attached animations list.
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2893.
-Total: 1.293165 ms (FindLiveObjects: 0.132632 ms CreateObjectMapping: 0.042631 ms MarkObjects: 0.324870 ms  DeleteObjects: 0.016579 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 7408.
+Total: 0.935730 ms (FindLiveObjects: 0.226688 ms CreateObjectMapping: 0.037127 ms MarkObjects: 0.327505 ms  DeleteObjects: 0.039542 ms)
 
-Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\epita\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Boo.Lang.dll (this message is harmless)
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+hit!
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 11.261066 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 294 unused Assets to reduce memory usage. Loaded Objects now: 146.
+Total: 1.318776 ms (FindLiveObjects: 0.009961 ms CreateObjectMapping: 0.013281 ms MarkObjects: 0.118626 ms  DeleteObjects: 0.908866 ms)
+

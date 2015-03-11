@@ -11,6 +11,11 @@ public class other_imputs : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButton("Cancel"))
-            Application.Quit();
+        {
+            Application.LoadLevel("MainMenu");
+            Screen.showCursor = true;
+            Screen.lockCursor = false;
+        }
+
 	}
 }

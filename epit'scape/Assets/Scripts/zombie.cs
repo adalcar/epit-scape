@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class zombie : MonoBehaviour {
-	public GameObject zomb;
-	private int life = 100;
-	
+public class zombie : MonoBehaviour 
+{
+	public int life = 100;
+    public Animator a;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,17 +12,19 @@ public class zombie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (life <= 0) {
-			DestroyObject(this.gameObject);
+		if (life <= 0) 
+        {
+            a.Play("dead");
+            Destroy(gameObject);		
 		};
 	}
 	
-	/*void collisionObj(Collision coll)
+	void OnTriggerEnter(Collider c)
 	{
-		if(coll.gameObject.tag == "bullet")
+		Debug.Log("contact");
+		if (c.tag == "bullet")
 		{
-			
-			this.life -= 20;
+			life = life - 20;
 		}
-	}*/
+	}
 }
