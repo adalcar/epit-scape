@@ -16,7 +16,55 @@ Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'
 Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.059 seconds
+- Completed reload, in  0.061 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
+UnloadTime: 0.324476 ms
+The AnimationClip 'MachineGun_open' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+The AnimationClip 'MachineGun_reload' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2442.
+Total: 1.093824 ms (FindLiveObjects: 0.105000 ms CreateObjectMapping: 0.026842 ms MarkObjects: 0.275528 ms  DeleteObjects: 0.013026 ms)
+
+Platform assembly: C:\Users\David\Documents\GitHub\epit-scape\epit'scape\epit'S'cape_Data\Managed\Boo.Lang.dll (this message is harmless)
+contact
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 4.631877 ms
+The AnimationClip 'MachineGun_open' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+The AnimationClip 'MachineGun_reload' used by the Animation component 'MachineGun_00' must be marked as Legacy.
+ 
+(Filename:  Line: 1998)
+
+Default clip could not be found in attached animations list.
+ 
+(Filename:  Line: 395)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 118 unused Assets to reduce memory usage. Loaded Objects now: 7401.
+Total: 2.322649 ms (FindLiveObjects: 0.285396 ms CreateObjectMapping: 0.071053 ms MarkObjects: 0.484345 ms  DeleteObjects: 0.808427 ms)
+
+UnloadTime: 14.693400 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 294 unused Assets to reduce memory usage. Loaded Objects now: 150.
+Total: 10.069418 ms (FindLiveObjects: 0.013815 ms CreateObjectMapping: 0.025263 ms MarkObjects: 0.158685 ms  DeleteObjects: 9.277965 ms)
+
