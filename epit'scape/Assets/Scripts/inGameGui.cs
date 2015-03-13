@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System.IO;
 public class inGameGui : MonoBehaviour {
     public GUISkin skin;
     bool infoLabel;
@@ -12,26 +12,35 @@ public class inGameGui : MonoBehaviour {
         infoLabel = false;
         Screen.showCursor = false;
         Screen.lockCursor = true;
+        applyConfigs();
 	}
-	
+    void applyConfigs()
+    {
+        FileStream f = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
+        
+        this.audio.volume = ((float) f.ReadByte() )/ 100;
+        
+        f.Close();
+    }
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
+
 	}
     void OnGUI()
     {
         if (infoLabel)
         {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 20), infoLabelText);
-            if (terrain.GetComponent<gametime>().gettimesince("labelon") >= 60)
-                infoLabel = false;
         }
             
     }
-    public void Info(string infostring)
+    public IEnumerable Info(string infostring)
     {
         Debug.Log("spot!");
         infoLabelText = infostring;
         infoLabel = true;
-        terrain.GetComponent<gametime>().savetime("labelOn");
+        yield return new WaitForSeconds(2);
+        infoLabel = false;
     }
 }

@@ -16,6 +16,11 @@ public class other_imputs : MonoBehaviour {
             Screen.showCursor = true;
             Screen.lockCursor = false;
         }
+        if (Input.GetButton("mousefree"))
+        {
+            Screen.showCursor = !Screen.showCursor;
+            Screen.lockCursor = !Screen.lockCursor;
+        }
 
 	}
 }
