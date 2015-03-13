@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class MainMenu : MonoBehaviour {
     private bool _isFirstMenu = true;
@@ -10,11 +11,13 @@ public class MainMenu : MonoBehaviour {
     public string gameTitle = "Name This Game";
     public Texture background1;
     public GUISkin myskin;
-
+    FileStream Configfs;
 
 	// Use this for initialization
 	void Start () 
     {
+
+        checkConfigFile();
         title = gameTitle;
 	}
 	
@@ -44,6 +47,17 @@ public class MainMenu : MonoBehaviour {
                 _isFirstMenu = true;
             }
         }
+    }
+    void checkConfigFile()
+    {
+        FileStream f = new FileStream("Saves and Config/Config", FileMode.OpenOrCreate);
+        int l = (int) f.Length;
+        f.Close();
+
+        if (l != 1)
+            File.WriteAllBytes("Saves and Config/Config", new byte[1] { 100 });
+
+        Configfs = new FileStream("Saves and Config/Config", FileMode.Open,FileAccess.ReadWrite);
     }
     void FirstMenu()
     {
@@ -106,12 +120,24 @@ public class MainMenu : MonoBehaviour {
     }
     void OptionMenu()
     {
+        Configfs.Position = 0;
+        int soundlvl = Configfs.ReadByte();
         if (_isOptionMenu)
         {
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), "Language"))
             {
 
             }
+
+
+            soundlvl = (int) GUI.HorizontalSlider(new Rect(Screen.width / 2 - 200, Screen.height / 2 - 100, 400, 20), soundlvl, 0, 100);
+            Configfs.Position = 0;
+            Configfs.WriteByte((byte)soundlvl);
         }
+    }
+    void OnApplicationQuit()
+    {
+        Debug.Log("quit");
+        Configfs.Close();
     }
 }
