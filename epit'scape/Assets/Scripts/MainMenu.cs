@@ -57,7 +57,7 @@ public class MainMenu : MonoBehaviour {
         if (l != 1)
             File.WriteAllBytes("Saves and Config/Config", new byte[1] { 100 });
 
-        Configfs = new FileStream("Saves and Config/Config", FileMode.Open,FileAccess.ReadWrite);
+        Configfs = new FileStream("Saves and Config/Config", FileMode.Open,FileAccess.ReadWrite,FileShare.Read);
     }
     void FirstMenu()
     {

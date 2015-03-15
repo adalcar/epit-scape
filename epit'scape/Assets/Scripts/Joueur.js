@@ -20,4 +20,4 @@ function Dead()
 function OnGUI()
 {
     GUI.Box(Rect(100,0,100,20), "Vie:" + Health);
-    }
+}

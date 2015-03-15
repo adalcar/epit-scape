@@ -6,15 +6,15 @@ public class Shoot : MonoBehaviour {
 	public Transform bullet;
 	public GameObject posCanon;
     public bool monArme = true;
-	public int minutions = 10;
+	public int munitions = 10;
 	float cadence = 0.2f; 
 
 	
 	// Update is called once per frame
 	void Update () {
 
-			if (Input.GetKey ("f") && monArme && (minutions>0)) {
-			    minutions--;
+			if (Input.GetKey ("f") && monArme && (munitions>0)) {
+			    munitions--;
 				Transform balle;
 				balle = Instantiate (bullet, posCanon.transform.position, posCanon.transform.rotation) as Transform;
 				balle.rigidbody.AddForce (posCanon.transform.forward * 1200);
@@ -23,7 +23,7 @@ public class Shoot : MonoBehaviour {
 
 			}
 		if (Input.GetKey ("r")) {
-			minutions = 10;
+			munitions = 10;
 		}
 
 
@@ -49,7 +49,7 @@ public class Shoot : MonoBehaviour {
 
 	void OnGUI () {
 
-		GUI.Box(new Rect(0, 0, 90, 20), "Munitions: " + minutions);
+		GUI.Box(new Rect(0, 0, 90, 20), "Munitions: " + munitions);
 	}
 
 
