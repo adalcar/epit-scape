@@ -1,16 +1,8 @@
-﻿html{background-image: url(../Images/bloodboard.jpg);
-background-size: 100% auto;
+﻿html{background-image: url(../Images/background.jpg);
+background-size: 20% auto;
 background-repeat: repeat;}
 
 p,h1,h2,h3,caption,tr,ul{color:rgb(255,255,255);}
-
-h1{font-family:"Times New Roman",serif;}
-p{font-family: Arial;}
-h3{color:yellow;}
-
-a:link {color: green;} /*lien non visité*/
-a:visited {color: red;} /*lien visité*/
-a:hover {color:yellow;} /*lien survolé*/
 
 #Logo
 {
@@ -18,22 +10,61 @@ a:hover {color:yellow;} /*lien survolé*/
 	width:220px; /*l'image à une largueur de 285 pixels*/
 	height:150px; /*l'image à une hauteur de 200 pixels*/
 	margin:0px;
-	
 	position:fixed; /*l'image est fixée à l'écran*/
 	top:0px; /*à 0px du haut*/
 	right:0px; /*à 0px de la droite*/
 }
 
-body
-{
-	margin-top:5%;
-	margin-bottom:5%;
-	margin-right:10%;
-	margin-left:10%;
-}
+
 
 .nom
 {
-	color:red
+	font-size: large;
+	color:red;
+	text-decoration:underline;
 }
 
+ul#menu li
+{ padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;}
+  
+  ul#menu li a
+{ float: left;
+  font: bold 120% Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  height: 24px;
+  padding: 16px 15px 10px 15px;
+  background: transparent; } 
+  
+  ul#menu li.current a, ul#menu li:hover a
+{ color: #C56B85;}
+  
+  #menu_items
+{ float: right;
+  width: 800px;
+  text-align: center;}
+  
+#menubar
+{ width: 960px;
+  height: 50px;
+  margin-top: 20px;} 
+
+  
+  #welcome
+{ width: 360px;
+  float: left;
+  text-align: center;
+  height: 45px;
+  margin: 0 auto;
+  padding-left: 20px;}  
+   
+#welcome h1 a
+{ font: normal 150% Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: rgb(200,0,0);
+  text-decoration: none;}
