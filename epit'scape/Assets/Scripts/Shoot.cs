@@ -17,7 +17,7 @@ public class Shoot : MonoBehaviour {
 			    munitions--;
 				Transform balle;
 				balle = Instantiate (bullet, posCanon.transform.position, posCanon.transform.rotation) as Transform;
-				balle.rigidbody.AddForce (posCanon.transform.forward * 1200);
+				balle.GetComponent<Rigidbody>().AddForce (posCanon.transform.forward * 1200);
 				monArme = false;
 				StartCoroutine (StartWait ());
 

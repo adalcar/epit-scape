@@ -13,13 +13,13 @@ public class other_imputs : MonoBehaviour {
         if (Input.GetButton("Cancel"))
         {
             Application.LoadLevel("MainMenu");
-            Screen.showCursor = true;
-            Screen.lockCursor = false;
+            Cursor.visible = true;
+          //  Screen.lockCursor = false;
         }
         if (Input.GetButton("mousefree"))
         {
-            Screen.showCursor = !Screen.showCursor;
-            Screen.lockCursor = !Screen.lockCursor;
+            Cursor.visible = !Cursor.visible;
+          //  Screen.lockCursor = !Screen.lockCursor;
         }
 
 	}

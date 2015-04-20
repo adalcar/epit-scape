@@ -23,10 +23,10 @@ public class BasicAI : MonoBehaviour {
             if (Vector3.Distance(this.transform.position, player.transform.position) <= ViewRange &&
                 Vector3.Distance(this.transform.position, player.transform.position) >= hitrange)
             {
-                if (!animation.IsPlaying("walk"))
-                    animation.Play("walk");
+                if (!GetComponent<Animation>().IsPlaying("walk"))
+                    GetComponent<Animation>().Play("walk");
                 this.transform.LookAt(player.transform);
-                this.rigidbody.AddForce(this.transform.forward * speed);
+                this.GetComponent<Rigidbody>().AddForce(this.transform.forward * speed);
             }
             else
                 if (Vector3.Distance(this.transform.position, player.transform.position) < hitrange)
@@ -41,18 +41,18 @@ public class BasicAI : MonoBehaviour {
 	}
     void attack()
     {
-        if (animation.IsPlaying("attack") && time  - AttackStartTime % 20 == 0)
+        if (GetComponent<Animation>().IsPlaying("attack") && time  - AttackStartTime % 20 == 0)
             player.GetComponentInChildren<inGameGui>().health -= AttackDamage;
         else
         {
-            animation.Play("attack");
+            GetComponent<Animation>().Play("attack");
             AttackStartTime = time;
         }
     }
     IEnumerator die()
     {
         dead = true;
-        animation.Play("back_fall");
+        GetComponent<Animation>().Play("back_fall");
         yield return new WaitForSeconds(1);
         Destroy(this.gameObject);
     }
