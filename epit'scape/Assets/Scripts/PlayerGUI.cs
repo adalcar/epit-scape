@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerGUI : MonoBehaviour {
 
     public GameObject joueur;
-    private int vie = 100;
+    private int vie;
     public void set_vie(int degats)
     {
         this.vie += degats;
@@ -13,17 +13,13 @@ public class PlayerGUI : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        this.vie = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (this.vie < 0)
-        {
-            Destroy(this.gameObject);
-        }
     }
     void OnTriggerEnter(Collider c)
     {

@@ -19,7 +19,7 @@ public class bullet : MonoBehaviour {
         if(coll.tag == "Enemy" )
         {
             Debug.Log("hit!");
-            coll.GetComponent<Health>().life -= degats;
+            coll.GetComponent<EnemyHealth>().currentLife -= degats;
         }
         Destroy(this.gameObject);
     }

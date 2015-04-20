@@ -8,6 +8,7 @@ public class inGameGui : MonoBehaviour {
     
     string infoLabelText;
     bool infoLabel;
+
 	// Use this for initialization
 	void Start () {
         infoLabel = false;
@@ -33,7 +34,7 @@ public class inGameGui : MonoBehaviour {
 	}
     void OnGUI()
     {
-        //GUI.Box(new Rect(100, 0, 100, 20), "Vie:" + health);
+        GUI.Box(new Rect(600, 0, 100, 20), "Vie:" + health);
         if (infoLabel)
         {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 20), infoLabelText);
@@ -52,4 +53,5 @@ public class inGameGui : MonoBehaviour {
     {
 
     }
+
 }
