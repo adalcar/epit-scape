@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class EnemyAttack : MonoBehaviour {
-    public float lapsTime = 0.5f;
+    public float lapsTime = 3.0f;
     public int damages = 20;
 
     Animator anim;
@@ -25,7 +25,7 @@ public class EnemyAttack : MonoBehaviour {
     {
         if (coll.tag == "Player")
         {
-            Debug.Log("hit!");
+            Debug.Log("touche!");
             isInRange = !isInRange;
         }
     }
@@ -36,6 +36,7 @@ public class EnemyAttack : MonoBehaviour {
         {
             Debug.Log("nohit!");
             isInRange = !isInRange;
+            anim.SetBool("IsWalking", true);
         }
     }
 	// Update is called once per frame
@@ -46,10 +47,10 @@ public class EnemyAttack : MonoBehaviour {
         {
             Attack();
         }
-        //if(!isInRange)
-        //{
-        //    anim.SetBool("IsInRange", false);
-        //}
+        if(!isInRange)
+        {
+            anim.SetBool("IsInRange", false);
+        }
         //if (playerHealth.currentLife <= 0)
         //{
         //    anim.SetTrigger("GameOver");

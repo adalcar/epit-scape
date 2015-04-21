@@ -19,9 +19,11 @@ public class playerHealth : MonoBehaviour {
 
 	void Update () 
     {
-	
 	}
-
+    void OnGUI()
+    {
+        GUI.Box(new Rect(0, 600, 100, 20),"vie : " +currentLife);
+    }
     public void loseLife(int damages)
     {
         isAttaked = true;
@@ -40,9 +42,18 @@ public class playerHealth : MonoBehaviour {
         //anim.SetTrigger("Die");
         Destroy(this.gameObject);
         restart();
+        
     }
     void restart()
     {
+        StartCoroutine("wait");
         Application.LoadLevel("Level 01");
+    }
+
+    IEnumerator wait()
+    {
+      yield return new WaitForSeconds(5.0f);
+      print("respawn");
+      restart();
     }
 }
