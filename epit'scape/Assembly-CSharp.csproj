@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Arme.cs" />
      <Compile Include="Assets\Scripts\Basic AI.cs" />
+     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\EnemyMov.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\inGameGui.cs" />
      <Compile Include="Assets\Scripts\interaction.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
+     <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\zombie.cs" />
      <Compile Include="Assets\Scripts\zzz.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />

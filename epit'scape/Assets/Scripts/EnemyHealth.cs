@@ -63,7 +63,7 @@ public class EnemyHealth : MonoBehaviour {
         isDead = true;
         //capColl.isTrigger = true;
         anim.SetTrigger("IsDead");
-        Destroy(gameObject, 2f);
+        //Destroy(gameObject, 2f);
 
     }
 
