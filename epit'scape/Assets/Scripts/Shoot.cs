@@ -22,12 +22,10 @@ public class Shoot : MonoBehaviour {
 				StartCoroutine (StartWait ());
 
 			}
-		if (Input.GetKey ("r")) {
+		if (Input.GetKey ("r")) 
+        {
 			munitions = 10;
 		}
-
-
-
 
 	}
 

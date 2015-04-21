@@ -19,23 +19,15 @@ public class EnemyHealth : MonoBehaviour {
         currentLife = startLife;
 
     }
-	void Start () {
-	    
-	}
-	
+    void OnGui()
+    {
+        GUI.Box(new Rect(0, 100, 60, 60), "vie :" + currentLife);
+    }
 	// Update is called once per frame
-	void Update () {
+    void Update()
+    {
         
-        //if (life <= 0)
-        //    StartCoroutine(death());
-
-	}
-    //IEnumerator death()
-    //{
-    //    anim.Play("dead");
-    //    yield return new WaitForSeconds(1);
-    //    Destroy(this.gameObject);
-    //}
+    }
     void OnTriggerEnter(Collider coll)
     {
         if (coll.tag == "bullet")
