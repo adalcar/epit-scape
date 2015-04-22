@@ -5,6 +5,7 @@ using System.Collections;
 public class EnemyHealth : MonoBehaviour {
     public int startLife = 100;
     public int currentLife;
+    NavMeshAgent nav;
     //public AudioClip deathClip; // a ajouter
 
     public Animator anim;
@@ -17,7 +18,7 @@ public class EnemyHealth : MonoBehaviour {
         //enemyAudio = GetComponent <AudioSource> ();
         //capColl = GetComponent<CapsuleCollider>();
         currentLife = startLife;
-
+        nav = GetComponent<NavMeshAgent>();
     }
     void OnGui()
     {
@@ -53,10 +54,10 @@ public class EnemyHealth : MonoBehaviour {
     public void Dead()
     {
         isDead = true;
+        nav.enabled = false;
         //capColl.isTrigger = true;
         anim.SetTrigger("IsDead");
         //Destroy(gameObject, 2f);
-
     }
 
 }

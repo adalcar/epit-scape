@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     public float distanceAway;
     public Transform thisObject;
     public Transform target;
-    private NavMeshAgent navComponent;
+    NavMeshAgent navComponent;
 
     void Start()
     {
