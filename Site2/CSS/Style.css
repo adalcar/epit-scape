@@ -1,0 +1,60 @@
+﻿html{
+background-color : #F7F7F7;
+color : #777777;
+font-size : 13px;
+font-family : helvetica, sans-serif;
+min-width : 450px;
+height : 1583px;
+width : 1726px;
+}
+
+body{
+display : block;
+color : rgb(119, 119, 119);
+outline-color : rgb(119, 119, 119);
+margin-left : 306.5px;
+margin-right : 306.5px;
+}
+
+.container{
+width : 970px;
+height : 142px;
+}
+
+#logo{
+float : left; /*l'image flotte à gauche de l'écran*/
+width : 120px; /*l'image à une largueur de 285 pixels*/
+height : 114px; /*l'image à une hauteur de 200 pixels*/
+margin : 0px;
+}
+#menu{
+width : 556px;
+height : 142px;
+float : right;
+}
+
+#menu a{ 
+float : right;
+color : rgb(241, 20, 49);
+margin-top : 80px;
+padding : 0px 30px 40px 30px;
+width : 67px;
+height : 22px;
+font-size : 20px;
+display : inline-block;
+cursor : auto;
+text-decoration:none
+}
+#separation { 
+display : block;
+height : 2px; 
+width : 1110px;
+background-color : black;
+}
+
+#centre{
+background: center center no-repeat url("../Images/better.jpg");
+display : block;
+height : 440px;
+width : 970px;
+}
