@@ -1,70 +1,60 @@
-﻿html{background-image: url(../Images/background.jpg);
-background-size: 20% auto;
-background-repeat: repeat;}
-
-p,h1,h2,h3,caption,tr,ul{color:rgb(255,255,255);}
-
-#Logo
-{
-	float:right; /*l'image flotte à gauche de l'écran*/
-	width:220px; /*l'image à une largueur de 285 pixels*/
-	height:150px; /*l'image à une hauteur de 200 pixels*/
-	margin:0px;
-	position:fixed; /*l'image est fixée à l'écran*/
-	top:0px; /*à 0px du haut*/
-	right:0px; /*à 0px de la droite*/
+﻿html{
+background-color : #F7F7F7;
+color : #777777;
+font-size : 13px;
+font-family : helvetica, sans-serif;
+min-width : 450px;
+height : 1583px;
+width : 1726px;
 }
 
-
-
-.nom
-{
-	font-size: large;
-	color:red;
-	text-decoration:underline;
+body{
+display : block;
+color : rgb(119, 119, 119);
+outline-color : rgb(119, 119, 119);
+margin-left : 306.5px;
+margin-right : 306.5px;
 }
 
-ul#menu li
-{ padding: 0 0 0 0px;
-  list-style: none;
-  margin: 2px 0 0 0;
-  display: inline;
-  background: transparent;}
-  
-  ul#menu li a
-{ float: left;
-  font: bold 120% Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  height: 24px;
-  padding: 16px 15px 10px 15px;
-  background: transparent; } 
-  
-  ul#menu li.current a, ul#menu li:hover a
-{ color: #C56B85;}
-  
-  #menu_items
-{ float: right;
-  width: 800px;
-  text-align: center;}
-  
-#menubar
-{ width: 960px;
-  height: 50px;
-  margin-top: 20px;} 
+.container{
+width : 970px;
+height : 142px;
+}
 
-  
-  #welcome
-{ width: 360px;
-  float: left;
-  text-align: center;
-  height: 45px;
-  margin: 0 auto;
-  padding-left: 20px;}  
-   
-#welcome h1 a
-{ font: normal 150% Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
-  color: rgb(200,0,0);
-  text-decoration: none;}
+#logo{
+float : left; /*l'image flotte à gauche de l'écran*/
+width : 120px; /*l'image à une largueur de 120 pixels*/
+height : 114px; /*l'image à une hauteur de 114 pixels*/
+margin : 0px;
+}
+#menu{
+width : 556px;
+height : 142px;
+float : right;
+}
+
+#menu a{ 
+float : right;
+color : rgb(241, 20, 49);
+margin-top : 80px;
+padding : 0px 30px 40px 30px;
+width : 67px;
+height : 22px;
+font-size : 20px;
+display : inline-block;
+cursor : auto;
+text-decoration:none
+}
+#separation { 
+display : block;
+height : 2px; 
+width : 1110px;
+background-color : black;
+}
+
+#centre{
+background: center center no-repeat url("../Images/better.jpg");
+display : block;
+height : 440px;
+width : 970px;
+}
