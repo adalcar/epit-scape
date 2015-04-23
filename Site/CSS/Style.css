@@ -12,8 +12,8 @@ body{
 display : block;
 color : rgb(119, 119, 119);
 outline-color : rgb(119, 119, 119);
-margin-left : 306.5px;
-margin-right : 306.5px;
+margin-left : 7%;
+margin-right : 7%;
 }
 
 .container{
@@ -27,6 +27,7 @@ width : 120px; /*l'image à une largueur de 120 pixels*/
 height : 114px; /*l'image à une hauteur de 114 pixels*/
 margin : 0px;
 }
+
 #menu{
 width : 556px;
 height : 142px;
@@ -45,6 +46,7 @@ display : inline-block;
 cursor : auto;
 text-decoration:none
 }
+
 #separation { 
 display : block;
 height : 2px; 
@@ -53,16 +55,23 @@ background-color : black;
 }
 
 #centre{
-background: center center no-repeat url("../Images/better.jpg");
+background: center center no-repeat url("../Images/Accueil.jpg");
+background-size: 970px 440px;
 display : block;
 height : 440px;
 width : 970px;
+
+border-style: ridge;
+border-width: 8px;
+border-color: gray;
+border-radius:30px;
 }
 
 footer{
 background-color: #FFFFFF;
 margin-top: 50px;
 }
+
 #sociaux {
 background-color: #3D3C3F;
 padding: 35px 0 60px;
@@ -75,13 +84,13 @@ margin: 0 40px;
 
 #face{
 display : center; /*l'image flotte à gauche de l'écran*/
-width : 50px; /*l'image à une largueur de 120 pixels*/
-height : 50px; /*l'image à une hauteur de 114 pixels*/
+width : 50px; /*l'image à une largueur de 50 pixels*/
+height : 50px; /*l'image à une hauteur de 50 pixels*/
 margin : 0px;
 }
 #twitt{
 display : center; /*l'image flotte à gauche de l'écran*/
-width : 50px; /*l'image à une largueur de 120 pixels*/
-height : 50px; /*l'image à une hauteur de 114 pixels*/
+width : 50px; /*l'image à une largueur de 50 pixels*/
+height : 50px; /*l'image à une hauteur de 50 pixels*/
 margin : 0px;
 }
