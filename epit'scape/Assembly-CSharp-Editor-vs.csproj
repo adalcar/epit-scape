@@ -132,6 +132,18 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="uSequencerEditor">
+ <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/Editor/uSequencerEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="SharedRuntime">
+ <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="SharedEditor">
+ <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Editor/SharedEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="uSequencerRuntime">
+ <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
@@ -139,6 +151,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
       <Project>{70CE9BAF-2332-03A5-D4F6-38D99F53119F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
