@@ -20,6 +20,7 @@ public class EnemyAI : MonoBehaviour
         if(!GetComponent<EnemyHealth>().isDead)
         {
             float dist = Vector3.Distance(target.position, transform.position);
+
             if (target)
             {
                 navComponent.SetDestination(target.position);
@@ -36,6 +37,5 @@ public class EnemyAI : MonoBehaviour
                 }
             }
         }
-        
     }
 }
