@@ -79,6 +79,9 @@ width : 50px; /*l'image à une largueur de 120 pixels*/
 height : 50px; /*l'image à une hauteur de 114 pixels*/
 margin : 0px;
 }
-#twitt
-{
+#twitt{
+display : center; /*l'image flotte à gauche de l'écran*/
+width : 50px; /*l'image à une largueur de 120 pixels*/
+height : 50px; /*l'image à une hauteur de 114 pixels*/
+margin : 0px;
 }
