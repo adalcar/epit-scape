@@ -11,7 +11,8 @@ public class EnemyHealth : MonoBehaviour {
     public Animator anim;
     //AudioSource enemyAudio;// a ajouter
     //CapsuleCollider capColl;
-    bool isDead;
+    public bool isDead;
+
     void Awake()
     {
         anim = GetComponent<Animator>();

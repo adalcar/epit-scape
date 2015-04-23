@@ -17,23 +17,25 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-
-        float dist = Vector3.Distance(target.position, transform.position);
-
-        if (target)
+        if(!GetComponent<EnemyHealth>().isDead)
         {
-            navComponent.SetDestination(target.position);
-        }
-        else
-        {
-            if (target = null)
+            float dist = Vector3.Distance(target.position, transform.position);
+            if (target)
             {
-                target = this.gameObject.GetComponent<Transform>();
+                navComponent.SetDestination(target.position);
             }
             else
             {
-                target = GameObject.FindGameObjectWithTag("Player").transform;
+                if (target = null)
+                {
+                    target = this.gameObject.GetComponent<Transform>();
+                }
+                else
+                {
+                    target = GameObject.FindGameObjectWithTag("Player").transform;
+                }
             }
         }
+        
     }
 }
