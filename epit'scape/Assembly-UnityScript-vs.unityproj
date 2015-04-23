@@ -93,12 +93,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
