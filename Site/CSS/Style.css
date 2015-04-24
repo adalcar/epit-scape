@@ -12,13 +12,20 @@ body{
 display : block;
 color : rgb(119, 119, 119);
 outline-color : rgb(119, 119, 119);
-margin-left : 10%;
-margin-right : 10%;
+margin-left : 24%;
+margin-right : 20%;
 }
 
 .container{
 width : 970px;
 height : 142px;
+}
+.flottant{
+float : left;}
+
+.pres{
+text-indent : 2em;
+padding-left : 10em;
 }
 
 #logo{
@@ -35,7 +42,7 @@ float : right;
 }
 
 #menu a{ 
-float : right;
+float : left;
 color : rgb(241, 20, 49);
 margin-top : 80px;
 padding : 0px 30px 40px 30px;
@@ -50,7 +57,7 @@ text-decoration:none
 #separation { 
 display : block;
 height : 2px; 
-width : 1110px;
+width : 970px;
 background-color : black;
 }
 
@@ -69,12 +76,13 @@ border-radius:20px;
 
 footer{
 background-color: #FFFFFF;
-margin-top: 50px;
+margin-top: 30px;
+width : 970px;
 }
 
 #sociaux {
 background-color: #3D3C3F;
-padding: 35px 0 60px;
+padding: 5px 0 5px;
 text-align: center;
 }
 
@@ -93,4 +101,20 @@ display : center; /*l'image flotte à gauche de l'écran*/
 width : 50px; /*l'image à une largueur de 50 pixels*/
 height : 50px; /*l'image à une hauteur de 50 pixels*/
 margin : 0px;
+}
+
+#contact{
+width : 60%;
+display : center;
+height : 40%;
+vertical-align : top;
+position : relative;
+}
+#acces{
+position : relative;
+height : 40%;
+width : 60%;}
+
+.flotte {
+float:left;
 }
