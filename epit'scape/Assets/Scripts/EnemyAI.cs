@@ -6,7 +6,9 @@ public class EnemyAI : MonoBehaviour
     public float deathDistance = 0.5f;
     public float distanceAway;
     public Transform thisObject;
+    //public Transform maintarget;
     public Transform target;
+    //public bool locked = false;
     NavMeshAgent navComponent;
 
     void Start()
@@ -20,6 +22,20 @@ public class EnemyAI : MonoBehaviour
         if(!GetComponent<EnemyHealth>().isDead)
         {
             float dist = Vector3.Distance(target.position, transform.position);
+
+            /*if(dist < distanceAway)
+            {
+                locked = true;
+            }
+
+            if(locked)
+            {
+
+            }
+            else
+            {
+
+            }*/
 
             if (target)
             {

@@ -91,10 +91,10 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredWipeRight.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>D:/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>D:/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -131,18 +131,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerEditor">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/Editor/uSequencerEditor.dll</HintPath>
- </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
- <Reference Include="SharedEditor">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Editor/SharedEditor.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>D:/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
