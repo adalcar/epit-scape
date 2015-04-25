@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
-        target.position = thisObject.position + T;
+        target.position += T;
         maintarget = GameObject.FindGameObjectWithTag("Player").transform;
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
     }
@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour
                         Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
                         target.position += T;
 
-                        if(target.position.x > 46 || target.position.x < -46 || target.position.z < 0 || target.position.z > 25)
+                        if(target.position.x > 46 || target.position.x < -46 || target.position.z < -1 || target.position.z > 25)
                         {
                             target.position -= T;
                         }
@@ -77,7 +77,7 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        target.position = new Vector3(Random.value, 0, Random.value);
+                        target.position = new Vector3(Random.value * range, 0, Random.value * range);
                     }
                 }
             }
