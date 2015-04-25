@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float deathDistance = 0.5f;
     public float distanceAway;
     public Transform thisObject;
     public Transform maintarget;
@@ -21,7 +20,7 @@ public class EnemyAI : MonoBehaviour
     {
         if(!GetComponent<EnemyHealth>().isDead)
         {
-            float dist = Vector3.Distance(target.position, transform.position);
+            float dist = Vector3.Distance(maintarget.position, transform.position);
 
             if(dist < distanceAway)
             {
