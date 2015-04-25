@@ -13,7 +13,8 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-			if (Input.GetKey ("f") && monArme && (munitions>0)) {
+        if (Input.GetMouseButtonDown(0) && monArme && (munitions > 0))
+        {
 			    munitions--;
 				Transform balle;
 				balle = Instantiate (bullet, posCanon.transform.position, posCanon.transform.rotation) as Transform;

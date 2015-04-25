@@ -8,11 +8,12 @@ public class Arme : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
 		munition = 10;
 	
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	

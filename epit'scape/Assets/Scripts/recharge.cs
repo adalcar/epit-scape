@@ -6,9 +6,9 @@ public class recharge : MonoBehaviour {
 
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.tag == "bullet")
+        if(coll.tag == "Player")
         {
-            //coll.GetComponent<Shoot>().munitions = 10;
+            coll.GetComponent<Shoot>().munitions = 10;
             Destroy(this.gameObject);
         }
     }
