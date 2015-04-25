@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     public float distanceAway;
+    public float range;
     public Transform thisObject;
     public Transform maintarget;
     public Transform target;
@@ -12,6 +13,8 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
+        target.position = thisObject.position + T;
         maintarget = GameObject.FindGameObjectWithTag("Player").transform;
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
     }
@@ -51,7 +54,20 @@ public class EnemyAI : MonoBehaviour
             {
                 if (target)
                 {
-                    navComponent.SetDestination(target.position);
+                    if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
+                    {
+                        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
+                        target.position += T;
+
+                        if(target.position.x > 46 || target.position.x < -46 || target.position.z < 0 || target.position.z > 25)
+                        {
+                            target.position -= T;
+                        }
+                    }
+                    else
+                    {
+                        navComponent.SetDestination(target.position);
+                    }
                 }
                 else
                 {
