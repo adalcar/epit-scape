@@ -52,23 +52,25 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                float pileface = Random.value * 2;
+                float range2 = range;
 
-                if(pileface > 1)
-                {
+                float pile = Random.value * 2;
+                if(pile > 1)
                     range *= -1;
-                }
+
+                float face = Random.value * 2;
+                if (face > 1)
+                    range2 *= -1;
 
                 if (target)
                 {
                     NavMeshPath path = new NavMeshPath();
 
-                    if(NavMesh.CalculatePath(thisObject.position, target.position, NavMesh.AllAreas, path))
+                    if(NavMesh.CalculatePath(thisObject.position, target.position, 0, path))
                     {
                         if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
                         {
-                            Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
-                            target.position += T;
+                            target.position = new Vector3(Random.value * range, 0, Random.value * range2);
                         }
                         else
                         {
@@ -77,8 +79,7 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
-                        target.position += T;
+                        target.position = new Vector3(Random.value * range, 0, Random.value * range2);
                     }
                 }
                 else
@@ -89,7 +90,7 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        target.position = new Vector3(Random.value * range, 0, Random.value * range);
+                        target.position = new Vector3(Random.value * range, 0, Random.value * range2);
                     }
                 }
             }
