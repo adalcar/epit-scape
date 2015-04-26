@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class recharge : MonoBehaviour {
-    int munition = 10;
+    public int munition = 10;
 
     void OnTriggerEnter(Collider coll)
     {

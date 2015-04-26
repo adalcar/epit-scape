@@ -5,7 +5,7 @@ public class playerHealth : MonoBehaviour {
 
     public int startingLife = 100;                           
     public int currentLife;
-    bool isAttaked;
+    public bool isAttaked;
     bool isDead;
     //Animator anim;
     //AudioSource playerAudio; 
