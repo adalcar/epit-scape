@@ -52,6 +52,13 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
+                float pileface = Random.value * 2;
+
+                if(pileface > 1)
+                {
+                    range *= -1;
+                }
+
                 if (target)
                 {
                     NavMeshPath path = new NavMeshPath();
