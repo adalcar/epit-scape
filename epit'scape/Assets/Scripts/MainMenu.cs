@@ -16,9 +16,9 @@ public class MainMenu : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-
         checkConfigFile();
         title = gameTitle;
+        Biblio.english = true;
 	}
 	
 	// Update is called once per frame
@@ -28,7 +28,6 @@ public class MainMenu : MonoBehaviour {
 	}
     void OnGUI()
     {
-        
         GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), background1);
         GUI.skin = myskin;
         GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 200, 200, 50), gameTitle);
@@ -38,7 +37,7 @@ public class MainMenu : MonoBehaviour {
         OptionMenu();
         if (!_isFirstMenu)
         {
-            if (GUI.Button(new Rect(10, 20, 100, 45), "Back"))
+            if (GUI.Button(new Rect(10, 20, 120, 45), Biblio.Text("back")))
             {
                 gameTitle = title;
                 _isLevelSelectMenu = false;
@@ -63,22 +62,22 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isFirstMenu)
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 100, 300, 50), "New Game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 100, 300, 50), Biblio.Text("newgame")))
             {
                 Application.LoadLevel("level 0");
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 50), "Load Game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 50, 300, 50), Biblio.Text("load")))
             {
-                gameTitle = "Load game";
+                gameTitle = Biblio.Text("load");
                 _isFirstMenu = false;
                 _isLoadGameMenu = true;
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2, 300, 50), "Level Select"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2, 300, 50), Biblio.Text("select")))
             {
-                gameTitle = "Select a level";
+                gameTitle = Biblio.Text("selectlvl");
                 _isFirstMenu = false;
                 _isLevelSelectMenu = true;
-            } if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 50), "Multiplayer"))
+            } if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 50), Biblio.Text("mult")))
             {
 
             }
@@ -88,7 +87,7 @@ public class MainMenu : MonoBehaviour {
                 _isFirstMenu = false;
                 _isOptionMenu = true;
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 50), "Quit game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 50), Biblio.Text("quit")))
             {
                 Application.Quit();
             }
@@ -98,7 +97,7 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isLoadGameMenu)
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), "savegame"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), Biblio.Text("saved")))
             {
 
             }
@@ -108,11 +107,11 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isLevelSelectMenu)
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 30, 300, 50), "Level 1"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 30, 300, 50), Biblio.Text("lvl1")))
             {
                 Application.LoadLevel("Level 01");
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 60, 300, 50), "Level 0"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 60, 300, 50), Biblio.Text("lvl0")))
             {
                 Application.LoadLevel("level 0");
             }
@@ -124,9 +123,9 @@ public class MainMenu : MonoBehaviour {
         int soundlvl = Configfs.ReadByte();
         if (_isOptionMenu)
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), "Language"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), Biblio.Text("lang")))
             {
-
+                Biblio.english = !(Biblio.english);
             }
 
 
