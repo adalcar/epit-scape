@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
+        Vector3 T = new Vector3(Random.value * 20, 0, Random.value * 20);
         target.position += T;
         maintarget = GameObject.FindGameObjectWithTag("Player").transform;
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
@@ -54,19 +54,24 @@ public class EnemyAI : MonoBehaviour
             {
                 if (target)
                 {
-                    if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
-                    {
-                        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
-                        target.position += T;
+                    NavMeshPath path = new NavMeshPath();
 
-                        if(target.position.x > 46 || target.position.x < -46 || target.position.z < -1 || target.position.z > 25)
+                    if(NavMesh.CalculatePath(thisObject.position, target.position, NavMesh.AllAreas, path))
+                    {
+                        if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
                         {
-                            target.position -= T;
+                            Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
+                            target.position += T;
+                        }
+                        else
+                        {
+                            navComponent.SetDestination(target.position);
                         }
                     }
                     else
                     {
-                        navComponent.SetDestination(target.position);
+                        Vector3 T = new Vector3(Random.value * range, 0, Random.value * range);
+                        target.position += T;
                     }
                 }
                 else
