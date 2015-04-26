@@ -4,7 +4,8 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     public float distanceAway;
-    public float range;
+    public float rangeX;
+    public float rangeZ;
     public Transform thisObject;
     public Transform maintarget;
     public Transform target;
@@ -52,25 +53,19 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                float range2 = range;
-
-                float pile = Random.value * 2;
-                if(pile > 1)
-                    range *= -1;
-
-                float face = Random.value * 2;
-                if (face > 1)
-                    range2 *= -1;
+                float pileface = Random.value * 2;
+                if(pileface > 1)
+                    rangeX *= -1;
 
                 if (target)
                 {
                     NavMeshPath path = new NavMeshPath();
 
-                    if(NavMesh.CalculatePath(thisObject.position, target.position, 0, path))
+                    if(!navComponent.isPathStale)
                     {
                         if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
                         {
-                            target.position = new Vector3(Random.value * range, 0, Random.value * range2);
+                            target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
                         }
                         else
                         {
@@ -79,7 +74,10 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        target.position = new Vector3(Random.value * range, 0, Random.value * range2);
+                        if(!navComponent.pathPending)
+                        {
+                            target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
+                        }
                     }
                 }
                 else
@@ -90,7 +88,7 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        target.position = new Vector3(Random.value * range, 0, Random.value * range2);
+                        target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
                     }
                 }
             }
