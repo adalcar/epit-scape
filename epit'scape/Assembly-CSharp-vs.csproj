@@ -64,12 +64,14 @@
      <Compile Include="Assets\Scripts\bullet.cs" />
      <Compile Include="Assets\Scripts\doorscript.cs" />
      <Compile Include="Assets\Scripts\gametime.cs" />
+     <Compile Include="Assets\Scripts\gate.cs" />
      <Compile Include="Assets\Scripts\inGameGui.cs" />
      <Compile Include="Assets\Scripts\interaction.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\recharge.cs" />
      <Compile Include="Assets\Scripts\zombie.cs" />
+     <Compile Include="Assets\gatee.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
@@ -91,7 +93,7 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>D:/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

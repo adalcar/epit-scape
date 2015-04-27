@@ -11,7 +11,10 @@ public class Quest : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        aim = 3;
+        if(this.name == "Porte") // quete 1
+        {
+            aim = 1;
+        }
         isStarted = false;
         isFinished = false;
 	}

@@ -18,7 +18,10 @@ public class QuestManager : MonoBehaviour
 
             if(GetComponent<Quest>().isFinished == true)
             {
-                Application.LoadLevel("Level 0");
+                if(this.name == "Porte")
+                {
+                    Application.LoadLevel("Level 01");
+                }
             }
         }
     }

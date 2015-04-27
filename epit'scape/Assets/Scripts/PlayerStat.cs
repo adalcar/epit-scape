@@ -20,4 +20,13 @@ public class PlayerStat : MonoBehaviour
             current_score = pnj.GetComponent<Quest>().aim;
         }
 	}
+
+    void OnTriggerEnter(Collider coll)
+    {
+        if (coll.tag == "aim" && pnj.GetComponent<Quest>().isStarted)
+        {
+            current_score++;
+            Destroy(coll);
+        }
+    }
 }
