@@ -22,9 +22,6 @@ public class Quest : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if(isStarted == true &&  GameObject.FindWithTag("Player").GetComponent<PlayerStat>().current_score >= aim)
-        {
-            isFinished = true;
-        }
+        isFinished = isStarted && GameObject.FindWithTag("Player").GetComponent<PlayerStat>().current_score >= aim;
 	}
 }

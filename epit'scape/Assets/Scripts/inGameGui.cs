@@ -13,7 +13,7 @@ public class inGameGui : MonoBehaviour {
 	void Start () {
         infoLabel = false;
         Cursor.visible = false;
-       // Screen.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
         applyConfigs();
 	}
     void applyConfigs()
@@ -34,12 +34,7 @@ public class inGameGui : MonoBehaviour {
 	}
     void OnGUI()
     {
-        GUI.Box(new Rect(600, 0, 100, 20), "Vie:" + health);
-        if (infoLabel)
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 20), infoLabelText);
-        }
-            
+        
     }
     public IEnumerable Info(string infostring)
     {

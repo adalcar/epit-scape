@@ -11,12 +11,13 @@ public class QuestManager : MonoBehaviour
     {
         if( coll.tag == "Player" /*&& Input.GetButtonDown("x")*/)
         {
-            if(GetComponent<Quest>().isStarted == false)
+            if(!GetComponent<Quest>().isStarted)
             {
                 GetComponent<Quest>().isStarted = true;
+                coll.GetComponentInChildren<inGameGui>().Info("tu vas en chier");
             }
 
-            if(GetComponent<Quest>().isFinished == true)
+            if(GetComponent<Quest>().isFinished)
             {
                 if(this.name == "Porte")
                 {

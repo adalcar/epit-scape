@@ -26,7 +26,7 @@ public class PlayerStat : MonoBehaviour
         if (coll.tag == "aim" && pnj.GetComponent<Quest>().isStarted)
         {
             current_score++;
-            Destroy(coll);
+            Destroy(coll.gameObject);
         }
     }
 }
