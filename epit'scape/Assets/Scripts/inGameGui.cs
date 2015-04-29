@@ -5,16 +5,19 @@ public class inGameGui : MonoBehaviour {
     public int health;
     public GUISkin skin;
     public GameObject terrain, enemy;
-    
+    public Texture menuback;
     string infoLabelText;
     bool infoLabel;
+    bool menu;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         infoLabel = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         applyConfigs();
+        menu = false;
 	}
     void applyConfigs()
     {
@@ -32,13 +35,35 @@ public class inGameGui : MonoBehaviour {
         {
             death();
         }
+        if (Input.GetButtonDown("menu"))
+        {
+            if (!menu)
+            {
+                Time.timeScale = 0;
+                menu = true;
+            }
+            else
+            {
+                Time.timeScale = 1;
+                menu = false;
+            }
+            GetComponent<MouseLook>().menu();
+        }
+
 	}
     void OnGUI()
     {
         if (infoLabel)
         {
-            GUI.Label(new Rect(Screen.width / 2, Screen.height - 50, 200, 40), infoLabelText);
-        }        
+            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 40), infoLabelText);
+        }
+        #region menu
+        if (menu)
+        {
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
+            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), "pause");
+        }
+        #endregion
     }
     public IEnumerator Info(string infostring)
     {
@@ -50,7 +75,8 @@ public class inGameGui : MonoBehaviour {
     }
     void death()
     {
-
+        
     }
+    
 
 }

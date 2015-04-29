@@ -10,16 +10,13 @@ public class other_imputs : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("Cancel"))
-        {
-            Application.LoadLevel("MainMenu");
-            Cursor.visible = true;
-          //  Screen.lockCursor = false;
-        }
-        if (Input.GetButton("mousefree"))
+        if (Input.GetButtonDown("mousefree"))
         {
             Cursor.visible = !Cursor.visible;
-          //  Screen.lockCursor = !Screen.lockCursor;
+            if (Cursor.lockState == CursorLockMode.Locked)
+                Cursor.lockState = CursorLockMode.None;
+            else
+                Cursor.lockState = CursorLockMode.Locked;
         }
 
 	}
