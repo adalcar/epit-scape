@@ -52,7 +52,7 @@ public class EnemyHealth : MonoBehaviour {
             Dead();
         }
     }
-    public IEnumerator Dead()
+    public void Dead()
     {
         isDead = true;
         nav.enabled = false;
