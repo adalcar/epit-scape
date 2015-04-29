@@ -27,6 +27,7 @@ public class inGameGui : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
+
         if (health <= 0)
         {
             death();
@@ -34,9 +35,12 @@ public class inGameGui : MonoBehaviour {
 	}
     void OnGUI()
     {
-        
+        if (infoLabel)
+        {
+            GUI.Label(new Rect(Screen.width / 2, Screen.height - 50, 200, 40), infoLabelText);
+        }        
     }
-    public IEnumerable Info(string infostring)
+    public IEnumerator Info(string infostring)
     {
         Debug.Log("spot!");
         infoLabelText = infostring;

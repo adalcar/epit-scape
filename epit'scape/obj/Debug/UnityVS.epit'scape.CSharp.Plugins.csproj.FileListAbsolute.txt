@@ -1,0 +1,13 @@
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\UnityVS.epit'scape.CSharp.Plugins.csprojResolveAssemblyReference.cache
+E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
+E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
