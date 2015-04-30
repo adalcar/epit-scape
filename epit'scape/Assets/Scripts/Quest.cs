@@ -15,6 +15,10 @@ public class Quest : MonoBehaviour
         {
             aim = 1;
         }
+        if(this.name == "P0-1")
+        {
+            aim = 2;
+        }
         isStarted = false;
         isFinished = false;
 	}

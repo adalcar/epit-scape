@@ -49,7 +49,8 @@ public class EnemyHealth : MonoBehaviour {
         currentLife -= dammage;
         if(currentLife <= 0 )
         {
-            StartCoroutine( Dead());
+            currentLife = 0;
+            Dead();
         }
     }
     public void Dead()
@@ -58,7 +59,6 @@ public class EnemyHealth : MonoBehaviour {
         nav.enabled = false;
         GameObject.FindWithTag("Player").GetComponent<PlayerStat>().current_score++;
         anim.SetTrigger("IsDead");
-        yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
 
