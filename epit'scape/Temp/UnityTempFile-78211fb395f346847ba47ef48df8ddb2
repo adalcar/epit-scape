@@ -65,7 +65,6 @@ Assets/Scripts/EnemyHealth.cs
 Assets/Scripts/EnemyMov.cs
 Assets/Scripts/MainMenu.cs
 Assets/Scripts/PlayerGUI.cs
-Assets/Scripts/PlayerStat.cs
 Assets/Scripts/Portal.cs
 Assets/Scripts/Quest.cs
 Assets/Scripts/QuestManager.cs
@@ -80,8 +79,6 @@ Assets/Scripts/interaction.cs
 Assets/Scripts/other_imputs.cs
 Assets/Scripts/playerHealth.cs
 Assets/Scripts/recharge.cs
-Assets/Scripts/zombie.cs
-Assets/aim.cs
 Assets/startQuest.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

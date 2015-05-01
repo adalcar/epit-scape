@@ -63,7 +63,6 @@
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -r:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.Xcode.dll"
 -i:UnityEditor
-Assets/Scripts/AdvancedAI.js
 Assets/Scripts/destru.js
 "Assets/Standard Assets (Mobile)/Scripts/CameraRelativeControl.js"
 "Assets/Standard Assets (Mobile)/Scripts/FirstPersonControl.js"
