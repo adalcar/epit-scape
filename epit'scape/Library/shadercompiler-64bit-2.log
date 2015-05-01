@@ -123,3 +123,9 @@ Cmd: compileSnippet
   api=1 type=1 insize=9591 outsize=837 kw= ok=1
 Cmd: compileSnippet
   api=1 type=1 insize=9591 outsize=967 kw=UNITY_COLORSPACE_GAMMA ok=1
+Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
+
+
+Quitting shader compiler process
+
+Crashed!
