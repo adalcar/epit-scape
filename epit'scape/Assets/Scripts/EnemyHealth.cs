@@ -59,7 +59,15 @@ public class EnemyHealth : MonoBehaviour {
         nav.enabled = false;
         //GameObject.FindWithTag("Player").GetComponent<QuestManager>().current_score++;
         anim.SetTrigger("IsDead");
-        Destroy(gameObject);
+        StartCoroutine(dead());
+        
     }
+    IEnumerator dead()
+	{   
+		yield return new WaitForSeconds(3);
+        Destroy(gameObject);
+	}
+    
+    
 
 }

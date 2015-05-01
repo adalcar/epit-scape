@@ -32,23 +32,12 @@ public class QuestManager : MonoBehaviour
             switch (name)
             {
                 case "Porte":
-                    Application.LoadLevel("Level 01");
+                    Application.LoadLevel("Level 1");
                     break;
-                case "PO-1":
+                case "portal":
                     Application.LoadLevel("Level 01");
                     break;
             }
-
-
-                /*if(this.name == "Porte")
-                {
-                    Application.LoadLevel("Level 01");
-                }
-                if(this.name == "P0-1")
-                {
-                    Application.LoadLevel("Level 02");
-                }*/
-            
         }
     }
 }
