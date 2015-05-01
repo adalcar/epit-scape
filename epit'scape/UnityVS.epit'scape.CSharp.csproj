@@ -54,6 +54,9 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -93,7 +96,7 @@
     <Compile Include="Assets\Scripts\playerHealth.cs" />
     <Compile Include="Assets\Scripts\recharge.cs" />
     <Compile Include="Assets\Scripts\zombie.cs" />
-    <Compile Include="Assets\gatee.cs" />
+    <Compile Include="Assets\aim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
