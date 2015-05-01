@@ -55,7 +55,6 @@
      <Compile Include="Assets\Scripts\EnemyMov.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerGUI.cs" />
-     <Compile Include="Assets\Scripts\PlayerStat.cs" />
      <Compile Include="Assets\Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
      <Compile Include="Assets\Scripts\QuestManager.cs" />
@@ -71,7 +70,6 @@
      <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\recharge.cs" />
      <Compile Include="Assets\Scripts\zombie.cs" />
-     <Compile Include="Assets\aim.cs" />
      <Compile Include="Assets\startQuest.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

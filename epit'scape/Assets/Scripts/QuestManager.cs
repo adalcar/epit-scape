@@ -3,32 +3,41 @@ using System.Collections;
 
 public class QuestManager : MonoBehaviour
 {
-    void Update()
+    public int current_score;
+    void Start()
     {
+        current_score = 0;
     }
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.tag == "Player")
+        if (coll.tag == "begin")
         {
             if (!GetComponent<Quest>().isStarted)
             {
                 GetComponent<Quest>().isStarted = true;
-                StartCoroutine(coll.GetComponentInChildren<inGameGui>().Info("tu vas en chier"));
+                //StartCoroutine(coll.GetComponentInChildren<inGameGui>().Info("tu vas en chier"));
             }
+        }
 
-            if (GetComponent<Quest>().isFinished)
+        if(coll.tag == "aim" && GetComponent<Quest>().isStarted)
+        {
+            this.current_score++;
+            Destroy(coll.gameObject);
+        }
+
+        if (coll.tag == "end" && GetComponent<Quest>().isFinished)
+        {
+            string name = coll.name;
+            switch (name)
             {
-                string name = this.name;
-                switch (name)
-                {
-                    case "Porte":
-                        Application.LoadLevel("Level 01");
-                        break;
-                    case "PO-1":
-                        Application.LoadLevel("Level 01");
-                        break;
-                }
+                case "Porte":
+                    Application.LoadLevel("Level 01");
+                    break;
+                case "PO-1":
+                    Application.LoadLevel("Level 01");
+                    break;
+            }
 
 
                 /*if(this.name == "Porte")
@@ -39,7 +48,7 @@ public class QuestManager : MonoBehaviour
                 {
                     Application.LoadLevel("Level 02");
                 }*/
-            }
+            
         }
     }
 }

@@ -57,7 +57,7 @@ public class EnemyHealth : MonoBehaviour {
     {
         isDead = true;
         nav.enabled = false;
-        GameObject.FindWithTag("Player").GetComponent<PlayerStat>().current_score++;
+        //GameObject.FindWithTag("Player").GetComponent<QuestManager>().current_score++;
         anim.SetTrigger("IsDead");
         Destroy(gameObject);
     }
