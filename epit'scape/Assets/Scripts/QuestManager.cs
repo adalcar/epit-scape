@@ -16,7 +16,7 @@ public class QuestManager : MonoBehaviour
             if (!GetComponent<Quest>().isStarted)
             {
                 GetComponent<Quest>().isStarted = true;
-                //StartCoroutine(coll.GetComponentInChildren<inGameGui>().Info("tu vas en chier"));
+                StartCoroutine(coll.GetComponentInChildren<inGameGui>().Info("Recupere les cles, tu vas en chier"));
             }
         }
 

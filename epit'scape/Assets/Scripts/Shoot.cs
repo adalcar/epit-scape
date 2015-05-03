@@ -7,12 +7,12 @@ public class Shoot : MonoBehaviour {
 	public GameObject posCanon;
     public bool monArme = true;
 	public int munitions = 10;
-	float cadence = 0.2f; 
-
+	float cadence = 0.2f;
+    public bool pause;
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (!pause)
         if (Input.GetMouseButtonDown(0) && monArme && (munitions > 0))
         {
 			    munitions--;

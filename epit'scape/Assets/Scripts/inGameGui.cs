@@ -18,13 +18,14 @@ public class inGameGui : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         applyConfigs();
         menu = false;
+
 	}
     void applyConfigs()
     {
         FileStream f = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
         
         this.GetComponent<AudioSource>().volume = ((float) f.ReadByte() )/ 100;
-        
+
         f.Close();
     }
 	// Update is called once per frame
@@ -53,6 +54,7 @@ public class inGameGui : MonoBehaviour {
 	}
     void OnGUI()
     {
+        GUI.skin = skin;
         if (infoLabel)
         {
             GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 40), infoLabelText);
@@ -62,6 +64,20 @@ public class inGameGui : MonoBehaviour {
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
             GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), "pause");
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 200, 200, 50), "Return to game"))
+            {
+                Time.timeScale = 1;
+                menu = false;
+                GetComponent<MouseLook>().menu();
+            }
+            if(GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 50), "Options"))
+            {
+
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "save and quit"))
+            {
+
+            }
         }
         #endregion
     }

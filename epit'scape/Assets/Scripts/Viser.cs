@@ -14,7 +14,7 @@ public class Viser : MonoBehaviour {
 	void Update () {
 
 		
-		if (Input.GetKey ("v")) {
+		if (Input.GetKeyDown ("v")) {
 			enVisee = !enVisee;
 
 		}
