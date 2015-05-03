@@ -24,6 +24,8 @@ public class MainMenu : MonoBehaviour {
     void checkfolders()
     {
         checkConfigFile();
+        if (!Directory.Exists("Saves and Config/Saves"))
+            Directory.CreateDirectory("Saves and Config/Saves");
 
     }
 	// Update is called once per frame

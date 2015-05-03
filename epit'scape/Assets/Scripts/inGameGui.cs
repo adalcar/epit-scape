@@ -87,7 +87,9 @@ public class inGameGui : MonoBehaviour {
             {
                 savemenu = true;
                 menu = false;
-                Directory.CreateDirectory("Saves and Config/Saves");
+                DirectoryInfo d = new DirectoryInfo("Saves and Config/Saves");
+                foreach()
+                
                 savegame();
             }
         }
