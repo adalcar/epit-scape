@@ -16,11 +16,16 @@ public class MainMenu : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        checkConfigFile();
+        checkfolders();
+
         title = gameTitle;
         Biblio.english = true;
 	}
-	
+    void checkfolders()
+    {
+        checkConfigFile();
+
+    }
 	// Update is called once per frame
 	void Update () 
     {

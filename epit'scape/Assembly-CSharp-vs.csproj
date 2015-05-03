@@ -39,37 +39,36 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>E:/Softs/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>H:/softs/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>E:/Softs/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>H:/softs/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Arme.cs" />
-     <Compile Include="Assets\Scripts\Basic AI.cs" />
      <Compile Include="Assets\Scripts\Biblio.cs" />
-     <Compile Include="Assets\Scripts\EnemyAI.cs" />
-     <Compile Include="Assets\Scripts\EnemyAttack.cs" />
-     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-     <Compile Include="Assets\Scripts\EnemyMov.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\PlayerGUI.cs" />
-     <Compile Include="Assets\Scripts\Portal.cs" />
-     <Compile Include="Assets\Scripts\Quest.cs" />
-     <Compile Include="Assets\Scripts\QuestManager.cs" />
-     <Compile Include="Assets\Scripts\Shoot.cs" />
-     <Compile Include="Assets\Scripts\Viser.cs" />
-     <Compile Include="Assets\Scripts\bullet.cs" />
-     <Compile Include="Assets\Scripts\doorscript.cs" />
-     <Compile Include="Assets\Scripts\gametime.cs" />
-     <Compile Include="Assets\Scripts\gate.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\Arme.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\Shoot.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\bullet.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\recharge.cs" />
+     <Compile Include="Assets\Scripts\enemies\Basic AI.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyMov.cs" />
      <Compile Include="Assets\Scripts\inGameGui.cs" />
-     <Compile Include="Assets\Scripts\interaction.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
-     <Compile Include="Assets\Scripts\quest1.cs" />
-     <Compile Include="Assets\Scripts\recharge.cs" />
+     <Compile Include="Assets\Scripts\questStuff\BaseQuest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\Quest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\terrain\Portal.cs" />
+     <Compile Include="Assets\Scripts\terrain\doorscript.cs" />
+     <Compile Include="Assets\Scripts\terrain\gametime.cs" />
+     <Compile Include="Assets\Scripts\terrain\gate.cs" />
+     <Compile Include="Assets\Scripts\terrain\interaction.cs" />
      <Compile Include="Assets\startQuest.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
@@ -92,13 +91,13 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>E:/Projet/epit-scape/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Tancrede/Documents/GitHub/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Softs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>H:/softs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>E:/Softs/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>H:/softs/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

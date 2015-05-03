@@ -7,10 +7,13 @@ public class inGameGui : MonoBehaviour {
     public GameObject terrain, enemy;
     public Texture menuback;
     string infoLabelText;
+    #region guibools
     bool infoLabel;
     bool menu;
-
-	// Use this for initialization
+    bool savemenu;
+    bool options;
+    #endregion
+    // Use this for initialization
 	void Start () 
     {
         infoLabel = false;
@@ -40,8 +43,13 @@ public class inGameGui : MonoBehaviour {
         {
             if (!menu)
             {
+                
                 Time.timeScale = 0;
                 menu = true;
+                if (options)
+                    options = false;
+                if (savemenu)
+                    savemenu = false;
             }
             else
             {
@@ -64,7 +72,7 @@ public class inGameGui : MonoBehaviour {
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
             GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), "pause");
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 200, 200, 50), "Return to game"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 200, 300, 50), "Return to game"))
             {
                 Time.timeScale = 1;
                 menu = false;
@@ -72,11 +80,15 @@ public class inGameGui : MonoBehaviour {
             }
             if(GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 200, 50), "Options"))
             {
-
+                menu = false;
+                options = true;
             }
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "save and quit"))
             {
-
+                savemenu = true;
+                menu = false;
+                Directory.CreateDirectory("Saves and Config/Saves");
+                savegame();
             }
         }
         #endregion
@@ -92,6 +104,10 @@ public class inGameGui : MonoBehaviour {
     void death()
     {
         
+    }
+    void savegame(string name)
+    {
+
     }
     
 
