@@ -8,12 +8,12 @@ public class playerHealth : MonoBehaviour {
     public bool isAttaked;
     bool isDead;
     //Animator anim;
-    //AudioSource playerAudio; 
+    AudioSource playerAudio; 
    
     void Awake()
     {
        // anim = GetComponent<Animator>();
-        //playerAudio = GetComponent<AudioSource>();
+        playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
     }
 
@@ -29,7 +29,7 @@ public class playerHealth : MonoBehaviour {
         isAttaked = true;
         currentLife -= damages;
         //healthSlider.value = currentLife;
-        //playerAudio.Play();
+        playerAudio.Play();
 
         if (currentLife <= 0 && !isDead)
         {

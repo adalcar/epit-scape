@@ -83,15 +83,15 @@ public class inGameGui : MonoBehaviour {
                 menu = false;
                 options = true;
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "save and quit"))
-            {
-                savemenu = true;
-                menu = false;
-                DirectoryInfo d = new DirectoryInfo("Saves and Config/Saves");
-                foreach()
+            //if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "save and quit"))
+            //{
+            //    savemenu = true;
+            //    menu = false;
+            //    DirectoryInfo d = new DirectoryInfo("Saves and Config/Saves");
+            //    foreach()
                 
-                savegame();
-            }
+            //    savegame();
+            //}
         }
         #endregion
     }

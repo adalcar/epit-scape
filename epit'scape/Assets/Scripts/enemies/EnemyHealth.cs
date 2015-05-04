@@ -9,14 +9,14 @@ public class EnemyHealth : MonoBehaviour {
     //public AudioClip deathClip; // a ajouter
 
     public Animator anim;
-    //AudioSource enemyAudio;// a ajouter
+    AudioSource enemyAudio;// a ajouter
     //CapsuleCollider capColl;
     public bool isDead;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
-        //enemyAudio = GetComponent <AudioSource> ();
+        enemyAudio = GetComponent <AudioSource> ();
         //capColl = GetComponent<CapsuleCollider>();
         currentLife = startLife;
         nav = GetComponent<NavMeshAgent>();
@@ -44,7 +44,7 @@ public class EnemyHealth : MonoBehaviour {
         if (!isDead)
         {
 
-            //enemyAudio.Play();
+            enemyAudio.Play();
             currentLife -= dammage;
             if (currentLife <= 0)
             {
