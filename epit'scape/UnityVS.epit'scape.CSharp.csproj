@@ -71,30 +71,35 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Arme.cs" />
-    <Compile Include="Assets\Scripts\Basic AI.cs" />
     <Compile Include="Assets\Scripts\Biblio.cs" />
-    <Compile Include="Assets\Scripts\EnemyAI.cs" />
-    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
-    <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-    <Compile Include="Assets\Scripts\EnemyMov.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\PlayerGUI.cs" />
-    <Compile Include="Assets\Scripts\Portal.cs" />
-    <Compile Include="Assets\Scripts\Quest.cs" />
-    <Compile Include="Assets\Scripts\QuestManager.cs" />
-    <Compile Include="Assets\Scripts\Shoot.cs" />
-    <Compile Include="Assets\Scripts\Viser.cs" />
-    <Compile Include="Assets\Scripts\bullet.cs" />
-    <Compile Include="Assets\Scripts\doorscript.cs" />
-    <Compile Include="Assets\Scripts\gametime.cs" />
-    <Compile Include="Assets\Scripts\gate.cs" />
+    <Compile Include="Assets\Scripts\Weapon stuff\Arme.cs" />
+    <Compile Include="Assets\Scripts\Weapon stuff\Shoot.cs" />
+    <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />
+    <Compile Include="Assets\Scripts\Weapon stuff\bullet.cs" />
+    <Compile Include="Assets\Scripts\Weapon stuff\recharge.cs" />
+    <Compile Include="Assets\Scripts\enemies\Basic AI.cs" />
+    <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\enemies\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\enemies\EnemyMov.cs" />
+    <Compile Include="Assets\Scripts\gui.cs" />
     <Compile Include="Assets\Scripts\inGameGui.cs" />
-    <Compile Include="Assets\Scripts\interaction.cs" />
     <Compile Include="Assets\Scripts\other_imputs.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
-    <Compile Include="Assets\Scripts\quest1.cs" />
-    <Compile Include="Assets\Scripts\recharge.cs" />
+    <Compile Include="Assets\Scripts\questStuff\GeneralQuestManager.cs" />
+    <Compile Include="Assets\Scripts\questStuff\Quest.cs" />
+    <Compile Include="Assets\Scripts\questStuff\QuestManager.cs" />
+    <Compile Include="Assets\Scripts\questStuff\keyQuest.cs" />
+    <Compile Include="Assets\Scripts\questStuff\queststarter.cs" />
+    <Compile Include="Assets\Scripts\questStuff\tmpQuest.cs" />
+    <Compile Include="Assets\Scripts\terrain\Portal.cs" />
+    <Compile Include="Assets\Scripts\terrain\doorscript.cs" />
+    <Compile Include="Assets\Scripts\terrain\gametime.cs" />
+    <Compile Include="Assets\Scripts\terrain\gate.cs" />
+    <Compile Include="Assets\Scripts\terrain\interaction.cs" />
+    <Compile Include="Assets\keyQuestTarget.cs" />
+    <Compile Include="Assets\portal1.cs" />
     <Compile Include="Assets\startQuest.cs" />
   </ItemGroup>
   <ItemGroup>

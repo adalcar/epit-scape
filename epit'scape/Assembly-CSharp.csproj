@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/Softs/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/Softs/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,17 +58,23 @@
      <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyMov.cs" />
+     <Compile Include="Assets\Scripts\gui.cs" />
      <Compile Include="Assets\Scripts\inGameGui.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
-     <Compile Include="Assets\Scripts\questStuff\BaseQuest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\GeneralQuestManager.cs" />
      <Compile Include="Assets\Scripts\questStuff\Quest.cs" />
      <Compile Include="Assets\Scripts\questStuff\QuestManager.cs" />
+     <Compile Include="Assets\Scripts\questStuff\keyQuest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\queststarter.cs" />
+     <Compile Include="Assets\Scripts\questStuff\tmpQuest.cs" />
      <Compile Include="Assets\Scripts\terrain\Portal.cs" />
      <Compile Include="Assets\Scripts\terrain\doorscript.cs" />
      <Compile Include="Assets\Scripts\terrain\gametime.cs" />
      <Compile Include="Assets\Scripts\terrain\gate.cs" />
      <Compile Include="Assets\Scripts\terrain\interaction.cs" />
+     <Compile Include="Assets\keyQuestTarget.cs" />
+     <Compile Include="Assets\portal1.cs" />
      <Compile Include="Assets\startQuest.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
@@ -91,10 +97,10 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Softs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>E:/Softs/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

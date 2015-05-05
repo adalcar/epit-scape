@@ -18,6 +18,21 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "retJeu":
+                if (english)
+                    return "back to game";
+                else
+                    return "retour au jeu";
+            case "recupCles":
+                if (english)
+                    return "you must \nfind the \nkeys! ";
+                else
+                    return "tu dois \nretrouver \nles cles!";
+            case "savquit":
+                if (english)
+                    return "save and quit";
+                else
+                    return "sauvegarder et quitter";
             case "back":
                 if (english)
                     return "Back";

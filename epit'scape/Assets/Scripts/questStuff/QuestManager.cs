@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Assets.Scripts;
 public class QuestManager : MonoBehaviour
 {
     public int current_score;
@@ -13,20 +13,21 @@ public class QuestManager : MonoBehaviour
     {
         if (coll.tag == "begin")
         {
-            if (!GetComponent<Quest>().isStarted)
+            if (!GetComponent<tmpQuest>().isStarted)
             {
-                GetComponent<Quest>().isStarted = true;
+                
+                GetComponent<tmpQuest>().isStarted = true;
                 StartCoroutine(coll.GetComponentInChildren<inGameGui>().Info("Recupere les cles, tu vas en chier"));
             }
         }
 
-        if(coll.tag == "aim" && GetComponent<Quest>().isStarted)
+        if(coll.tag == "aim" && GetComponent<tmpQuest>().isStarted)
         {
             this.current_score++;
             Destroy(coll.gameObject);
         }
 
-        if (coll.tag == "end" && GetComponent<Quest>().isFinished)
+        if (coll.tag == "end" && GetComponent<tmpQuest>().isFinished)
         {
             string name = coll.name;
             switch (name)

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BaseQuest : MonoBehaviour {
+public class queststarter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

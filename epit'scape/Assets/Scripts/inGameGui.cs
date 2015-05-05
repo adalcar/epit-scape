@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+
 public class inGameGui : MonoBehaviour {
     public int health;
     public GUISkin skin;
     public GameObject terrain, enemy;
     public Texture menuback;
+    private MouseLook[] cameras;
     string infoLabelText;
+    string menupause;
+    FileStream Configfs;
     #region guibools
     bool infoLabel;
     bool menu;
@@ -21,6 +25,10 @@ public class inGameGui : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         applyConfigs();
         menu = false;
+        options = false;
+        savemenu = false;
+        cameras = GetComponentsInParent<MouseLook>();
+        
 
 	}
     void applyConfigs()
@@ -43,37 +51,57 @@ public class inGameGui : MonoBehaviour {
         {
             if (!menu)
             {
-                
+                foreach (MouseLook m in cameras)
+                    m.enabled = false;
+                if (!options && !savemenu)
+                    Configfs = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
+                Cursor.visible = true;
                 Time.timeScale = 0;
                 menu = true;
                 if (options)
+                {
                     options = false;
+                    GetComponent<MouseLook>().menu();
+                }
                 if (savemenu)
+                {
                     savemenu = false;
+                    GetComponent<MouseLook>().menu();
+                }
             }
             else
             {
+                foreach (MouseLook m in cameras)
+                    m.enabled = true;
+                Configfs.Close();
+                Cursor.visible = false;
                 Time.timeScale = 1;
                 menu = false;
             }
             GetComponent<MouseLook>().menu();
         }
-
+        
 	}
     void OnGUI()
     {
         GUI.skin = skin;
+        option();
+
         if (infoLabel)
         {
-            GUI.Label(new Rect(Screen.width / 2 - 100, Screen.height - 50, 200, 40), infoLabelText);
+            GUI.Box(new Rect(Screen.width - 100, 5, 100,60), Biblio.Text(infoLabelText));
         }
         #region menu
         if (menu)
         {
+            menupause = "pause";
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
-            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), "pause");
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 200, 300, 50), "Return to game"))
+            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), menupause);
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 200, 300, 50), Biblio.Text("retJeu")))
             {
+                foreach (MouseLook m in cameras)
+                    m.enabled = true;
+                Configfs.Close();
                 Time.timeScale = 1;
                 menu = false;
                 GetComponent<MouseLook>().menu();
@@ -83,7 +111,7 @@ public class inGameGui : MonoBehaviour {
                 menu = false;
                 options = true;
             }
-            //if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "save and quit"))
+            //if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), Biblio.Text("savquit")))
             //{
             //    savemenu = true;
             //    menu = false;
@@ -92,17 +120,52 @@ public class inGameGui : MonoBehaviour {
                 
             //    savegame();
             //}
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "exit to menu"))
+            {
+                savemenu = true;
+                menu = false;
+                Application.LoadLevel("MainMenu");
+            }
         }
         #endregion
     }
+    void option()
+    {
+
+
+
+        if (options)
+        {
+            Configfs.Position = 0;
+            int soundlvl = Configfs.ReadByte();
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
+            menupause = "option";
+            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), menupause);
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), Biblio.Text("lang")))
+            {
+                Biblio.english = !(Biblio.english);
+            }
+
+
+            soundlvl = (int)GUI.HorizontalSlider(new Rect(Screen.width / 2 - 200, Screen.height / 2 - 100, 400, 20), soundlvl, 0, 100);
+            Configfs.Position = 0;
+            Configfs.WriteByte((byte)soundlvl);
+        }
+    }
+    public void staticInfo(string infostring)
+    {
+        StartCoroutine(Info(infostring));
+    }
     public IEnumerator Info(string infostring)
     {
-        Debug.Log("spot!");
+        
         infoLabelText = infostring;
         infoLabel = true;
         yield return new WaitForSeconds(2);
         infoLabel = false;
     }
+    
     void death()
     {
         

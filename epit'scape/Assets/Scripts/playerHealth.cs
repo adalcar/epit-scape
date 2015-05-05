@@ -22,7 +22,7 @@ public class playerHealth : MonoBehaviour {
 	}
     void OnGUI()
     {
-        GUI.Box(new Rect(0, 600, 100, 20),"vie : " +currentLife);
+        GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
     }
     public void loseLife(int damages)
     {
