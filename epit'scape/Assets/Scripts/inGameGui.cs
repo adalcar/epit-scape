@@ -20,6 +20,7 @@ public class inGameGui : MonoBehaviour {
     // Use this for initialization
 	void Start () 
     {
+        menu = true;
         infoLabel = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;

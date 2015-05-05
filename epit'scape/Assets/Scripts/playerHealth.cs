@@ -46,7 +46,7 @@ public class playerHealth : MonoBehaviour {
     }
     void restart()
     {
-        StartCoroutine("wait");
+        StartCoroutine(wait());
         Application.LoadLevel("Level 01");
     }
 
