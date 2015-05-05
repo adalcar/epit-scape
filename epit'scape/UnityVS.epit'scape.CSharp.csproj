@@ -54,9 +54,6 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -78,6 +75,7 @@
     <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />
     <Compile Include="Assets\Scripts\Weapon stuff\bullet.cs" />
     <Compile Include="Assets\Scripts\Weapon stuff\recharge.cs" />
+    <Compile Include="Assets\Scripts\endgame\ending.cs" />
     <Compile Include="Assets\Scripts\enemies\Basic AI.cs" />
     <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
@@ -87,6 +85,7 @@
     <Compile Include="Assets\Scripts\inGameGui.cs" />
     <Compile Include="Assets\Scripts\other_imputs.cs" />
     <Compile Include="Assets\Scripts\playerHealth.cs" />
+    <Compile Include="Assets\Scripts\playerdata.cs" />
     <Compile Include="Assets\Scripts\questStuff\GeneralQuestManager.cs" />
     <Compile Include="Assets\Scripts\questStuff\Quest.cs" />
     <Compile Include="Assets\Scripts\questStuff\QuestManager.cs" />

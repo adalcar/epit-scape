@@ -23,10 +23,6 @@ public class playerHealth : MonoBehaviour {
 	}
     void OnGUI()
     {
-        if (isDead)
-        {
-            
-        }
         GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
     }
     public void loseLife(int damages)
@@ -43,12 +39,10 @@ public class playerHealth : MonoBehaviour {
     }
     void dead()
     {
-        
-        isDead = true;
-        //anim.SetTrigger("Die");
-        Destroy(this.gameObject);
-        restart();
-        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        Assets.Scripts.playerdata.scene = Application.loadedLevelName;
+        Application.LoadLevel("gameOver");
     }
     void restart()
     {
