@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class playerHealth : MonoBehaviour {
-
+    public GUISkin skin;
     public int startingLife = 100;                           
     public int currentLife;
     public bool isAttaked;
     bool isDead;
+    public Texture deadback;
     //Animator anim;
     AudioSource playerAudio; 
    
@@ -22,6 +23,10 @@ public class playerHealth : MonoBehaviour {
 	}
     void OnGUI()
     {
+        if (isDead)
+        {
+            
+        }
         GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
     }
     public void loseLife(int damages)
@@ -38,6 +43,7 @@ public class playerHealth : MonoBehaviour {
     }
     void dead()
     {
+        
         isDead = true;
         //anim.SetTrigger("Die");
         Destroy(this.gameObject);

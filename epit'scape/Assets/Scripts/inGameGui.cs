@@ -169,7 +169,6 @@ public class inGameGui : MonoBehaviour {
     
     void death()
     {
-        
     }
     void savegame(string name)
     {

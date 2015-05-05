@@ -19,6 +19,7 @@ public class keyQuestTarget : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-	
+        if (keyQuest.questcompleted)
+            Destroy(gameObject);
 	}
 }
