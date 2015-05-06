@@ -2,66 +2,29 @@ Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x162)
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
     Vendor:   Intel
     VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.042 seconds
-desktop: 1920x1200 60Hz; virtual: 1920x1200 at 0,0
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.240 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\System.Core.dll (this message is harmless)
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.368856 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 7955.
-Total: 1.036843 ms (FindLiveObjects: 0.196502 ms CreateObjectMapping: 0.405380 ms MarkObjects: 0.422283 ms  DeleteObjects: 0.012375 ms)
-
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\Boo.Lang.dll (this message is harmless)
-touche!
+Platform assembly: C:\Users\Tessier Fabien\Desktop\Bananas Propellers\Projet\epit-scape\epit'scape\epit'S'cape_Data\Managed\System.Core.dll (this message is harmless)
+quit
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-touche!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-nohit!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-touche!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-touche!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-touche!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Platform assembly: E:\Projet\epit-scape\epit-scape\epit'scape\epit'S'cape_Data\Managed\System.dll (this message is harmless)
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.596824 ms
-
-Unloading 298 unused Assets to reduce memory usage. Loaded Objects now: 251.
-Total: 0.616974 ms (FindLiveObjects: 0.025355 ms CreateObjectMapping: 0.023544 ms MarkObjects: 0.127077 ms  DeleteObjects: 0.440696 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1d64 -> priority: 1 
-  Thread -> id: 18ec -> priority: 1 

@@ -23,7 +23,7 @@ public class inGameGui : MonoBehaviour {
         menu = true;
         infoLabel = false;
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
         applyConfigs(); 
         menu = false;
         options = false;
