@@ -118,9 +118,13 @@ public class MainMenu : MonoBehaviour {
             {
                 Application.LoadLevel("Level 01");
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 60, 300, 50), Biblio.Text("lvl0")))
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 100, 300, 50), Biblio.Text("out")))
             {
                 Application.LoadLevel("level 0");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 40, 300, 50), Biblio.Text("lvl0")))
+            {
+                Application.LoadLevel("level 1");
             }
         }
     }
