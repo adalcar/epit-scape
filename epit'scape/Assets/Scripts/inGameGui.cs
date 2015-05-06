@@ -24,12 +24,12 @@ public class inGameGui : MonoBehaviour {
         infoLabel = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        applyConfigs();
+        applyConfigs(); 
         menu = false;
         options = false;
         savemenu = false;
         cameras = GetComponentsInParent<MouseLook>();
-        
+        Time.timeScale = 1;
 
 	}
     void applyConfigs()
