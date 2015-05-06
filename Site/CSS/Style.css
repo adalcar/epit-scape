@@ -4,8 +4,6 @@ color : #777777;
 font-size : 13px;
 font-family : helvetica, sans-serif;
 min-width : 450px;
-/*height : 1583px;
-width : 1726px;*/
 }
 
 body{
@@ -36,8 +34,8 @@ margin : 0px;
 }
 
 #menu{
-width : 556px;
-height : 142px;
+width : 87%;
+height : 10%;
 float : right;
 }
 
@@ -46,7 +44,7 @@ float : left;
 color : rgb(241, 20, 49);
 margin-top : 80px;
 padding : 0px 30px 40px 30px;
-width : 67px;
+width : 60px;
 height : 22px;
 font-size : 20px;
 display : inline-block;
