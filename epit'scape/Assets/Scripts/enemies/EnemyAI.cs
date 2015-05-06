@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
-        Vector3 T = new Vector3(Random.value * 20, 0, Random.value * 20);
+        Vector3 T = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
         target.position += T;
         maintarget = GameObject.FindGameObjectWithTag("Player").transform;
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
@@ -53,9 +53,13 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                float pileface = Random.value * 2;
-                if(pileface > 1)
+                float pile = Random.value * 2;
+                if(pile > 1)
                     rangeX *= -1;
+
+                float face = Random.value * 2;
+                if (face > 1)
+                    rangeZ *= -1;
 
                 if (target)
                 {
