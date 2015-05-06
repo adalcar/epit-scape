@@ -29,7 +29,7 @@ public class inGameGui : MonoBehaviour {
         options = false;
         savemenu = false;
         cameras = GetComponentsInParent<MouseLook>();
-        
+        Time.timeScale = 1;
 
 	}
     void applyConfigs()
