@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class playerHealth : MonoBehaviour {
     public GUISkin skin;
-    public GameObject healthBar;
+    public Image mask;
     public Color good;
     public Color middle;
     public Color bad;
@@ -22,6 +22,9 @@ public class playerHealth : MonoBehaviour {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
+        mask.GetComponent<Image>().fillAmount = 1;
+        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        
         if (Assets.Scripts.playerdata.loadedfromsave)
             transform.position = Assets.Scripts.playerdata.playerpos;
         else
@@ -43,7 +46,7 @@ public class playerHealth : MonoBehaviour {
         isAttaked = true;
         currentLife -= damages;
 
-        float lifebar = (float)currentLife / 100f;
+        float lifebar = (float)currentLife / 200f;
         SetLifeBar(lifebar);
         //healthSlider.value = currentLife;
         playerAudio.Play();
@@ -56,19 +59,19 @@ public class playerHealth : MonoBehaviour {
 
     void SetLifeBar(float value)
     {
-        healthBar.GetComponent<Scrollbar>().size = value;
+        mask.GetComponent<Image>().fillAmount = value;
 
-        if(value >= 0.5f)
+        if (value >= 0.5f)
         {
-            healthBar.transform.FindChild("Mask").FindChild("Sprite").GetComponent<Image>().color = good;
+            mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
         }
-        else if(value >= 0.25f)
+        else if (value >= 0.25f)
         {
-            healthBar.transform.FindChild("Mask").FindChild("Sprite").GetComponent<Image>().color = middle;
+            mask.transform.FindChild("Sprite").GetComponent<Image>().color = middle;
         }
         else
         {
-            healthBar.transform.FindChild("Mask").FindChild("Sprite").GetComponent<Image>().color = bad;
+            mask.transform.FindChild("Sprite").GetComponent<Image>().color = bad;
         }
     }
 
