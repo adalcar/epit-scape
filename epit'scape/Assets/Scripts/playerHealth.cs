@@ -22,10 +22,17 @@ public class playerHealth : MonoBehaviour {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
+        if (Assets.Scripts.playerdata.loadedfromsave)
+            transform.position = Assets.Scripts.playerdata.playerpos;
+        else
+            Assets.Scripts.playerdata.scene = Application.loadedLevel;
+
     }
 
 	void Update () 
     {
+        Assets.Scripts.playerdata.playerpos = transform.position;
+        Assets.Scripts.playerdata.life = currentLife;
 	}
     void OnGUI()
     {
@@ -69,7 +76,7 @@ public class playerHealth : MonoBehaviour {
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
-        Assets.Scripts.playerdata.scene = Application.loadedLevelName;
+        Assets.Scripts.playerdata.scene = Application.loadedLevel;
         Application.LoadLevel("gameOver");
     }
     void restart()

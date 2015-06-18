@@ -104,7 +104,11 @@ public class Biblio : MonoBehaviour {
                     return "Français";
                 else
                     return "English";
-
+            case "save":
+                if (english)
+                    return "Save";
+                else
+                    return "Sauvegarde";
             default:
                 return "???";
         }

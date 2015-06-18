@@ -32,7 +32,7 @@ public class inGameGui : MonoBehaviour {
         Time.timeScale = 1;
 
 	}
-    void applyConfigs()
+    void applyConfigs() 
     {
         FileStream f = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
         
@@ -54,13 +54,12 @@ public class inGameGui : MonoBehaviour {
             {
                 foreach (MouseLook m in cameras)
                     m.enabled = false;
-                if (!options && !savemenu)
-                    Configfs = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
                 Cursor.visible = true;
                 Time.timeScale = 0;
                 menu = true;
                 if (options)
                 {
+                    Configfs.Close();
                     options = false;
                     GetComponent<MouseLook>().menu();
                 }
@@ -85,8 +84,15 @@ public class inGameGui : MonoBehaviour {
 	}
     void OnGUI()
     {
+
         GUI.skin = skin;
+        if (menu || options || savemenu)
+        {
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
+            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), menupause);
+        }
         option();
+        save_menu();
 
         if (infoLabel)
         {
@@ -96,8 +102,7 @@ public class inGameGui : MonoBehaviour {
         if (menu)
         {
             menupause = "pause";
-            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
-            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), menupause);
+
             if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 200, 300, 50), Biblio.Text("retJeu")))
             {
                 foreach (MouseLook m in cameras)
@@ -111,17 +116,15 @@ public class inGameGui : MonoBehaviour {
             {
                 menu = false;
                 options = true;
+                Configfs = new FileStream("Saves and Config/Config", FileMode.Open, FileAccess.Read);
             }
-            //if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), Biblio.Text("savquit")))
-            //{
-            //    savemenu = true;
-            //    menu = false;
-            //    DirectoryInfo d = new DirectoryInfo("Saves and Config/Saves");
-            //    foreach()
-                
-            //    savegame();
-            //}
-            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2, 200, 50), "exit to menu"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 200, Screen.height / 2, 400, 50), Biblio.Text("savquit")))
+            {
+                savemenu = true;
+                menu = false;
+
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 100, 200, 50), "exit to menu"))
             {
                 savemenu = true;
                 menu = false;
@@ -129,6 +132,30 @@ public class inGameGui : MonoBehaviour {
             }
         }
         #endregion
+    }
+    void save_menu()
+    {
+        if (savemenu)
+        {
+            menupause = "save";
+            if(GUI.Button (new Rect(Screen.width/2 - 100, Screen.height / 2 - 50, 200, 50), "Save 1"))
+            {
+                savegame(1);
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2  + 50, 200, 50), "Save 2"))
+            {
+                savegame(2);
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 150, 200, 50), "Save 3"))
+            {
+                savegame(3);
+            }
+            if (GUI.Button(new Rect(10, 20, 120, 45), Biblio.Text("back")))
+            {
+                savemenu = false;
+                menu = true;
+            }
+        }
     }
     void option()
     {
@@ -139,9 +166,7 @@ public class inGameGui : MonoBehaviour {
         {
             Configfs.Position = 0;
             int soundlvl = Configfs.ReadByte();
-            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), menuback);
             menupause = "option";
-            GUI.Label(new Rect(Screen.width / 2 - 100, 100, 200, 50), menupause);
 
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 200, 50), Biblio.Text("lang")))
             {
@@ -170,9 +195,24 @@ public class inGameGui : MonoBehaviour {
     void death()
     {
     }
-    void savegame(string name)
+    void savegame(int save_number)
     {
 
+        string savename = "Saves and Config/Save_" + save_number;
+        if(File.Exists(savename))
+        {
+            //todo: voulez-vous vraiment sauvegarder?
+        }
+        int pos = 0;
+        int k = 0;
+        byte[] save = new byte[1024];
+        Assets.Scripts.playerdata.toSave(ref k).CopyTo(save, pos);
+        pos += k;
+        Assets.Scripts.questStuff.keyQuest.to_save(ref k).CopyTo(save, pos);
+        pos += k;
+            //todo: add other things to save? 
+        File.WriteAllBytes(savename, save);
+        Application.LoadLevel("MainMenu");
     }
     
 

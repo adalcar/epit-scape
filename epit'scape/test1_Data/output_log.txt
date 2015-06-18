@@ -1,4 +1,4 @@
-Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+Initialize engine version: 5.0.2f1 (0b02744d4013)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
@@ -20,49 +20,77 @@ Platform assembly: C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test
 Loading C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.040 seconds
+- Completed reload, in  0.056 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test1_Data\Managed\System.Core.dll (this message is harmless)
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.335074 ms
-Failed getting triangles. Submesh 2 has no indices.
+UnloadTime: 0.784258 ms
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
-Failed getting triangles. Submesh 2 has no indices.
+Failed getting triangles. Submesh 2 has no indices. Mesh asset path "" Mesh name "Mesh"
  
-(Filename:  Line: 36)
+(Filename:  Line: 77)
 
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1160.
-Total: 0.279530 ms (FindLiveObjects: 0.036526 ms CreateObjectMapping: 0.025356 ms MarkObjects: 0.211308 ms  DeleteObjects: 0.006339 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1184.
+Total: 0.344131 ms (FindLiveObjects: 0.052827 ms CreateObjectMapping: 0.030488 ms MarkObjects: 0.250552 ms  DeleteObjects: 0.009659 ms)
 
 Platform assembly: C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\test1_Data\Managed\Boo.Lang.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1713)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.682623 ms
+
+Unloading 147 unused Assets to reduce memory usage. Loaded Objects now: 547.
+Total: 1.661190 ms (FindLiveObjects: 0.058562 ms CreateObjectMapping: 0.042563 ms MarkObjects: 0.225194 ms  DeleteObjects: 1.334265 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1eb4 -> priority: 1 
+  Thread -> id: 2234 -> priority: 1 
+NullReferenceException: Object reference not set to an instance of an object
+  at QuestManager.OnTriggerEnter (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.538837 ms
+
+Unloading 192 unused Assets to reduce memory usage. Loaded Objects now: 213.
+Total: 0.809313 ms (FindLiveObjects: 0.038337 ms CreateObjectMapping: 0.016602 ms MarkObjects: 0.140671 ms  DeleteObjects: 0.613097 ms)
+
+quit
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+

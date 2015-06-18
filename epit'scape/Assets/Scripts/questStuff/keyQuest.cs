@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.questStuff
 {
-    public static class keyQuest
+    public static class keyQuest 
     {
         static string questStart = "recupCles";
         static string questUpdate; 
@@ -16,8 +16,9 @@ namespace Assets.Scripts.questStuff
         static int count = 0;
         public static bool queststarted = false;
         public static bool questcompleted = false;
-        public static byte[] to_save()
+        public static byte[] to_save(ref int k)
         {
+            k = 4;
             byte[] b = new byte[4];
             b[0] = (byte)questid;
             if (queststarted)
@@ -30,6 +31,12 @@ namespace Assets.Scripts.questStuff
                 b[2] = 0;
             b[3] = (byte)count;
             return b;
+        }
+        public static void load(byte[] save, int pos)
+        {
+            queststarted = save[pos + 1] == 1;
+            questcompleted = save[pos + 2] == 1;
+            count = save[pos + 3];
         }
         public static void add()
         {
