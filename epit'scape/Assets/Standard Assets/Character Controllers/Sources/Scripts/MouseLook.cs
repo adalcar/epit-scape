@@ -30,6 +30,7 @@ public class MouseLook : MonoBehaviour {
 
 	float rotationY = 0F;
 
+
     void Update()
     {
         if (!pause)
@@ -58,10 +59,15 @@ public class MouseLook : MonoBehaviour {
     }	
 	void Start ()
 	{
+        if (!this.GetComponent<NetworkView>().isMine)
+        {
+            this.enabled = false;
+        }
 		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
         pause = false;
+
 	}
     public void menu()
     {

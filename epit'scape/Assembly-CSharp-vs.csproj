@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\enemies\EnemyMov.cs" />
      <Compile Include="Assets\Scripts\gui.cs" />
      <Compile Include="Assets\Scripts\inGameGui.cs" />
+     <Compile Include="Assets\Scripts\multi.cs" />
      <Compile Include="Assets\Scripts\other_imputs.cs" />
      <Compile Include="Assets\Scripts\playerHealth.cs" />
      <Compile Include="Assets\Scripts\playerdata.cs" />

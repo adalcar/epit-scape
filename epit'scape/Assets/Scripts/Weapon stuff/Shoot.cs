@@ -9,6 +9,14 @@ public class Shoot : MonoBehaviour {
 	public int munitions = 10;
 	float cadence = 0.2f;
     public bool pause;
+    
+    void Start()
+    {
+        if(!this.GetComponent<NetworkView>().isMine)
+        {
+            this.enabled = false;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {

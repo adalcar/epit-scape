@@ -10,6 +10,7 @@ public class NetworkManager : MonoBehaviour
     private GameObject[] spawners;
     GameObject spawn;
 
+
     private void StartServer()
     {
         Network.InitializeServer(4, 192168019, false);

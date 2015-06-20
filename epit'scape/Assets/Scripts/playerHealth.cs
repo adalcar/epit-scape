@@ -15,8 +15,15 @@ public class playerHealth : MonoBehaviour {
     bool isDead;
     public Texture deadback;
     //Animator anim;
-    AudioSource playerAudio; 
-   
+    AudioSource playerAudio;
+
+    void Start()
+    {
+        if (!this.GetComponent<NetworkView>().isMine)
+        {
+            this.enabled = false;
+        }
+    }
     void Awake()
     {
        // anim = GetComponent<Animator>();
