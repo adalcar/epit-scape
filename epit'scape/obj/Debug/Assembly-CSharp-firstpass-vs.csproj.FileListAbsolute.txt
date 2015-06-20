@@ -81,3 +81,17 @@ E:\Projet\epit-scape\epit-scape\epit'scape\Temp\bin\Debug\Unity.CecilTools.dll
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
+F:\epit-scape\epit'scape\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+F:\epit-scape\epit'scape\Temp\bin\Debug\UnityEditor.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\UnityEngine.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\UnityEngine.UI.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\Mono.Cecil.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\Unity.SerializationLogic.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\Unity.DataContract.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+F:\epit-scape\epit'scape\Temp\bin\Debug\Unity.CecilTools.dll
+F:\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+F:\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
+F:\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
