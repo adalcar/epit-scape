@@ -31,12 +31,9 @@ public class playerHealth : MonoBehaviour {
         currentLife = startingLife;
         mask.GetComponent<Image>().fillAmount = 1;
         mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
-
+        
         if (Assets.Scripts.playerdata.loadedfromsave)
-        {
             transform.position = Assets.Scripts.playerdata.playerpos;
-            Assets.Scripts.playerdata.loadedfromsave = false;
-        }
         else
             Assets.Scripts.playerdata.scene = Application.loadedLevel;
 
