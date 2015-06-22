@@ -73,7 +73,7 @@ public class inGameGui : MonoBehaviour {
             {
                 foreach (MouseLook m in cameras)
                     m.enabled = true;
-                Configfs.Close();
+
                 Cursor.visible = false;
                 Time.timeScale = 1;
                 menu = false;
@@ -107,7 +107,6 @@ public class inGameGui : MonoBehaviour {
             {
                 foreach (MouseLook m in cameras)
                     m.enabled = true;
-                Configfs.Close();
                 Time.timeScale = 1;
                 menu = false;
                 GetComponent<MouseLook>().menu();
