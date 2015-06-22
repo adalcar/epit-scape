@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\bullet.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\recharge.cs" />
+     <Compile Include="Assets\Scripts\ZombMouvMult.cs" />
      <Compile Include="Assets\Scripts\endgame\ending.cs" />
      <Compile Include="Assets\Scripts\enemies\Basic AI.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
