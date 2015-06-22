@@ -106,16 +106,28 @@ public class MainMenu : MonoBehaviour {
         {
 
             GUI.enabled = File.Exists("Saves and Config/Save_1");
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 - 70, 200, 50), Biblio.Text("del")))
+            {
+                File.Delete("Saves and Config/Save_1");
+            }
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 70, 200, 50), Biblio.Text("save") + 1))
             {
                 loadlevelfromfile(1);
             }
             GUI.enabled = File.Exists("Saves and Config/Save_2");
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 + 30, 200, 50), Biblio.Text("del")))
+            {
+                File.Delete("Saves and Config/Save_2");
+            }
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 30, 200, 50), Biblio.Text("save") + 2))
             {
                 loadlevelfromfile(2);
             }
             GUI.enabled = File.Exists("Saves and Config/Save_3");
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 + 130, 200, 50), Biblio.Text("del")))
+            {
+                File.Delete("Saves and Config/Save_3");
+            }
             if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 130, 200, 50), Biblio.Text("save") + 3))
             {
                 loadlevelfromfile(3);
@@ -162,6 +174,7 @@ public class MainMenu : MonoBehaviour {
     {
         string filename = "Saves and Config/Save_" + file;
         byte[] loaded = File.ReadAllBytes(filename);
+        Assets.Scripts.playerdata.loadedfromsave = true;
         Assets.Scripts.playerdata.load(loaded, 0);
         Assets.Scripts.questStuff.keyQuest.load(loaded, 5);
     }
