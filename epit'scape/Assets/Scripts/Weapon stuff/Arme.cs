@@ -4,13 +4,12 @@ using System.Collections;
 public class Arme : MonoBehaviour {
 
 	public GameObject arm;
-	public int munition = 10;
+	public int munition = 1000;
 
 
 	// Use this for initialization
 	void Start () 
     {
-		munition = 10;
 	
 	}
 

@@ -12,10 +12,7 @@ public class Shoot : MonoBehaviour {
     
     void Start()
     {
-        if(!this.GetComponent<NetworkView>().isMine)
-        {
-            this.enabled = false;
-        }
+
     }
 	
 	// Update is called once per frame
