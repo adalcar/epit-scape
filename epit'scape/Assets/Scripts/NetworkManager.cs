@@ -3,6 +3,8 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
 
+   // public Camera cam;
+    GameObject spawn;
 	// Use this for initialization
 	void Start () 
     {
@@ -39,6 +41,7 @@ public class NetworkManager : MonoBehaviour {
     public void OnJoinedRoom()
     {
         Debug.Log("OnJoinedRoom()");
+        SpawnPlayer();
     }
 
     public void OnJoinedLobby()
@@ -57,4 +60,16 @@ public class NetworkManager : MonoBehaviour {
     {
         Debug.Log("OnPhotonRandomJoin()");
     }
+    void SpawnPlayer()
+     {
+         //Random rdn = new Random();
+         GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
+         if(PhotonNetwork.isMasterClient)
+         {
+             spawn = tab[0];
+         }
+         PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
+        // cam.enabled = false;
+         Debug.Log("spawn");
+     }
 }
