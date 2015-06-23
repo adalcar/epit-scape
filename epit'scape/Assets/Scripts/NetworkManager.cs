@@ -79,5 +79,16 @@ public class NetworkManager : MonoBehaviour {
          PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
         // cam.enabled = false;
          Debug.Log("spawn");
+         SpawnEnemies();
      }
+    void SpawnEnemies()
+    {
+        GameObject[] tab_en = GameObject.FindGameObjectsWithTag("enemy_spawn");
+        for(int i = 0; i < tab_en.Length; i++)
+        {
+            spawn = tab_en[i];
+            PhotonNetwork.Instantiate("zombmult", spawn.transform.position, Quaternion.identity, 0);
+        }
+        Debug.Log("spawn_enemies");
+    }
 }

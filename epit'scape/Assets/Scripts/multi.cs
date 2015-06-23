@@ -29,9 +29,9 @@ public class multi : MonoBehaviour {
             for(int i = 0; i < 10; i++)
             {
 
-                GameObject[] spawners = GameObject.FindGameObjectsWithTag("spawn");
+                GameObject[] spawners = GameObject.FindGameObjectsWithTag("enemy_spawn");
                 GameObject spawn = spawners[i];
-                Network.Instantiate(Resources.Load("zombmult"), spawn.transform.position, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate("zombmult", spawn.transform.position, Quaternion.identity, 0);
             }
         }
         
