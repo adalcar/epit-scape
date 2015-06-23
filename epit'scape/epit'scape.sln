@@ -5,6 +5,8 @@ Project("{8F3E24A8-4029-066D-444E-CC048906CBA1}") = "epit'scape", "Assembly-CSha
 EndProject
 Project("{8F3E24A8-4029-066D-444E-CC048906CBA1}") = "epit'scape", "Assembly-CSharp.csproj", "{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}"
 EndProject
+Project("{8F3E24A8-4029-066D-444E-CC048906CBA1}") = "epit'scape", "Assembly-CSharp-Editor.csproj", "{7AFFA42D-688A-8996-57F2-35C9C68FD05D}"
+EndProject
 Project("{8F3E24A8-4029-066D-444E-CC048906CBA1}") = "epit'scape", "Assembly-UnityScript-firstpass.unityproj", "{9F8D4D50-74AC-46A0-9799-C98775476786}"
 EndProject
 Project("{8F3E24A8-4029-066D-444E-CC048906CBA1}") = "epit'scape", "Assembly-UnityScript.unityproj", "{77567C24-E4DD-2713-44FB-79EE0A5DE339}"
@@ -23,6 +25,10 @@ Global
 		{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E11F3D70-BBF4-9A1C-37E0-86F93B86791B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFFA42D-688A-8996-57F2-35C9C68FD05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFFA42D-688A-8996-57F2-35C9C68FD05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFFA42D-688A-8996-57F2-35C9C68FD05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFFA42D-688A-8996-57F2-35C9C68FD05D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F8D4D50-74AC-46A0-9799-C98775476786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F8D4D50-74AC-46A0-9799-C98775476786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8D4D50-74AC-46A0-9799-C98775476786}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																																																																																																																																																																																																																																																																																																								GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																																																																																																																																																																																																																																																																																											GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																																																																																																																																																																																																																																																																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> origin/master
