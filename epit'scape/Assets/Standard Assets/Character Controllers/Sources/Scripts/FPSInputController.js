@@ -4,11 +4,7 @@ private var motor : CharacterMotor;
 function Awake () {
 	motor = GetComponent(CharacterMotor);
 }
-function Start(){
-    if(!GetComponent.<NetworkView>().isMine)
-    {
-        this.enabled = false;
-    }}
+
 // Update is called once per frame
 function Update () {
 	// Get the input vector from keyboard or analog stick

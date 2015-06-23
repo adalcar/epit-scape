@@ -332,11 +332,6 @@ function FixedUpdate () {
 		UpdateFunction();
 }
 
-function Start(){
-    if(!GetComponent.<NetworkView>().isMine)
-    {
-        this.enabled = false;
-    }}
 function Update () {
 	if (!useFixedUpdate)
 		UpdateFunction();
