@@ -56,7 +56,7 @@ public class playerHealth : MonoBehaviour {
         isAttaked = true;
         currentLife -= damages;
 
-        float lifebar = (float)currentLife / 200f;
+        float lifebar = (float)currentLife / 100f;
         SetLifeBar(lifebar);
         //healthSlider.value = currentLife;
         playerAudio.Play();

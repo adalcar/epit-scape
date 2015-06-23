@@ -4,18 +4,33 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
     public float distanceAway;
-    public float rangeX;
-    public float rangeZ;
     public Transform thisObject;
     public Transform maintarget;
-    public Transform target;
+    private Transform target;
+    public Transform target0;
+    public Transform target1;
+    public Transform target2;
+    public Transform target3;
+    public Transform target4;
+    public Transform target5;
+    public Transform target6;
+    public Transform target7;
+    public Transform target8;
+    public Transform target9;
+    public Transform target10;
+    public Transform target11;
+    private Transform[] tab;
     public bool locked = false;
     NavMeshAgent navComponent;
 
     void Start()
     {
-        Vector3 T = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
-        target.position += T;
+        Transform[] truc = { target0, target1, target2, target3, target4, target5, target6, target7, target8, target9, target10, target11 };
+        tab = truc;
+
+        int rand = Random.Range(0, 12);
+        target = tab[rand];
+
         maintarget = GameObject.FindGameObjectWithTag("Player").transform;
         navComponent = this.gameObject.GetComponent<NavMeshAgent>();
     }
@@ -53,23 +68,17 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                float pile = Random.value * 2;
-                if(pile > 1)
-                    rangeX *= -1;
-
-                float face = Random.value * 2;
-                if (face > 1)
-                    rangeZ *= -1;
-
                 if (target)
                 {
                     NavMeshPath path = new NavMeshPath();
 
                     if(!navComponent.isPathStale)
                     {
-                        if(thisObject.position.x == target.position.x && thisObject.position.z == target.position.z)
+                        if (thisObject.position.x < (target.position.x + 2) && thisObject.position.x > (target.position.x - 2)
+                            && thisObject.position.z < (target.position.z + 2) && thisObject.position.z > (target.position.z - 2))
                         {
-                            target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
+                            int rand = Random.Range(0, 12);
+                            target = tab[rand];
                         }
                         else
                         {
@@ -80,7 +89,8 @@ public class EnemyAI : MonoBehaviour
                     {
                         if(!navComponent.pathPending)
                         {
-                            target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
+                            int rand = Random.Range(0, 12);
+                            target = tab[rand];
                         }
                     }
                 }
@@ -92,7 +102,8 @@ public class EnemyAI : MonoBehaviour
                     }
                     else
                     {
-                        target.position = new Vector3(Random.value * rangeX, 0, Random.value * rangeZ);
+                        int rand = Random.Range(0, 12);
+                        target = tab[rand];
                     }
                 }
             }
