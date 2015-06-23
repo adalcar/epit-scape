@@ -27,12 +27,16 @@ public class NetworkManager : MonoBehaviour {
                 PhotonNetwork.Disconnect();
             }
         }
+        if (GUI.Button(new Rect(new Rect(0, 0, 90, 20)), "refresh"))
+        {
+            PhotonNetwork.JoinRoom("epita", false);
+        }
     }
 
     public void OnPhotonRandomJoinFailed()
     {
         Debug.Log("OnPhotonRandomJoinFailed()");
-        PhotonNetwork.CreateRoom(null, new RoomOptions() { maxPlayers = 4 }, null);
+        PhotonNetwork.CreateRoom("epita", new RoomOptions() { maxPlayers = 4 }, null);
     }
     public void OnFailedToConnectToPhoton(DisconnectCause cause)
     {
@@ -53,7 +57,7 @@ public class NetworkManager : MonoBehaviour {
     public void OnConnectedToMaster()
     {
         if (PhotonNetwork.networkingPeer.AvailableRegions != null) Debug.LogWarning("List of available regions counts " + PhotonNetwork.networkingPeer.AvailableRegions.Count + ". First: " + PhotonNetwork.networkingPeer.AvailableRegions[0] + " \t Current Region: " + PhotonNetwork.networkingPeer.CloudRegion);
-        Debug.Log("OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room. Calling: PhotonNetwork.JoinRandomRoom();");
+        Debug.Log("OnConnectedToMaster()");
         PhotonNetwork.JoinRandomRoom();
     }
      public void OnPhotonRandomJoin()
@@ -67,6 +71,10 @@ public class NetworkManager : MonoBehaviour {
          if(PhotonNetwork.isMasterClient)
          {
              spawn = tab[0];
+         }
+         else
+         {
+             spawn = tab[3];
          }
          PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
         // cam.enabled = false;
