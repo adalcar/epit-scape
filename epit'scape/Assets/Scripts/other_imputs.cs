@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Assets.Scripts.questStuff;
 public class other_imputs : MonoBehaviour {
 
 	// Use this for initialization
@@ -17,6 +17,13 @@ public class other_imputs : MonoBehaviour {
                 Cursor.lockState = CursorLockMode.None;
             else
                 Cursor.lockState = CursorLockMode.Locked;
+        }
+        if(Input.GetButtonDown("cheat"))
+        {
+            Penquest.questcompleted = true;
+            keyQuest.questcompleted = true;
+            Bananalauncherquest.questcompleted = true;
+            GetComponentInChildren<WeaponShift>().cheat();
         }
 
 	}
