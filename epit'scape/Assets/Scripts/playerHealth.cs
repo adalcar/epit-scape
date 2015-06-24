@@ -19,15 +19,18 @@ public class playerHealth : MonoBehaviour {
 
     void Start()
     {
-
+        if (!this.GetComponent<NetworkView>().isMine)
+        {
+            this.enabled = false;
+        }
     }
     void Awake()
     {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
-        //mask.GetComponent<Image>().fillAmount = 1;
-        //mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        mask.GetComponent<Image>().fillAmount = 1;
+        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
 
         if (Assets.Scripts.playerdata.loadedfromsave)
         {
