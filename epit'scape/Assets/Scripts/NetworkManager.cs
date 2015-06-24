@@ -66,18 +66,13 @@ public class NetworkManager : MonoBehaviour {
     }
     void SpawnPlayer()
      {
-         //Random rdn = new Random();
          GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
-         if(PhotonNetwork.isMasterClient)
-         {
-             spawn = tab[0];
-         }
-         else
-         {
-             spawn = tab[3];
-         }
-         PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
-        // cam.enabled = false;
+         GameObject myPlayer = PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
+         spawn = tab[Random.Range(0, tab.Length)];
+         ((MonoBehaviour)myPlayer.GetComponent("FPSInputController")).enabled = true;
+         ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
+         ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
+         myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
          Debug.Log("spawn");
          SpawnEnemies();
      }
