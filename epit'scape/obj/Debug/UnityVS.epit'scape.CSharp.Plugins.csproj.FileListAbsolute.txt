@@ -11,3 +11,16 @@ E:\Projet\epit-scape\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.iO
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\UnityVS.epit'scape.CSharp.Plugins.csprojResolveAssemblyReference.cache
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
 E:\Projet\epit-scape\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\UnityVS.epit'scape.CSharp.Plugins.csprojResolveAssemblyReference.cache
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Tancrede\Documents\GitHub\epit-scape\epit'scape\obj\Debug\Assembly-CSharp-firstpass.pdb

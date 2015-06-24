@@ -69,7 +69,6 @@ public class NetworkManager : MonoBehaviour {
          GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
          ((MonoBehaviour)myPlayer.GetComponent("FPSInputController")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
-         ((MonoBehaviour)myPlayer.GetComponent("CharacterMotor")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
          myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
          Debug.Log("spawn");

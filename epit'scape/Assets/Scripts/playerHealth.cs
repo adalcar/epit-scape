@@ -17,14 +17,17 @@ public class playerHealth : MonoBehaviour {
     //Animator anim;
     AudioSource playerAudio;
 
+    void Start()
+    {
 
+    }
     void Awake()
     {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
-        mask.GetComponent<Image>().fillAmount = 1;
-        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        //mask.GetComponent<Image>().fillAmount = 1;
+        //mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
 
         if (Assets.Scripts.playerdata.loadedfromsave)
         {
