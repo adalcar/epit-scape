@@ -17,13 +17,7 @@ public class playerHealth : MonoBehaviour {
     //Animator anim;
     AudioSource playerAudio;
 
-    void Start()
-    {
-        if (!this.GetComponent<NetworkView>().isMine)
-        {
-            this.enabled = false;
-        }
-    }
+
     void Awake()
     {
        // anim = GetComponent<Animator>();
