@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour {
     public float lapsTime = 3.0f;
     public int damages = 20;
+    public static bool attacked = false;
 
     Animator anim;
     GameObject player;                         
@@ -67,6 +68,7 @@ public class EnemyAttack : MonoBehaviour {
         {
             playerHealth.loseLife(damages);
             anim.SetBool("IsInRange", isInRange);
+            attacked = true;
         }
     }
 }
