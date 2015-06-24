@@ -27,10 +27,8 @@ public class NetworkManager : MonoBehaviour {
                 PhotonNetwork.Disconnect();
             }
         }
-        if (GUI.Button(new Rect(new Rect(0, 0, 90, 20)), "refresh"))
-        {
-            PhotonNetwork.JoinRoom("epita", false);
-        }
+       // if (GUI.Button(new Rect(new Rect(0, 0, 90, 20)), "refresh"))
+
     }
 
     public void OnPhotonRandomJoinFailed()
@@ -67,8 +65,8 @@ public class NetworkManager : MonoBehaviour {
     void SpawnPlayer()
      {
          GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
-         GameObject myPlayer = PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
          spawn = tab[Random.Range(0, tab.Length)];
+         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
          ((MonoBehaviour)myPlayer.GetComponent("FPSInputController")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
