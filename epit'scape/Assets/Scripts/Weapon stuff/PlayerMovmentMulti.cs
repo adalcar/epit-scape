@@ -4,10 +4,8 @@ using System.Collections;
 public class PlayerMovmentMulti : MonoBehaviour {
 
     float speed = 10f;
-    float jumpSpeed = 6f;
-    Vector3 direction = Vector3.zero;	
-    float verticalVelocity = 0;
 
+    Vector3 direction = Vector3.zero;	
     CharacterController characControl;
     Animator anim;
     CapsuleCollider capsCollider;
@@ -24,57 +22,49 @@ public class PlayerMovmentMulti : MonoBehaviour {
     }
     void Update()
     {
-        direction = transform.rotation * new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        if (direction.magnitude > 1f)
-        {
-            direction = direction.normalized;
-        }
-        anim.SetFloat("Speed", direction.magnitude);
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //direction = transform.rotation * new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        //if (direction.magnitude > 1f)
+        //{
+        //    direction = direction.normalized;
+        //}
+        //anim.SetFloat("Speed", direction.magnitude);
 
 
-        if (characControl.isGrounded)
-        {
-            anim.SetBool("Jumping", false);
-            //capsCollider.height = realCapsuleColliderHeight;
-            if (Input.GetButton("Jump"))
-            {
-                verticalVelocity = jumpSpeed;
-            }
-            else
-            {
-                verticalVelocity = -1f;
-            }
-        }
-        else
-        {
-            anim.SetBool("Jumping", true);
-            //capsCollider.height = jumpCapsuleColliderHeight;
-        }
-
-
-        if(Input.GetKeyDown("g"))
-        {
+        //if(Input.GetKeyDown("g"))
+        //{
             
-            isDancing = true;
-            anim.SetBool("IsDancing", true);
-            isDancing = false;
-        }
+        //    isDancing = true;
+        //    anim.SetBool("IsDancing", true);
+        //    isDancing = false;
+        //}
+
+        
         
     }
 
     void FixedUpdate()
     {
-        Vector3 dist = direction * speed * Time.deltaTime;
+        //Vector3 dist = direction * speed * Time.deltaTime;
 
-        if (characControl.isGrounded)
-        {
-        }
-        else
-        {
-            verticalVelocity += Physics.gravity.y * Time.deltaTime;
-        }
-        Debug.Log(verticalVelocity);
-        dist.y = verticalVelocity * Time.deltaTime;
-        characControl.Move(dist);
+        //if (characControl.isGrounded)
+        //{
+        //}
+        //else
+        //{
+        //    verticalVelocity += Physics.gravity.y * Time.deltaTime;
+        //}
+        //Debug.Log(verticalVelocity);
+        //dist.y = verticalVelocity * Time.deltaTime;
+        //characControl.Move(dist);
     }
 }
