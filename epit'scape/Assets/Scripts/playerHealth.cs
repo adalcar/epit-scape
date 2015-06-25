@@ -17,10 +17,6 @@ public class playerHealth : MonoBehaviour {
     //Animator anim;
     AudioSource playerAudio;
 
-    void Start()
-    {
-
-    }
     void Awake()
     {
        // anim = GetComponent<Animator>();
@@ -55,7 +51,6 @@ public class playerHealth : MonoBehaviour {
 
         float lifebar = (float)currentLife / 100f;
         SetLifeBar(lifebar);
-        //healthSlider.value = currentLife;
         playerAudio.Play();
 
         if (currentLife <= 0 && !isDead)

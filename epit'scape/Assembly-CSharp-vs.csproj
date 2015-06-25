@@ -157,10 +157,12 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Scripts\Biblio.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MultiPlayerHealth.cs" />
      <Compile Include="Assets\Scripts\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\Arme.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\KeyboardScript.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\PenScript.cs" />
+     <Compile Include="Assets\Scripts\Weapon stuff\PlayerMovmentMulti.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\Shoot.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\bananalauncherscript.cs" />
