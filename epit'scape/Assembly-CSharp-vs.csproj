@@ -200,80 +200,6 @@
      <Compile Include="Assets\Scripts\terrain\gametime.cs" />
      <Compile Include="Assets\Scripts\terrain\gate.cs" />
      <Compile Include="Assets\Scripts\terrain\interaction.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\IO\OtherIOHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\IO\WebPlayerIOHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\IO\WindowsAppStoreIOHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\OpenInExplorer\IOpen.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\OpenInExplorer\LinuxOpen.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\OpenInExplorer\OSXOpen.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\OpenInExplorer\OpenFactory.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\OpenInExplorer\WinOpen.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\Reflection\OtherReflectionHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\Reflection\WindowsAppStoreReflectionHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\RuntimeProcessRunner.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\UnityEditor\EditorUnityEditorHelper.cs" />
-     <Compile Include="Assets\WellFired\Shared\Uncompiled\Runtime\Platform Specific\UnityEditor\RuntimeUnityEditorHelper.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Example Scenes\04 Intermediate Examples\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Example Scenes\ExampleSceneScripts\AlterPlaybackForASequence.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Example Scenes\ExampleSceneScripts\BasicCharacterControllerGUI.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Example Scenes\ExampleSceneScripts\BasicCharacterControls.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Quick Start Prefabs\Scripts\AmbientLightAdjuster.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Quick Start Prefabs\Scripts\AutoPlaySequence.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Quick Start Prefabs\Scripts\SequenceTrigger.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USSetAnimatorBool.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USSetAnimatorFloat.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USSetAnimatorInteger.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USSetAnimatorLayerWeight.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USSetAnimatorPlaybackSpeed.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USToggleAnimatorApplyRootMotion.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation Mecanim\Animator\USToggleAnimatorStabalizeFeet.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation\USBlendAnimEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation\USBlendAnimNoScrub.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation\USPlayAdvancedAnimEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Animation\USPlayAnimEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Application\USLoadLevelAdditiveEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Application\USLoadLevelEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Attachment\USAttachToParentEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Audio\USFadeAudioEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Audio\USPauseResumeAudioEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Audio\USPlayAudioEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Audio\USStopAudioEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Camera\USCameraDissolveTransition.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Camera\USCameraSetCullingMask.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Debug\USMessageEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Fullscreen\USDisplayImageEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Fullscreen\USFadeScreenEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Fullscreen\USPrintTextEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Light\USSetAmbientLightEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Object\USEnableComponentEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Object\USEnableObjectEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Particle System\USParticleEmitterStartEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Particle System\USParticleEmitterStopEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Physics\USApplyForceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Physics\USSleepRigidBody.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Recording\USStartRecordingEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Recording\USStopRecordingEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Render\USChangeColor.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Render\USChangeTexture.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Render\USMeshRenderDisable.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USPauseSequenceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USPlaySequenceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USSetPlaybackRateEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USSkipSequenceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USStopAndSkipToTimeSequenceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Sequence\USStopSequenceEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Signal\USSendMessageBoolEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Signal\USSendMessageEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Signal\USSendMessageFloatEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Signal\USSendMessageIntEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Signal\USSendMessageStringEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Spawn\USSpawnPrefabEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Time\USTimeScaleEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Transform\USLookAtObjectEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Transform\USMatchObjectEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Transform\USParentAndResetObjectEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Transform\USRotateObjectEvent.cs" />
-     <Compile Include="Assets\WellFired\uSequencer\Sequencer Events\Transform\USWarpToObject.cs" />
      <Compile Include="Assets\keyQuestTarget.cs" />
      <Compile Include="Assets\portal1.cs" />
      <Compile Include="Assets\startQuest.cs" />
@@ -284,17 +210,12 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredWipeLeft.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
-     <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredDissolve.shader" />
-     <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredWipeDown.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredWipeUp.shader" />
      <None Include="Assets\importEric\FreeMachineGun\Shader\BDCS.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Props\Info.txt" />
-     <None Include="Assets\WellFired\uSequencer\Example Scenes\05 Animation Examples\Art\Hellephant\Shaders\Rim Lit Bumped Specular.shader" />
      <None Include="Assets\readme (plan des fichiers configs).txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
@@ -310,29 +231,26 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\WellFired\Shared\Uncompiled\Resources\Transitions\WellFiredWipeRight.shader" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>F:/projeyt/epit-scape/epit'scape/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/WellFired/Shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
- </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>F:/projeyt/epit-scape/epit'scape/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>F:/projeyt/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{70CE9BAF-2332-03A5-D4F6-38D99F53119F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
 
-   // public Camera cam;
+    public Camera cam;
     GameObject spawn;
 	// Use this for initialization
 	void Start () 
@@ -66,11 +66,13 @@ public class NetworkManager : MonoBehaviour {
      {
          GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
          spawn = tab[Random.Range(0, tab.Length)];
-         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("player", spawn.transform.position, Quaternion.identity, 0);
+         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("player_mult", spawn.transform.position, Quaternion.identity, 0);
+         cam.enabled = false;
+         myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
+         Debug.Log("main camera bon");
          ((MonoBehaviour)myPlayer.GetComponent("FPSInputController")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
-         myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
          Debug.Log("spawn");
          SpawnEnemies();
      }
