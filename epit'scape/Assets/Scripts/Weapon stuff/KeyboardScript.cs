@@ -21,7 +21,7 @@ namespace Assets.Scripts.Weapon_stuff
             {
                 Debug.Log("hit!");
                 col.GetComponent<EnemyHealth>().currentLife -= 50;
-                col.attachedRigidbody.AddForce(cam.transform.forward);
+                //col.attachedRigidbody.AddForce(cam.transform.forward);
             }
         }
     }

@@ -18,6 +18,41 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "tutoshoot":
+                if (english)
+                    return "use the left mouse button to attack";
+                else
+                    return " clic gauche pour attaquer";
+            case "tutoswitch":
+                if (english)
+                    return "Use the scroll wheel to switch between weapons";
+                else
+                    return "utilisez la molette de la souris pour changer d'arme";
+            case "tutomove":
+                if (english)
+                    return "Use the arrows or WASD keys to move, and the mouse to look around";
+                else
+                    return "Utiliser les touches ZQSD ou les fleches directionnelles pour se deplacer";
+            case "up":
+                if (english)
+                    return "forward";
+                else
+                    return "avancer";
+            case "down":
+                if (english)
+                    return "back";
+                else
+                    return "reculer";
+            case "right":
+                if (english)
+                    return "right";
+                else
+                    return "droite";
+            case "left":
+                if (english)
+                    return "left";
+                else
+                    return "gauche";
             case "del":
                 if (english)
                     return "erase";

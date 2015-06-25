@@ -57,6 +57,7 @@ public class EnemyAttack : MonoBehaviour {
         //    anim.SetTrigger("GameOver");
         //}
 
+	
 	}
 
     void Attack()
