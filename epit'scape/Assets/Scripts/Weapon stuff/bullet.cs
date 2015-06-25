@@ -16,10 +16,15 @@ public class bullet : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.tag == "Enemy" )
+        if(coll.tag == "Enemy")
         {
             Debug.Log("hit!");
             coll.GetComponent<EnemyHealth>().currentLife -= degats;
+        }
+        else if (coll.tag == "Player")
+        {
+            Debug.Log("Aie!");
+            coll.GetComponent<playerHealth>().loseLife(degats);
         }
         Destroy(this.gameObject);
     }

@@ -22,6 +22,7 @@ public class EnemyAttack : MonoBehaviour {
         anim = GetComponent<Animator>();
         isInRange = false;
     }
+
     void OnTriggerEnter(Collider coll)
     {
         if (coll.tag == "Player")
