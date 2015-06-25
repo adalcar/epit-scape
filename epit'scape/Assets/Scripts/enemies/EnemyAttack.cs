@@ -47,10 +47,12 @@ public class EnemyAttack : MonoBehaviour {
         if (timer >= lapsTime && isInRange && enemyHealth.currentLife > 0)
         {
             Attack();
+            Debug.Log("attack");
         }
         if(!isInRange)
         {
             anim.SetBool("IsInRange", false);
+            Debug.Log("walk");
         }
         //if (playerHealth.currentLife <= 0)
         //{
