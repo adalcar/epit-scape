@@ -7,19 +7,21 @@ namespace Assets.Scripts.Weapon_stuff
 {
     class KeyboardScript : weaponscriptPere
     {
-        public GameObject camObject;
-        private Camera cam;
-        public GameObject projectile;
+        public Camera cam;
         void Start()
         {
-            cam = camObject.GetComponent<Camera>();
-            ammocap = 20;
         }
         public override void shoot()
         {
-            if (ammo != 0)
+            GetComponent<Animation>().Play("clavier");
+        }
+        void OnTriggerEnter(Collider col)
+        {
+            if(col.tag == "Enemy")
             {
-
+                Debug.Log("hit!");
+                col.GetComponent<EnemyHealth>().currentLife -= 50;
+                col.attachedRigidbody.AddForce(cam.transform.forward);
             }
         }
     }

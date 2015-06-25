@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Assets.Scripts.Weapon_stuff;
 public class recharge : MonoBehaviour {
     public int munition = 10;
 
@@ -8,8 +8,8 @@ public class recharge : MonoBehaviour {
     {
         if(coll.tag == "Player")
         {
-            coll.GetComponent<Shoot>().munitions = 10;
-            Destroy(this.gameObject);
+            if (coll.GetComponentInChildren<weaponscriptPere>().reload())
+                Destroy(this.gameObject);
         }
     }
 	

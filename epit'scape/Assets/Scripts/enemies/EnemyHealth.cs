@@ -3,7 +3,7 @@ using System.Collections;
 
 
 public class EnemyHealth : MonoBehaviour {
-    public int startLife = 100;
+    public int startLife;
     public int currentLife;
     NavMeshAgent nav;
     //public AudioClip deathClip; // a ajouter

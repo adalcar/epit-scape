@@ -7,9 +7,12 @@ namespace Assets.Scripts.Weapon_stuff
 {
     public abstract class weaponscriptPere : MonoBehaviour
     {
+
         protected int ammo, ammocap;
         protected bool UseAmmo;
         public abstract void shoot();
+        
+        
         public bool reload()
         {
             ammo = ammocap;

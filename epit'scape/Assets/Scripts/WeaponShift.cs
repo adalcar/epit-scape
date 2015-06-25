@@ -16,14 +16,14 @@ public class WeaponShift : MonoBehaviour {
         {
             g.SetActive(false);
         }
-        armes.Add(new dummyWeapon());
+        armes.Add(weapons[0].GetComponent<weaponscriptPere>());
         if (Penquest.questcompleted)
-            armes.Add(weapons[0].GetComponent<weaponscriptPere>());
-        if (KeyboardQuest.questcompleted)
             armes.Add(weapons[1].GetComponent<weaponscriptPere>());
+        if (KeyboardQuest.questcompleted)
+            armes.Add(weapons[2].GetComponent<weaponscriptPere>());
 
         if (Bananalauncherquest.questcompleted)
-            armes.Add(weapons[2].GetComponent<weaponscriptPere>());
+            armes.Add(weapons[3].GetComponent<weaponscriptPere>());
 	}
 	
 	// Update is called once per frame
@@ -38,38 +38,41 @@ public class WeaponShift : MonoBehaviour {
                 else
                     switchdown();
         #endregion
+        #region shoot
+        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
+        {
+            armes[activeweapon].shoot();
+        }
+        #endregion
+
 
     }
     void switchup()
     {
 
-        if (activeweapon != 0)
-            weapons[activeweapon - 1].SetActive(false);
+        weapons[activeweapon].SetActive(false);
         if (activeweapon == armes.Count - 1)
             activeweapon = 0;
         else
         {
             activeweapon++;
-            weapons[activeweapon - 1].SetActive(true);
         }
-        
+        weapons[activeweapon].SetActive(true);
     }
     void switchdown()
     {
+        weapons[activeweapon].SetActive(false);
         if (activeweapon == 0)
             activeweapon = armes.Count - 1;
         else
-        {
-            weapons[activeweapon - 1].SetActive(false);
             activeweapon--;
-        }
-        if (activeweapon != 0)
-            weapons[activeweapon - 1].SetActive(true);
+        
+        weapons[activeweapon].SetActive(true);
     }
     public void cheat()
     {
-        int k = armes.Count - 1;
-        while (k < 3)
+        int k = armes.Count;
+        while (k < 4)
             armes.Add(weapons[k++].GetComponent<weaponscriptPere>());
 
     }
