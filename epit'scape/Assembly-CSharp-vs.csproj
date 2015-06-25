@@ -173,6 +173,7 @@
      <Compile Include="Assets\Scripts\endgame\ending.cs" />
      <Compile Include="Assets\Scripts\enemies\Basic AI.cs" />
      <Compile Include="Assets\Scripts\enemies\Boss1IA.cs" />
+     <Compile Include="Assets\Scripts\enemies\Boss2Tir.cs" />
      <Compile Include="Assets\Scripts\enemies\Boss3IA.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
