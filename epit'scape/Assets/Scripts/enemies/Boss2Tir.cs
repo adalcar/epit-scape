@@ -18,13 +18,13 @@ public class Boss2Tir : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Transform vise = target.transform;
+        Vector3 vise = - posCanon.transform.position + target.transform.position;
 
         if (Time.timeScale != 0 && pause)
         {
             Transform balle;
             balle = Instantiate(bullet, posCanon.transform.position, posCanon.transform.rotation) as Transform;
-            balle.GetComponent<Rigidbody>().AddForce(vise.position * 200);
+            balle.GetComponent<Rigidbody>().AddForce(vise * 200);
             pause = false;
             Debug.Log("tir");
             StartCoroutine(StartWait());
