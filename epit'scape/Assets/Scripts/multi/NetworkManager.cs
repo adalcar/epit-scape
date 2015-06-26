@@ -66,9 +66,9 @@ public class NetworkManager : MonoBehaviour {
      {
          GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
          spawn = tab[Random.Range(0, tab.Length)];
-         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("player_mult", spawn.transform.position, Quaternion.identity, 0);
+         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("CarlMultBon", spawn.transform.position, Quaternion.identity, 0);
          cam.enabled = false;
-         myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
+         myPlayer.transform.FindChild("Camera").gameObject.SetActive(true);
          Debug.Log("main camera bon");
          ((MonoBehaviour)myPlayer.GetComponent("PlayerMovement")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
