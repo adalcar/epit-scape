@@ -61,10 +61,10 @@ background-color : black;
 
 #centre{
 background: center center no-repeat url("../Images/Accueil.jpg");
-background-size: 970px 440px;
+background-size: 1000px 600px;
 display : block;
-height : 440px;
-width : 970px;
+height : 600px;
+width : 1000px;
 
 border-style: ridge;
 border-width: 6px;
