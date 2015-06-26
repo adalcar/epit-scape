@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using Assets.Scripts.questStuff;
 
 public class EnemyHealth : MonoBehaviour {
     public int startLife;
@@ -58,6 +58,8 @@ public class EnemyHealth : MonoBehaviour {
         nav.enabled = false;
         //GameObject.FindWithTag("Player").GetComponent<QuestManager>().current_score++;
         anim.SetTrigger("IsDead");
+        if (!Zombquest.questcompleted)
+            Zombquest.add();
         StartCoroutine(dead());
         
     }

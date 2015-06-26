@@ -22,8 +22,8 @@ public class playerHealth : MonoBehaviour {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
-        //mask.GetComponent<Image>().fillAmount = 1;
-        //mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        mask.GetComponent<Image>().fillAmount = 1;
+        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
 
         if (Assets.Scripts.playerdata.loadedfromsave)
         {
@@ -55,6 +55,7 @@ public class playerHealth : MonoBehaviour {
 
         if (currentLife <= 0 && !isDead)
         {
+            Debug.Log("ur dead bitch!");
             dead();
         }
     }

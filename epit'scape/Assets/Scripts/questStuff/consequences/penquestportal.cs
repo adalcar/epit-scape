@@ -8,9 +8,9 @@ public class penquestportal : MonoBehaviour {
     {
 	}
 
-    void OnCollisionEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
-        if(col.tag == "Player")
+        if(col.gameObject.tag == "Player")
         {
             if (Penquest.questcompleted)
                 enter();

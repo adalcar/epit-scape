@@ -41,13 +41,13 @@ public class BasicAI : MonoBehaviour {
 	}
     void attack()
     {
-        if (GetComponent<Animation>().IsPlaying("attack") && time  - AttackStartTime % 20 == 0)
-            player.GetComponentInChildren<inGameGui>().health -= AttackDamage;
-        else
-        {
-            GetComponent<Animation>().Play("attack");
-            AttackStartTime = time;
-        }
+        //if (GetComponent<Animation>().IsPlaying("attack") && time  - AttackStartTime % 20 == 0)
+        //    player.GetComponentInChildren<inGameGui>().health -= AttackDamage;
+        //else
+        //{
+        //    GetComponent<Animation>().Play("attack");
+        //    AttackStartTime = time;
+        //}
     }
     IEnumerator die()
     {

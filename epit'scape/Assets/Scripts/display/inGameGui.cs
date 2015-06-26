@@ -3,7 +3,6 @@ using System.Collections;
 using System.IO;
 
 public class inGameGui : MonoBehaviour {
-    public int health;
     public GUISkin skin;
     public GameObject terrain, enemy;
     public Texture menuback;
@@ -44,10 +43,6 @@ public class inGameGui : MonoBehaviour {
 	void Update () 
     {
 
-        if (health <= 0)
-        {
-            death();
-        }
         if (Input.GetButtonDown("menu"))
         {
             if (!menu)
@@ -191,9 +186,6 @@ public class inGameGui : MonoBehaviour {
         infoLabel = false;
     }
     
-    void death()
-    {
-    }
     void savegame(int save_number)
     {
 

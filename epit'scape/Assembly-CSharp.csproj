@@ -192,6 +192,7 @@
      <Compile Include="Assets\Scripts\questStuff\Bananalauncherquest.cs" />
      <Compile Include="Assets\Scripts\questStuff\KeyboardQuest.cs" />
      <Compile Include="Assets\Scripts\questStuff\Penquest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\Zombquest.cs" />
      <Compile Include="Assets\Scripts\questStuff\consequences\penquestportal.cs" />
      <Compile Include="Assets\Scripts\questStuff\consequences\portal1.cs" />
      <Compile Include="Assets\Scripts\questStuff\keyQuest.cs" />
