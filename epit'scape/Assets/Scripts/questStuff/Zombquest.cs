@@ -38,20 +38,7 @@ namespace Assets.Scripts.questStuff
             questcompleted = save[pos + 2] == 1;
             count = save[pos + 3];
         }
-        public static void add()
-        {
-            if (queststarted && !questcompleted)
-            {
-                count++;
-                if (count == target)
-                {
-                    GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questfinish);
-                    questcompleted = true;
-                }
-                else
-                    GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questUpdate);
-            }
-        }
+        public static List<GameObject> vikos;
         public static void start()
         {
             if (!queststarted)

@@ -203,6 +203,7 @@
      <Compile Include="Assets\Scripts\terrain\gametime.cs" />
      <Compile Include="Assets\Scripts\terrain\gate.cs" />
      <Compile Include="Assets\Scripts\terrain\interaction.cs" />
+     <Compile Include="Assets\Scripts\terrain\portalzomb.cs" />
      <Compile Include="Assets\Scripts\tutos\movetuto.cs" />
      <Compile Include="Assets\Scripts\tutos\weapontuto.cs" />
      <Compile Include="Assets\WellFired\shared\Uncompiled\Runtime\Platform Specific\IO\OtherIOHelper.cs" />
@@ -331,19 +332,12 @@
  <Reference Include="websocket-sharp">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
  <Reference Include="uSequencerRuntime">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>E:/Softs/unity 5.1/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{70CE9BAF-2332-03A5-D4F6-38D99F53119F}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

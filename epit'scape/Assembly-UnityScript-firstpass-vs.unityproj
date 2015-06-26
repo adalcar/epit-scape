@@ -105,9 +105,6 @@
  <Reference Include="websocket-sharp">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
  <Reference Include="uSequencerRuntime">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
  </Reference>

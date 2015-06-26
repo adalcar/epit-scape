@@ -109,9 +109,6 @@
  <Reference Include="websocket-sharp">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="SharedRuntime">
- <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
- </Reference>
  <Reference Include="uSequencerRuntime">
  <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
  </Reference>
@@ -120,8 +117,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{70CE9BAF-2332-03A5-D4F6-38D99F53119F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{9F8D4D50-74AC-46A0-9799-C98775476786}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
