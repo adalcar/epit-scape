@@ -47,6 +47,11 @@ public class WeaponShift : MonoBehaviour {
 
 
     }
+    public void enableweapon(int w)
+    {
+        if (w >= armes.Count)
+            armes.Add(weapons[w].GetComponent<weaponscriptPere>());
+    }
     void switchup()
     {
 

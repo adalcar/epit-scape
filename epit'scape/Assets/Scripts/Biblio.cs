@@ -18,6 +18,16 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "findpen":
+                if (english)
+                    return "i'd better find something to defend myself, there must be something in the offices!";
+                else
+                    return "il me faudrait quelque chose pour me defendre, je devrais trouver mon bonheur dans un de ces bureaux";
+            case "closedDoor":
+                if (english)
+                    return "the door is closed, it seems, electronically. There must be a switch somewhere!";
+                else
+                    return "la porte est fermee electroniquement! il doit y avoir un interrupteur quelque part.";
             case "tutoshoot":
                 if (english)
                     return "use the left mouse button to attack";
@@ -32,7 +42,7 @@ public class Biblio : MonoBehaviour {
                 if (english)
                     return "Use the arrows or WASD keys to move, and the mouse to look around";
                 else
-                    return "Utiliser les touches ZQSD ou les fleches directionnelles pour se deplacer";
+                    return "Utiliser les fleches directionnelles pour se deplacer";
             case "up":
                 if (english)
                     return "forward";
