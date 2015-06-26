@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour {
     {
         if (Zombquest.vikos.Count > 0)
         {
-            display.infodisplay(Zombquest.vikos.Count + " enemies remaining, nowhere to run!")
+            display.infodisplay(Zombquest.vikos.Count + " enemies remaining, nowhere to run!");
         }
         else
             Application.LoadLevel(destination);
