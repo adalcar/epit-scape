@@ -22,8 +22,8 @@ public class playerHealth : MonoBehaviour {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
-        //mask.GetComponent<Image>().fillAmount = 1;
-        //mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        mask.GetComponent<Image>().fillAmount = 1;
+        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
         Time.timeScale = 1;
         if (Assets.Scripts.playerdata.loadedfromsave)
         {

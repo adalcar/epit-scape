@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NetworkCharacter : Photon.MonoBehaviour
+public class NetworkCharacter0 : Photon.MonoBehaviour
 {
     private Vector3 correctPlayerPos = Vector3.zero; // We lerp towards this
     private Quaternion correctPlayerRot = Quaternion.identity; // We lerp towards this

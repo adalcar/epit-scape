@@ -70,7 +70,7 @@ public class NetworkManager : MonoBehaviour {
          cam.enabled = false;
          myPlayer.transform.FindChild("Main Camera").gameObject.SetActive(true);
          Debug.Log("main camera bon");
-         ((MonoBehaviour)myPlayer.GetComponent("FPSInputController")).enabled = true;
+         ((MonoBehaviour)myPlayer.GetComponent("PlayerMovement")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
          ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
          Debug.Log("spawn");
