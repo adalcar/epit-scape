@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/Softs/unity 5.1/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/Softs/unity 5.1/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,23 +57,28 @@
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\WellFired\uSequencer\Example Scenes\05 Animation Examples\Art\Hellephant\Shaders\Rim Lit Bumped Specular.shader" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeLeft.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeLeft 1.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
-     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredDissolve.shader" />
-     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeDown.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredDissolve 1.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeDown 1.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeUp.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeUp.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeDown.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeUp 1.shader" />
      <None Include="Assets\importEric\FreeMachineGun\Shader\BDCS.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredDissolve.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Props\Info.txt" />
-     <None Include="Assets\WellFired\uSequencer\Example Scenes\05 Animation Examples\Art\Hellephant\Shaders\Rim Lit Bumped Specular.shader" />
+     <None Include="Assets\WellFired\uSequencer\Example Scenes\05 Animation Examples\Art\Hellephant\Shaders\Rim Lit Bumped Specular 1.shader" />
      <None Include="Assets\readme (plan des fichiers configs).txt" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeRight.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
@@ -81,6 +86,7 @@
      <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeLeft.shader" />
      <None Include="Assets\Mobile_Citizen_Human&amp;Zombie_free\ArtResources\Shader\CharacterShader_mobile.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\importEric\FreeMachineGun\documentation.txt" />
@@ -88,25 +94,25 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeRight.shader" />
+     <None Include="Assets\WellFired\shared\Uncompiled\Resources\Transitions\WellFiredWipeRight 1.shader" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/Softs/unity 5.1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>E:/Projet/epit-scape/epit'scape/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>E:/Projet/epit-scape/epit'scape/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="SharedRuntime">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/WellFired/shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
+ <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/shared/Compiled/Runtime/SharedRuntime.dll</HintPath>
  </Reference>
  <Reference Include="uSequencerRuntime">
- <HintPath>C:/Users/David/Documents/GitHub/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
+ <HintPath>E:/Projet/epit-scape/epit'scape/Assets/WellFired/uSequencer/Sequencer/uSequencerRuntime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>E:/Softs/unity 5.1/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
