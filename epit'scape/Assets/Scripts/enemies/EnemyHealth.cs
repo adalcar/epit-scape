@@ -15,7 +15,6 @@ public class EnemyHealth : MonoBehaviour {
 
     void Awake()
     {
-        Zombquest.vikos.Add(gameObject);
         anim = GetComponent<Animator>();
         enemyAudio = GetComponent <AudioSource> ();
         //capColl = GetComponent<CapsuleCollider>();
@@ -55,11 +54,12 @@ public class EnemyHealth : MonoBehaviour {
     }
     public void Dead()
     {
-        Zombquest.vikos.Remove(gameObject);
         isDead = true;
         nav.enabled = false;
         //GameObject.FindWithTag("Player").GetComponent<QuestManager>().current_score++;
         anim.SetTrigger("IsDead");
+        if (!Zombquest.questcompleted)
+            Zombquest.add();
         StartCoroutine(dead());
         
     }
