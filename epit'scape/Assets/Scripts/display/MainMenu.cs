@@ -86,7 +86,7 @@ public class MainMenu : MonoBehaviour {
                 _isLevelSelectMenu = true;
             } if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 50), Biblio.Text("mult")))
             {
-                Application.LoadLevel("Multi");
+                Application.LoadLevel("multi");
             }
             if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 50), "Options"))
             {

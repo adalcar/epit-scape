@@ -12,7 +12,7 @@ public class PlayerHealthMult : MonoBehaviour {
     public int startingLife = 100;
     public int currentLife;
     public bool isAttaked;
-    bool isDead;
+    public bool isDead;
     Camera cam;
 
     Animator anim;
