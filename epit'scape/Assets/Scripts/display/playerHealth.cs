@@ -16,15 +16,15 @@ public class playerHealth : MonoBehaviour {
     public Texture deadback;
     //Animator anim;
     AudioSource playerAudio;
-
+    public float ts;
     void Awake()
     {
        // anim = GetComponent<Animator>();
         playerAudio = GetComponent<AudioSource>();
         currentLife = startingLife;
-        mask.GetComponent<Image>().fillAmount = 1;
-        mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
-
+        //mask.GetComponent<Image>().fillAmount = 1;
+        //mask.transform.FindChild("Sprite").GetComponent<Image>().color = good;
+        Time.timeScale = 1;
         if (Assets.Scripts.playerdata.loadedfromsave)
         {
             transform.position = Assets.Scripts.playerdata.playerpos;
@@ -37,6 +37,7 @@ public class playerHealth : MonoBehaviour {
 
 	void Update () 
     {
+        
         Assets.Scripts.playerdata.playerpos = transform.position;
         Assets.Scripts.playerdata.life = currentLife;
 	}
