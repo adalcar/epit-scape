@@ -84,10 +84,20 @@ public class NetworkManager : MonoBehaviour
     }
     void SpawnEnemies()
     {
-        while(tab_jou.Length != null)
+        for (int i = 0; i < tab_en.Length; i++)
         {
-            StartCoroutine(dead());
+            spawn = tab_en[i];
+            PhotonNetwork.Instantiate("zombmult", spawn.transform.position, Quaternion.identity, 0);
         }
+        Debug.Log("spawn_enemies");
+
+
+
+
+        //while(tab_jou.Length != null)
+        //{
+        //    StartCoroutine(dead());
+        //}
         //int i = tab_jou.Length;
         //do 
         //{
@@ -96,15 +106,10 @@ public class NetworkManager : MonoBehaviour
         //}while(!tab_jou[0].GetComponent<PlayerHealthMult>().isDead /*|| !tab_jou[1].GetComponent<PlayerHealthMult>().isDead || !tab_jou[2].GetComponent<PlayerHealthMult>().isDead || !tab_jou[3].GetComponent<PlayerHealthMult>().isDead*/);
 
     }
-    IEnumerator dead()
-    {
-        yield return new WaitForSeconds(20);
-        for (int i = 0; i < tab_en.Length; i++)
-        {
-            spawn = tab_en[i];
-            PhotonNetwork.Instantiate("zombmult", spawn.transform.position, Quaternion.identity, 0);
-        }
-        Debug.Log("spawn_enemies");
-    }
+    //IEnumerator dead()
+    //{
+    //    yield return new WaitForSeconds(20);
+        
+    //}
 
 }
