@@ -8,15 +8,17 @@ public class penquestportal : MonoBehaviour {
     {
 	}
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.tag == "Player")
         {
+            Debug.Log("col");
             if (Penquest.questcompleted)
+            {
+                Debug.Log("sucess");
                 enter();
+            }
             else display.infodisplay("closedDoor");
-                
-
         }
     }
 	// Update is called once per frame
@@ -25,6 +27,6 @@ public class penquestportal : MonoBehaviour {
 	}
     void enter()
     {
-        Application.LoadLevel("Level 01");
+        Application.LoadLevel("Level 2");
     }
 }

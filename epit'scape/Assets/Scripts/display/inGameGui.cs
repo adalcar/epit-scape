@@ -154,8 +154,6 @@ public class inGameGui : MonoBehaviour {
     void option()
     {
 
-
-
         if (options)
         {
             Configfs.Position = 0;
@@ -182,7 +180,7 @@ public class inGameGui : MonoBehaviour {
         
         infoLabelText = infostring;
         infoLabel = true;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(10);
         infoLabel = false;
     }
     

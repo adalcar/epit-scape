@@ -10,7 +10,7 @@ namespace Assets.Scripts.questStuff
     {
         static string questStart = "recupCles";
         static string questUpdate; 
-        static string questfinish = "bien! la porte est ouverte!";
+        static string questfinish = "Bien! La porte est ouverte!";
         static int questid = 1;
         static int target = 1;
         static int count = 0;

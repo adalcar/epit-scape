@@ -20,24 +20,24 @@ public class Biblio : MonoBehaviour {
         {
             case "findpen":
                 if (english)
-                    return "i'd better find something to defend myself, there must be something in the offices!";
+                    return "I'd better find something to defend myself, there must be something in the offices!";
                 else
-                    return "il me faudrait quelque chose pour me defendre, je devrais trouver mon bonheur dans un de ces bureaux";
+                    return "Il me faudrait quelque chose pour me defendre, je devrais trouver mon bonheur dans un de ces bureaux";
             case "closedDoor":
                 if (english)
-                    return "the door is closed, it seems, electronically. There must be a switch somewhere!";
+                    return "The door is closed, it seems, electronically. There must be a switch somewhere!";
                 else
-                    return "la porte est fermee electroniquement! il doit y avoir un interrupteur quelque part.";
+                    return "La porte est fermee electroniquement! il doit y avoir un interrupteur quelque part.";
             case "tutoshoot":
                 if (english)
-                    return "use the left mouse button to attack";
+                    return "Use the left mouse button to attack";
                 else
-                    return " clic gauche pour attaquer";
+                    return "Clic gauche pour attaquer";
             case "tutoswitch":
                 if (english)
                     return "Use the scroll wheel to switch between weapons";
                 else
-                    return "utilisez la molette de la souris pour changer d'arme";
+                    return "Utilisez la molette de la souris pour changer d'arme";
             case "tutomove":
                 if (english)
                     return "Use the arrows or WASD keys to move, and the mouse to look around";
@@ -45,44 +45,44 @@ public class Biblio : MonoBehaviour {
                     return "Utiliser les fleches directionnelles pour se deplacer";
             case "up":
                 if (english)
-                    return "forward";
+                    return "Forward";
                 else
-                    return "avancer";
+                    return "Avancer";
             case "down":
                 if (english)
-                    return "back";
+                    return "Back";
                 else
-                    return "reculer";
+                    return "Reculer";
             case "right":
                 if (english)
-                    return "right";
+                    return "Right";
                 else
-                    return "droite";
+                    return "Droite";
             case "left":
                 if (english)
-                    return "left";
+                    return "Left";
                 else
-                    return "gauche";
+                    return "Gauche";
             case "del":
                 if (english)
-                    return "erase";
+                    return "Erase";
                 else
-                    return "supprimer";
+                    return "Supprimer";
             case "retJeu":
                 if (english)
-                    return "back to game";
+                    return "Back to game";
                 else
-                    return "retour au jeu";
+                    return "Retour au jeu";
             case "recupCles":
                 if (english)
-                    return "you must \nfind the \nkeys! ";
+                    return "You must \nfind the \nkeys! ";
                 else
-                    return "tu dois \nretrouver \nles cles!";
+                    return "Tu dois \nretrouver \nles cles!";
             case "savquit":
                 if (english)
-                    return "save and quit";
+                    return "Save and quit";
                 else
-                    return "sauvegarder et quitter";
+                    return "Sauvegarder et quitter";
             case "back":
                 if (english)
                     return "Back";

@@ -15,6 +15,8 @@ public class PenQuestTarget : MonoBehaviour {
         {
             Penquest.start();
             Destroy(gameObject);
+            Penquest.add();
+            Debug.Log("Tancrede je vais te crever");
             c.GetComponentInChildren<WeaponShift>().enableweapon(1);
         }
 

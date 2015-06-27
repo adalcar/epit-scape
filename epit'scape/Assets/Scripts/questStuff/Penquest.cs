@@ -26,11 +26,13 @@ public static class Penquest {
     }
     public static void add()
     {
+        Debug.Log("add");
         if (queststarted && !questcompleted)
         {
             count++;
             if (count == target)
             {
+                Debug.Log("count");
                 GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questfinish);
                 questcompleted = true;
             }

@@ -14,14 +14,14 @@ namespace Assets.Scripts.display
         {
             queststring = s;
             questdisp = true;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(10);
             questdisp = false;
         }
         public static IEnumerator infodisplay(string s)
         {
             infodisp = true;
             infostring = s;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(10);
             infodisp = false;
         }
     }
