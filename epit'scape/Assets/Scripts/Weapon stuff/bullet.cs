@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class bullet : MonoBehaviour { 
-	public int degats = 20;
+	public int degats = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,7 @@ public class bullet : MonoBehaviour {
         if(coll.tag == "Enemy" )
         {
             Debug.Log("hit!");
-            coll.GetComponent<EnemyHealth>().currentLife -= degats;
+            coll.GetComponent<EnemyHealthZomb>().currentLife -= degats;
         }
         Destroy(this.gameObject);
     }

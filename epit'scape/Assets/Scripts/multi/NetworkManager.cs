@@ -7,6 +7,8 @@ public class NetworkManager : MonoBehaviour
     GameObject spawn;
     GameObject[] tab_en;
     GameObject[] tab_jou;
+    int winneur = 0;
+    float tempsWineur = 0;
     // Use this for initialization
     void Start()
     {
@@ -29,13 +31,21 @@ public class NetworkManager : MonoBehaviour
                 PhotonNetwork.Disconnect();
             }
         }
+        if (GUILayout.Button("Restart"))
+        {
+            PhotonNetwork.Disconnect();
+            PhotonNetwork.ConnectUsingSettings("Epit'S'cape v001");
+        }
+        GUI.Box(new Rect(400, 0, 90, 20), "Gagant" + winneur);
+        GUI.Box(new Rect(600, 0, 90, 20), "Temps" + tempsWineur);
         // if (GUI.Button(new Rect(new Rect(0, 0, 90, 20)), "refresh"))
+
 
     }
     void Update()
     {
         tab_jou = GameObject.FindGameObjectsWithTag("Player");
-        if(tab_jou[0].GetComponent<PlayerHealthMult>().isFinished && tab_jou[1].GetComponent<PlayerHealthMult>().isFinished )
+        if(tab_jou[0].GetComponent<PlayerHealthMult>().isFinished && tab_jou[1].GetComponent<PlayerHealthMult>().isFinished)
         {
             endGame();
             Debug.Log("fIN");
@@ -103,16 +113,32 @@ public class NetworkManager : MonoBehaviour
     }
     void endGame()
     {
+        int gagnant;
+        float temps;
         if (tab_jou[0].GetComponent<PlayerHealthMult>().time < tab_jou[1].GetComponent<PlayerHealthMult>().time)
         {
-            Debug.Log("PLAYER 1 GAGNE");
+            gagnant = 1;
+            temps = tab_jou[0].GetComponent<PlayerHealthMult>().time;
+            Debug.Log("PLAYER 1 WIN");
         }
         else
         {
-            Debug.Log("PLAYER 2 GAGNE");
+            gagnant = 2;
+            temps = tab_jou[1].GetComponent<PlayerHealthMult>().time;
+            Debug.Log("PLAYER 2 WIN");
         }
-    }
+        //tab_jou[0].GetComponent<Fin>().enabled = true;
+        //tab_jou[0].GetComponent<Fin>().winneur = gagnant;
+        //tab_jou[0].GetComponent<Fin>().tempsWineur = temps;
+        Debug.Log("allez");
+        winneur = gagnant;
+        tempsWineur = temps;
 
+        //tab_jou[1].GetComponent<Fin>().enabled = true;
+        //tab_jou[0].GetComponent<Fin>().winneur = gagnant;
+        //tab_jou[0].GetComponent<Fin>().tempsWineur = temps;
+
+    }
 
 
 

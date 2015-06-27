@@ -206,6 +206,7 @@
      <Compile Include="Assets\Scripts\terrain\portalzomb.cs" />
      <Compile Include="Assets\Scripts\tutos\movetuto.cs" />
      <Compile Include="Assets\Scripts\tutos\weapontuto.cs" />
+     <Compile Include="Assets\animMult\Fin.cs" />
      <Compile Include="Assets\animMult\NetworkCharacter.cs" />
      <Compile Include="Assets\animMult\NetworkCharacterEnemy.cs" />
      <Compile Include="Assets\animMult\PlayerHealthMult.cs" />
