@@ -3,37 +3,30 @@ using System.Collections;
 
 public class Credits : MonoBehaviour {
 
-    public GameObject cameraF;
-    public GameObject cameraE;
-    public GameObject image;
-    public int speed;
-    public int LimitTime;
+    public GameObject camera;
+    public int speed = 1;
+    //public int LimitTime;
     public string level;
 	
 	
 	void Update () 
     {
-        GameObject camera = Choose();
+        //Choose();
         camera.transform.Translate(Vector3.down * Time.deltaTime * speed);
-        image.transform.Translate(Vector3.down * Time.deltaTime * speed);
         StartCoroutine(WaitFor());
 	}
 
     IEnumerator WaitFor()
     {
-        yield return new WaitForSeconds(LimitTime);
+        yield return new WaitForSeconds(20);
         Application.LoadLevel(level);
     }
 
-    GameObject Choose()
-    {
-        if (Biblio.english == true)
-        {
-            return cameraE;
-        }
-        else
-        {
-            return cameraF;
-        }
-    }
+    //void Choose()
+   // {
+      //  if (Biblio.english == true)
+      //  {
+     //       camera.transform.TransformPoint(0, 0, 0);
+     //   }
+   // }
 }
