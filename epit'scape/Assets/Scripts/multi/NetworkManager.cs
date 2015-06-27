@@ -35,6 +35,15 @@ public class NetworkManager : MonoBehaviour
     void Update()
     {
         tab_jou = GameObject.FindGameObjectsWithTag("Player");
+        if(tab_jou[0].GetComponent<PlayerHealthMult>().isFinished && tab_jou[1].GetComponent<PlayerHealthMult>().isFinished )
+        {
+            endGame();
+            Debug.Log("fIN");
+        }
+        else
+        {
+            Debug.Log("continue");
+        }
     }
     public void OnPhotonRandomJoinFailed()
     {
@@ -69,6 +78,7 @@ public class NetworkManager : MonoBehaviour
     }
     void SpawnPlayer()
     {
+        SpawnEnemies();
         GameObject[] tab = GameObject.FindGameObjectsWithTag("spawn");
         spawn = tab[Random.Range(0, tab.Length)];
         GameObject myPlayer = (GameObject)PhotonNetwork.Instantiate("CarlMultBon", spawn.transform.position, Quaternion.identity, 0);
@@ -79,7 +89,7 @@ public class NetworkManager : MonoBehaviour
         ((MonoBehaviour)myPlayer.GetComponent("MouseLook")).enabled = true;
         ((MonoBehaviour)myPlayer.GetComponent("Shoot")).enabled = true;
         Debug.Log("spawn");
-        SpawnEnemies();
+        
         Debug.Log("spawn_enemies");
     }
     void SpawnEnemies()
@@ -90,6 +100,18 @@ public class NetworkManager : MonoBehaviour
             PhotonNetwork.Instantiate("zombmult", spawn.transform.position, Quaternion.identity, 0);
         }
         Debug.Log("spawn_enemies");
+    }
+    void endGame()
+    {
+        if (tab_jou[0].GetComponent<PlayerHealthMult>().time < tab_jou[1].GetComponent<PlayerHealthMult>().time)
+        {
+            Debug.Log("PLAYER 1 GAGNE");
+        }
+        else
+        {
+            Debug.Log("PLAYER 2 GAGNE");
+        }
+    }
 
 
 
@@ -105,7 +127,7 @@ public class NetworkManager : MonoBehaviour
 
         //}while(!tab_jou[0].GetComponent<PlayerHealthMult>().isDead /*|| !tab_jou[1].GetComponent<PlayerHealthMult>().isDead || !tab_jou[2].GetComponent<PlayerHealthMult>().isDead || !tab_jou[3].GetComponent<PlayerHealthMult>().isDead*/);
 
-    }
+    
     //IEnumerator dead()
     //{
     //    yield return new WaitForSeconds(20);

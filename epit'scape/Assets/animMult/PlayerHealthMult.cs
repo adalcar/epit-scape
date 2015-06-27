@@ -18,6 +18,9 @@ public class PlayerHealthMult : MonoBehaviour {
     Animator anim;
     AudioSource playerAudio;
     public float ts;
+    public bool isFinished = false;
+    GameObject[] tab_en;
+    public float time = 0;
     void Awake()
     {
          anim = GetComponent<Animator>();
@@ -28,11 +31,17 @@ public class PlayerHealthMult : MonoBehaviour {
         Time.timeScale = 1;
         cam = GetComponent<Camera>();
     }
+    void Start()
+    {
+        tab_en = GameObject.FindGameObjectsWithTag("Enemy");
+        time = Time.time;
+    }
 
     void OnGUI()
     {
         GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
-       // GUI.Box(new Rect(300, 350, 100, 20), "vie : " + currentLife);
+        GUI.Box(new Rect(0, 300, 90, 20), "temps: " + time);
+        GUI.Box(new Rect(0, 400, 90, 20), "temps: " + tab_en.Length);
     }
     
 
@@ -54,7 +63,18 @@ public class PlayerHealthMult : MonoBehaviour {
     //    }
     //}
 
-    [PunRPC]
+    void Update()
+    {
+        tab_en = GameObject.FindGameObjectsWithTag("Enemy");
+        if(tab_en.Length == 0)
+        {
+            isFinished = true;
+        }
+        if(!isFinished)
+        {
+            time += Time.deltaTime;
+        }
+    }
     public void loseLife(int damages)
     {
         isAttaked = true;
@@ -72,11 +92,13 @@ public class PlayerHealthMult : MonoBehaviour {
     }
     void dead()
     {
+        isFinished = true;
         anim.SetTrigger("IsDead");
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
         this.transform.FindChild("Camera").gameObject.SetActive(false);
         this.cam = GameObject.FindObjectOfType<Camera>();
+
     }
 
 }

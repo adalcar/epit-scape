@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour {
 	public Transform bullet;
 	public GameObject posCanon;
     public bool monArme = true;
-	public int munitions = 10;
+	public int munitions = 1000;
 	float cadence = 0.2f;
     public bool pause;
     
@@ -51,10 +51,7 @@ public class Shoot : MonoBehaviour {
 		
 	}
 
-	void OnGUI () {
 
-		GUI.Box(new Rect(0, 0, 90, 20), "Munitions: " + munitions);
-	}
 
 
 
