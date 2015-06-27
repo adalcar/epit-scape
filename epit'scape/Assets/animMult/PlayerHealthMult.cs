@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -34,21 +34,7 @@ public class PlayerHealthMult : MonoBehaviour {
         GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
        // GUI.Box(new Rect(300, 350, 100, 20), "vie : " + currentLife);
     }
-    public void loseLife(int damages)
-    {
-        isAttaked = true;
-        currentLife -= damages;
-
-        float lifebar = (float)currentLife / 100f;
-        //SetLifeBar(lifebar);
-        playerAudio.Play();
-
-        if (currentLife <= 0 && !isDead)
-        {
-            Debug.Log("ur dead bitch!");
-            dead();
-        }
-    }
+    
 
     //void SetLifeBar(float value)
     //{
@@ -68,6 +54,22 @@ public class PlayerHealthMult : MonoBehaviour {
     //    }
     //}
 
+    [PunRPC]
+    public void loseLife(int damages)
+    {
+        isAttaked = true;
+        currentLife -= damages;
+
+        //float lifebar = (float)currentLife / 100f;
+        //SetLifeBar(lifebar);
+        playerAudio.Play();
+
+        if (currentLife <= 0 && !isDead)
+        {
+            Debug.Log("ur dead bitch!");
+            dead();
+        }
+    }
     void dead()
     {
         anim.SetTrigger("IsDead");

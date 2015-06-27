@@ -54,7 +54,7 @@ public class ZombMouvMult : MonoBehaviour
 
     void Update()
     {
-        if (!GetComponent<EnemyHealth>().isDead)
+        if (!GetComponent<EnemyHealthZomb>().isDead)
         {
             if (maintarget)
             {

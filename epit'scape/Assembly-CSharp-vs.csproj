@@ -207,6 +207,7 @@
      <Compile Include="Assets\Scripts\tutos\movetuto.cs" />
      <Compile Include="Assets\Scripts\tutos\weapontuto.cs" />
      <Compile Include="Assets\animMult\NetworkCharacter.cs" />
+     <Compile Include="Assets\animMult\NetworkCharacterEnemy.cs" />
      <Compile Include="Assets\animMult\PlayerHealthMult.cs" />
      <Compile Include="Assets\animMult\PlayerMovement.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
