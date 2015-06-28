@@ -30,7 +30,6 @@ public class EnemyAttackBoss1 : MonoBehaviour {
         #region playerdetect
         isInRange = Vector3.Distance(transform.position, player.transform.position) < 6.5F;
         GetComponent<Boss1IA>().enabled = !isInRange;
-
         #endregion
 
         timer += Time.deltaTime;
@@ -41,7 +40,7 @@ public class EnemyAttackBoss1 : MonoBehaviour {
 
         if (isInRange && !GetComponent<EnemyHealth>().isDead)
             transform.LookAt(player.transform.position - new Vector3(0, player.transform.position.y + 2.5F, 0));
-        anim.SetBool("IsInRange", isInRange);
+
         //if (playerHealth.currentLife <= 0)
         //{
         //    anim.SetTrigger("GameOver");
@@ -58,7 +57,7 @@ public class EnemyAttackBoss1 : MonoBehaviour {
         {
             Debug.Log("get hurt biatch");
             playerHealth.loseLife(damages);
-
+            anim.SetBool("IsInRange", isInRange);
             attacked = true;
         }
     }

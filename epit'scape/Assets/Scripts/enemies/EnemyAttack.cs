@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour {
     }
     void OnTriggerEnter(Collider coll)
     {
-        Attack();
+        
     }
 
     void OnTriggerExit(Collider coll)
