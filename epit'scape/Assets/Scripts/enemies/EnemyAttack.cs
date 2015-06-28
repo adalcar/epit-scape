@@ -24,12 +24,7 @@ public class EnemyAttack : MonoBehaviour {
     }
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.tag == "Player")
-        {
-            GetComponent<EnemyAI>().enabled = false;
-            Debug.Log("touche!");
-            isInRange = !isInRange;
-        }
+        
     }
 
     void OnTriggerExit(Collider coll)
@@ -45,11 +40,18 @@ public class EnemyAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        #region playerdetect
+        isInRange = Vector3.Distance(transform.position, player.transform.position) < 2.5F;
+        GetComponent<EnemyAI>().enabled = !isInRange;
+        
+        #endregion
+
         timer += Time.deltaTime;
         if (timer > lapsTime && isInRange && enemyHealth.currentLife > 0)
         {
             Attack();
         }
+        
         if (isInRange)
             transform.LookAt(player.transform.position - new Vector3(0,player.transform.position.y  + 2.5F ,0));
         anim.SetBool("IsInRange", isInRange);

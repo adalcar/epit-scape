@@ -33,11 +33,11 @@ public class EnemyHealth : MonoBehaviour {
     }
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.tag == "bullet")
-        {
-            Debug.Log("hit!");
-            loseLife(coll.GetComponent<bullet>().degats);
-        }
+        //if (coll.tag == "bullet")
+        //{
+        //    Debug.Log("hit!");
+        //    loseLife(coll.GetComponent<bullet>().degats);
+        //}
     }
     
     public void loseLife(int dammage)

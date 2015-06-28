@@ -16,6 +16,11 @@ public class bullet : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider coll)
     {
+        if(coll.tag == "Enemy")
+        {
+            Debug.Log("i hit u");
+            coll.GetComponent<EnemyHealth>().loseLife(degats);
+        }
         if (coll.tag != "Player")
             Destroy(this.gameObject);
     }
