@@ -24,7 +24,7 @@ public class Boss2Tir : MonoBehaviour
         {
             Transform balle;
             balle = Instantiate(bullet, posCanon.transform.position, posCanon.transform.rotation) as Transform;
-            balle.GetComponent<Rigidbody>().AddForce(vise * 200);
+            balle.GetComponent<Rigidbody>().AddForce((vise + Vector3.up / 5) * 500);
             pause = false;
             Debug.Log("tir");
             StartCoroutine(StartWait());

@@ -18,6 +18,16 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "bananadone":
+                if (english)
+                    return "that was... weird... Alright, let's go to the under, maybe we'll find the answer here";
+                else
+                    return "bon, on va faire comme si on avait rien vu et on va continuer, l'acces a l'under est ouvert";
+            case "banana":
+                if (english)
+                    return "wait.... what?? giants bananas, too much coding, i'm getting hallucinations... and it's shooting bananas?";
+                else
+                    return "heu... il se passe quoi la? j'en suis juste a un rush de projet, meme pas a la piscine, pourquoi j'ai des hallucinations?";
             case "goKB":
                 if (english)
                     return "Great! the door is open! now I can escape this nightmare and go home! nah just kidding, let's have some more fun, ill surely find some help in the main building";
@@ -45,9 +55,9 @@ public class Biblio : MonoBehaviour {
                     return "ils sont deja revenus? c'est pas vrai!";
             case "gobocal1":
                 if (english)
-                    return "perfect ! i always feel better with a keyboard in my hands! \n it seems there is no way to open the gates from here\n how about the bocal then?";
+                    return "perfect ! i always feel better with a keyboard in my hands! it seems there is no way to open the gates from here, how about the bocal then?";
                 else
-                    return "Parfait, je me sens toujours mieux avec un clavier dans les mains! \n bon, pas moyen d'ouvrir les portes depuis l'ordi\n allons voir au bocal";
+                    return "Parfait, je me sens toujours mieux avec un clavier dans les mains! bon, pas moyen d'ouvrir les portes depuis l'ordi. allons voir au bocal";
             case "findkeyboard":
                 if (english)
                     return "good, it seems the zombies didn't find this place \n let'see if i can find something useful, maybe a way to open the gates";

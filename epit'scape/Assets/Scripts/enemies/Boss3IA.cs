@@ -31,25 +31,11 @@ public class Boss3IA : MonoBehaviour
     {
         if(!GetComponent<EnemyHealth>().isDead)
         {
-            if(!EnemyAttack.attacked)
+            if(!EnemyAttackBoss3.attacked)
             {
                 target = maintarget;
+                navComponent.SetDestination(target.position);
 
-                if (target)
-                {
-                    navComponent.SetDestination(target.position);
-                }
-                else
-                {
-                    if (target = null)
-                    {
-                        target = this.gameObject.GetComponent<Transform>();
-                    }
-                    else
-                    {
-                        target = GameObject.FindGameObjectWithTag("Player").transform;
-                    }
-                }
             }
             else
             {
@@ -67,7 +53,7 @@ public class Boss3IA : MonoBehaviour
                         if (thisObject.position.x < (target.position.x + 2) && thisObject.position.x > (target.position.x - 2)
                             && thisObject.position.z < (target.position.z + 2) && thisObject.position.z > (target.position.z - 2))
                         {
-                            EnemyAttack.attacked = false;
+                            EnemyAttackBoss3.attacked = false;
                             target = maintarget;
                         }
                         else
