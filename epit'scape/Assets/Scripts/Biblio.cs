@@ -18,71 +18,84 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "goUp":
+                if (english)
+                    return "Doors to the stairs opened. Go to the fourth floor.";
+                else
+                    return "Les portes des escaliers sont ouvertes. Va au 3e étage.";
+
             case "findpen":
                 if (english)
                     return "I'd better find something to defend myself, there must be something in the offices!";
                 else
                     return "Il me faudrait quelque chose pour me defendre, je devrais trouver mon bonheur dans un de ces bureaux";
-            case "closedDoor":
-                if (english)
-                    return "The door is closed, it seems, electronically. There must be a switch somewhere!";
-                else
-                    return "La porte est fermee electroniquement! il doit y avoir un interrupteur quelque part.";
+
             case "tutoshoot":
                 if (english)
                     return "Use the left mouse button to attack";
                 else
                     return "Clic gauche pour attaquer";
+
             case "tutoswitch":
                 if (english)
                     return "Use the scroll wheel to switch between weapons";
                 else
                     return "Utilisez la molette de la souris pour changer d'arme";
+
             case "tutomove":
                 if (english)
                     return "Use the arrows or WASD keys to move, and the mouse to look around";
                 else
                     return "Utiliser les fleches directionnelles pour se deplacer";
+
             case "up":
                 if (english)
                     return "Forward";
                 else
                     return "Avancer";
+
             case "down":
                 if (english)
                     return "Back";
                 else
                     return "Reculer";
+
             case "right":
                 if (english)
                     return "Right";
                 else
                     return "Droite";
+
             case "left":
                 if (english)
                     return "Left";
                 else
                     return "Gauche";
+
             case "del":
                 if (english)
                     return "Erase";
                 else
                     return "Supprimer";
+
             case "retJeu":
                 if (english)
                     return "Back to game";
                 else
                     return "Retour au jeu";
+
             case "recupCles":
                 if (english)
-                    return "You must \nfind the \nkeys! ";
+                    return "It's closed, find the keys !";
                 else
-                    return "Tu dois \nretrouver \nles cles!";
+                    return "C'est fermé, trouve les clefs !";
+
             case "savquit":
                 if (english)
                     return "Save and quit";
                 else
                     return "Sauvegarder et quitter";
+
             case "back":
                 if (english)
                     return "Back";

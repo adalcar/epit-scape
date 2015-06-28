@@ -15,7 +15,10 @@ public class portal1 : MonoBehaviour {
         if (col.tag == "Player")
         {
             if (!keyQuest.queststarted)
+            {
                 keyQuest.start();
+                QuestAffichage.str = "recupCles";
+            }
 
             if (keyQuest.questcompleted)
             {

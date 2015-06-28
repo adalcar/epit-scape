@@ -171,6 +171,7 @@
      <Compile Include="Assets\Scripts\WeaponShift.cs" />
      <Compile Include="Assets\Scripts\display\Display.cs" />
      <Compile Include="Assets\Scripts\display\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\display\QuestAffichage.cs" />
      <Compile Include="Assets\Scripts\display\gui.cs" />
      <Compile Include="Assets\Scripts\display\inGameGui.cs" />
      <Compile Include="Assets\Scripts\display\playerHealth.cs" />

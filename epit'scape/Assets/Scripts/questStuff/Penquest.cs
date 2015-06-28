@@ -3,7 +3,6 @@ using System.Collections;
 
 public static class Penquest {
 
-    public static string questStart, questUpdate, questfinish;
     static int questid = 2;
     static int target = 1;
     static int count = 0;
@@ -33,11 +32,8 @@ public static class Penquest {
             if (count == target)
             {
                 Debug.Log("count");
-                GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questfinish);
                 questcompleted = true;
             }
-            else
-                GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questUpdate);
         }
     }
     public static void start()
@@ -45,7 +41,6 @@ public static class Penquest {
         if (!queststarted)
         {
             queststarted = true;
-            GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().staticInfo(questStart);
         }
     }
 }

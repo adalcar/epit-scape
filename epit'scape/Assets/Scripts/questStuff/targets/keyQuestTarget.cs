@@ -14,6 +14,7 @@ public class keyQuestTarget : MonoBehaviour {
             {
                 Destroy(gameObject);
                 keyQuest.add();
+                QuestAffichage.str = "";
             }
 
     }

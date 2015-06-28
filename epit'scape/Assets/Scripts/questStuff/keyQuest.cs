@@ -8,9 +8,6 @@ namespace Assets.Scripts.questStuff
 {
     public static class keyQuest 
     {
-        static string questStart = "recupCles";
-        static string questUpdate; 
-        static string questfinish = "Bien! La porte est ouverte!";
         static int questid = 1;
         static int target = 1;
         static int count = 0;
@@ -45,11 +42,8 @@ namespace Assets.Scripts.questStuff
                 count++;
                 if (count == target)
                 {
-                    GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questfinish);
                     questcompleted = true;
                 }
-                else
-                    GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questUpdate);
             }
         }
         public static void start()
@@ -57,7 +51,6 @@ namespace Assets.Scripts.questStuff
             if (!queststarted)
             {
                 queststarted = true;
-                GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().staticInfo(questStart);
             }
         }
     }

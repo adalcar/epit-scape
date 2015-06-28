@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-	    
+        
 	}
     void OnTriggerEnter(Collider c)
     {

@@ -177,7 +177,6 @@ public class inGameGui : MonoBehaviour {
     }
     public IEnumerator Info(string infostring)
     {
-        
         infoLabelText = infostring;
         infoLabel = true;
         yield return new WaitForSeconds(10);

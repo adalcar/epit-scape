@@ -7,13 +7,14 @@ public class PenQuestTarget : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        display.infodisplay("findpen");
+        
 	}
     void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Player")
         {
             Penquest.start();
+            QuestAffichage.str = "goUp";
             Destroy(gameObject);
             Penquest.add();
             Debug.Log("Tancrede je vais te crever");
@@ -26,5 +27,7 @@ public class PenQuestTarget : MonoBehaviour {
     {
         if (Penquest.questcompleted)
             Destroy(gameObject);
+        else
+            QuestAffichage.str = "findpen";
 	}
 }
