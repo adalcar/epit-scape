@@ -12,14 +12,17 @@ public class Credits : MonoBehaviour {
 	void Update () 
     {
         //Choose();
-        camera.transform.Translate(Vector3.down * Time.deltaTime * speed);
-        StartCoroutine(WaitFor());
+        camera.transform.position = (camera.transform.position + Vector3.down);
+        
+        Debug.Log("Bon");
+        Debug.Log(camera.transform.position);
+       // StartCoroutine(WaitFor());
 	}
 
     IEnumerator WaitFor()
     {
         yield return new WaitForSeconds(20);
-        Application.LoadLevel(level);
+        Application.LoadLevel("MainMenu");
     }
 
     //void Choose()
