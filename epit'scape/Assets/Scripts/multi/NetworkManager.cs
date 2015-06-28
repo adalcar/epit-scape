@@ -8,7 +8,7 @@ public class NetworkManager : MonoBehaviour
     GameObject[] tab_en;
     GameObject[] tab_jou;
     int winneur = 0;
-    float tempsWineur = 0;
+   // float tempsWineur = 0;
     // Use this for initialization
     void Start()
     {
@@ -37,7 +37,7 @@ public class NetworkManager : MonoBehaviour
             PhotonNetwork.ConnectUsingSettings("Epit'S'cape v001");
         }
         GUI.Box(new Rect(400, 0, 90, 20), "Gagant" + winneur);
-        GUI.Box(new Rect(600, 0, 90, 20), "Temps" + tempsWineur);
+     //   GUI.Box(new Rect(600, 0, 90, 20), "Temps" + tempsWineur);
         // if (GUI.Button(new Rect(new Rect(0, 0, 90, 20)), "refresh"))
 
 
@@ -124,7 +124,7 @@ public class NetworkManager : MonoBehaviour
         else
         {
             gagnant = 2;
-            temps = tab_jou[1].GetComponent<PlayerHealthMult>().time;
+           // temps = tab_jou[1].GetComponent<PlayerHealthMult>().time;
             Debug.Log("PLAYER 2 WIN");
         }
         //tab_jou[0].GetComponent<Fin>().enabled = true;
@@ -132,7 +132,7 @@ public class NetworkManager : MonoBehaviour
         //tab_jou[0].GetComponent<Fin>().tempsWineur = temps;
         Debug.Log("allez");
         winneur = gagnant;
-        tempsWineur = temps;
+       // tempsWineur = temps;
 
         //tab_jou[1].GetComponent<Fin>().enabled = true;
         //tab_jou[0].GetComponent<Fin>().winneur = gagnant;

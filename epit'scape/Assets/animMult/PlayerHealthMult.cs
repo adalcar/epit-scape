@@ -41,7 +41,7 @@ public class PlayerHealthMult : MonoBehaviour {
     {
         GUI.Box(new Rect(0, 50, 100, 20),"vie : " +currentLife);
         GUI.Box(new Rect(0, 300, 90, 20), "temps: " + time);
-        GUI.Box(new Rect(0, 400, 90, 20), "temps: " + tab_en.Length);
+       // GUI.Box(new Rect(0, 400, 90, 20), "temps: " + tab_en.Length);
     }
     
 
