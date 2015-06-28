@@ -22,26 +22,13 @@ public class EnemyAttackBoss1 : MonoBehaviour {
         anim = GetComponent<Animator>();
         isInRange = false;
     }
-    void OnTriggerEnter(Collider coll)
-    {
-        Attack();
-    }
 
-    void OnTriggerExit(Collider coll)
-    {
-        if (coll.tag == "Player")
-        {
-            GetComponent<EnemyAI>().enabled = true;
-            Debug.Log("nohit!");
-            isInRange = !isInRange;
-            anim.SetBool("IsWalking", true);
-        }
-    }
+
     // Update is called once per frame
     void Update()
     {
         #region playerdetect
-        isInRange = Vector3.Distance(transform.position, player.transform.position) < 2.5F;
+        isInRange = Vector3.Distance(transform.position, player.transform.position) < 6.5F;
         GetComponent<Boss1IA>().enabled = !isInRange;
 
         #endregion
@@ -52,7 +39,7 @@ public class EnemyAttackBoss1 : MonoBehaviour {
             Attack();
         }
 
-        if (isInRange)
+        if (isInRange && !GetComponent<EnemyHealth>().isDead)
             transform.LookAt(player.transform.position - new Vector3(0, player.transform.position.y + 2.5F, 0));
         anim.SetBool("IsInRange", isInRange);
         //if (playerHealth.currentLife <= 0)

@@ -18,6 +18,16 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "goKB":
+                if (english)
+                    return "Great! the door is open! now I can escape this nightmare and go home! nah just kidding, let's have some more fun, ill surely find some help in the main building";
+                else
+                    return "Parfait! la porte est ouverte! allons au kb voir comment ca se passe la-bas, avec un peu de chance on trouvera de quoi mettre une fin permanente a cette infestation";
+            case "killboss1":
+                if (english)
+                    return "what the hell?? those guys are huge! i've gotta put those experiments out of their misery";
+                else
+                    return "mais qu'est-ce que c'est que ces monstres? les supbiotechs avaient serieusement des problemes d'ethique avec leurs experiences!";
             case "killallzomb5":
                 if (english)
                     return "alright, it's starting to get boring";
