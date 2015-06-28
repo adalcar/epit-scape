@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour {
     }
     void OnTriggerEnter(Collider coll)
     {
-        
+        Attack();
     }
 
     void OnTriggerExit(Collider coll)
@@ -42,7 +42,7 @@ public class EnemyAttack : MonoBehaviour {
     {
         #region playerdetect
         isInRange = Vector3.Distance(transform.position, player.transform.position) < 2.5F;
-        GetComponent<EnemyAI>().enabled = !isInRange;
+        GetComponent<Boss1IA>().enabled = !isInRange;
         
         #endregion
 
