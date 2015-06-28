@@ -24,7 +24,7 @@ namespace Assets.Scripts.Weapon_stuff
             if (ammo != 0 && canshoot)
             {
                 GameObject bullet = (GameObject)Instantiate(projectile, transform.position, transform.rotation);
-                bullet.GetComponent<Rigidbody>().AddForce(camObject.transform.forward * 5, ForceMode.Impulse);
+                bullet.GetComponent<Rigidbody>().AddForce(camObject.transform.forward * 50, ForceMode.Impulse);
                 StartCoroutine(loadWait());
             }
         }

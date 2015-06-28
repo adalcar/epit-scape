@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Assets.Scripts.questStuff;
-
+using Assets.Scripts.display;
 public class EnemyHealth : MonoBehaviour {
     public int startLife;
     public int currentLife;
@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour {
 
     void Awake()
     {
-        Zombquest.vikos.Add(gameObject);
+        Zombquest.victimes ++;
         anim = GetComponent<Animator>();
         enemyAudio = GetComponent <AudioSource> ();
         //capColl = GetComponent<CapsuleCollider>();
@@ -55,7 +55,7 @@ public class EnemyHealth : MonoBehaviour {
     }
     public void Dead()
     {
-        Zombquest.vikos.Remove(gameObject);
+        Zombquest.victimes--;
         isDead = true;
         nav.enabled = false;
         //GameObject.FindWithTag("Player").GetComponent<QuestManager>().current_score++;

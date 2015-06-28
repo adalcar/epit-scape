@@ -2,18 +2,20 @@
 using System.Collections;
 using Assets.Scripts.questStuff;
 using Assets.Scripts.display;
-public class NewBehaviourScript : MonoBehaviour {
+public class portalzomb : MonoBehaviour {
     public string destination;
+    public string quest;
 	// Use this for initialization
-	void Start () 
+	void Awake () 
     {
-        
+        QuestAffichage.str = quest;
 	}
+    
     void OnTriggerEnter(Collider c)
     {
-        if (Zombquest.vikos.Count > 0)
+        if (Zombquest.victimes > 0)
         {
-            display.infodisplay(Zombquest.vikos.Count + " enemies remaining, nowhere to run!");
+            QuestAffichage.str = "Restzomb";
         }
         else
             Application.LoadLevel(destination);
@@ -21,6 +23,6 @@ public class NewBehaviourScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        QuestAffichage.str = quest;
+    }
 }

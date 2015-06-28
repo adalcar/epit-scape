@@ -7,14 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{67D201C2-271A-CFC8-EFE1-2A8B57F918C8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.0.1f1</UnityVersion>
@@ -62,14 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.epit&apos;scape.CSharp.Plugins.csproj">
+    <ProjectReference Include="UnityVS.epit'scape.CSharp.Plugins.csproj">
       <Project>{34738D00-8CB9-19F1-77E0-28CDE83A57D5}</Project>
-      <Name>UnityVS.epit&apos;scape.CSharp.Plugins</Name>
+      <Name>UnityVS.epit'scape.CSharp.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Biblio.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\questStuff\portalzomb.cs" />
     <Compile Include="Assets\Scripts\Weapon stuff\Arme.cs" />
     <Compile Include="Assets\Scripts\Weapon stuff\Shoot.cs" />
     <Compile Include="Assets\Scripts\Weapon stuff\Viser.cs" />

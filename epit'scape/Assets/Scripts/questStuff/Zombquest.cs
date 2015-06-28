@@ -13,7 +13,6 @@ namespace Assets.Scripts.questStuff
         static string questfinish = "bien! la porte est ouverte!";
         static int questid = 1;
         static int target = 20;
-        static int count = 0;
         public static bool queststarted = false;
         public static bool questcompleted = false;
         public static byte[] to_save(ref int k)
@@ -29,16 +28,14 @@ namespace Assets.Scripts.questStuff
                 b[2] = 1;
             else
                 b[2] = 0;
-            b[3] = (byte)count;
             return b;
         }
         public static void load(byte[] save, int pos)
         {
             queststarted = save[pos + 1] == 1;
             questcompleted = save[pos + 2] == 1;
-            count = save[pos + 3];
         }
-        public static List<GameObject> vikos;
+        public static int victimes;
         public static void start()
         {
             if (!queststarted)

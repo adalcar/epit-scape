@@ -16,12 +16,8 @@ public class bullet : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.tag == "Enemy" )
-        {
-            Debug.Log("hit!");
-            coll.GetComponent<EnemyHealthZomb>().currentLife -= degats;
-        }
-        Destroy(this.gameObject);
+        if (coll.tag != "Player")
+            Destroy(this.gameObject);
     }
     private IEnumerator selfdestruct()
     {

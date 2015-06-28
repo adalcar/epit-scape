@@ -18,6 +18,21 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "killallzomb2":
+                if (english)
+                    return "so many zombies, this place is infested, i have to clear it";
+                else
+                    return "encore des zombies... il y en a partout!";
+            case "killallzomb1":
+                if (english)
+                    return "what the... where do those... zombies come from??";
+                else
+                    return "Bon sang! ca grouille de... zombies???? ";
+            case "Restzomb":
+                if (english)
+                    return "There are still zombies left! I must clean up this place";
+                else
+                    return "il reste encore des zombies! je dois nettoyer cet etage";
             case "goUp":
                 if (english)
                     return "Doors to the stairs opened. Go to the fourth floor.";
