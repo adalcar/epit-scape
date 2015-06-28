@@ -42,7 +42,7 @@ public class EnemyAttack : MonoBehaviour {
     {
         #region playerdetect
         isInRange = Vector3.Distance(transform.position, player.transform.position) < 2.5F;
-        GetComponent<Boss1IA>().enabled = !isInRange;
+        GetComponent<EnemyAI>().enabled = !isInRange;
         
         #endregion
 
