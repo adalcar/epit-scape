@@ -5,6 +5,7 @@ using Assets.Scripts.display;
 public class portalzomb : MonoBehaviour {
     public string destination;
     public string quest;
+    bool tested, done;
 	// Use this for initialization
 	void Awake () 
     {
@@ -13,16 +14,28 @@ public class portalzomb : MonoBehaviour {
     
     void OnTriggerEnter(Collider c)
     {
-        if (Zombquest.victimes > 0)
+        if (!done)
         {
-            QuestAffichage.str = "Restzomb";
+            tested= true;
         }
         else
             Application.LoadLevel(destination);
     }
 	
 	// Update is called once per frame
-	void Update () {
-        QuestAffichage.str = quest;
+	void Update ()
+    {
+        if (quest != "")
+        {
+            done = (Zombquest.victimes == 0);
+
+            if (!done)
+                if (!tested)
+                    QuestAffichage.str = quest;
+                else
+                    QuestAffichage.str = "Restzomb";
+            else
+                QuestAffichage.str = "clear1";
+        }
     }
 }

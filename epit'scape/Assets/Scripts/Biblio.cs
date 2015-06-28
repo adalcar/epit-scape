@@ -18,6 +18,36 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+            case "killallzomb5":
+                if (english)
+                    return "alright, it's starting to get boring";
+                else
+                    return "bon bah, c'est reparti";
+            case "killallzomb4":
+                if (english)
+                    return "here too? well it should be obvious";
+                else
+                    return "ici aussi? bon, je devrais m'attendre a en trouver partout maintenant";
+            case "killallzomb3":
+                if (english)
+                    return "dammit, they already came back! do they reproduce or what?";
+                else
+                    return "ils sont deja revenus? c'est pas vrai!";
+            case "gobocal1":
+                if (english)
+                    return "perfect ! i always feel better with a keyboard in my hands! \n it seems there is no way to open the gates from here\n how about the bocal then?";
+                else
+                    return "Parfait, je me sens toujours mieux avec un clavier dans les mains! \n bon, pas moyen d'ouvrir les portes depuis l'ordi\n allons voir au bocal";
+            case "findkeyboard":
+                if (english)
+                    return "good, it seems the zombies didn't find this place \n let'see if i can find something useful, maybe a way to open the gates";
+                else
+                    return "bon, les zombies ne sont pas encore arrives ici\n voyons ce que je peux y trouver d'interessant, \n peut-etre un moyen de reouvrir les portes";
+            case "clear1":
+                if (english)
+                    return "good! now i can go";
+                else
+                    return "ca c'est fait, je dois y aller!";
             case "killallzomb2":
                 if (english)
                     return "so many zombies, this place is infested, i have to clear it";

@@ -76,7 +76,8 @@ public class WeaponShift : MonoBehaviour {
     }
     public void cheat()
     {
-        int k = armes.Count;
+        armes.Clear();
+        int k = 0;
         while (k < 4)
             armes.Add(weapons[k++].GetComponent<weaponscriptPere>());
 

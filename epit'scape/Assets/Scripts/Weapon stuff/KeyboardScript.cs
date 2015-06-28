@@ -14,13 +14,14 @@ namespace Assets.Scripts.Weapon_stuff
         public override void shoot()
         {
             GetComponent<Animation>().Play("clavier");
+            
         }
         void OnTriggerEnter(Collider col)
         {
             if(col.tag == "Enemy")
             {
                 Debug.Log("hit!");
-                col.GetComponent<EnemyHealth>().currentLife -= 50;
+                col.GetComponent<EnemyHealth>().loseLife(100);
                 //col.attachedRigidbody.AddForce(cam.transform.forward);
             }
         }
