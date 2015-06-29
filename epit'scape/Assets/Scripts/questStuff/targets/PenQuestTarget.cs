@@ -13,7 +13,7 @@ public class PenQuestTarget : MonoBehaviour {
     {
         if (c.tag == "Player")
         {
-            Penquest.start();
+            Penquest.queststarted = true;
             QuestAffichage.str = "goUp";
             Destroy(gameObject);
             Penquest.add();

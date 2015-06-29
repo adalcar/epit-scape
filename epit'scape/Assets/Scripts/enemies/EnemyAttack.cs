@@ -27,16 +27,16 @@ public class EnemyAttack : MonoBehaviour {
         
     }
 
-    void OnTriggerExit(Collider coll)
-    {
-        if (coll.tag == "Player")
-        {
-            GetComponent<EnemyAI>().enabled = true;
-            Debug.Log("nohit!");
-            isInRange = !isInRange;
-            anim.SetBool("IsWalking", true);
-        }
-    }
+    //void OnTriggerExit(Collider coll)
+    //{
+    //    if (coll.tag == "Player")
+    //    {
+    //        GetComponent<EnemyAI>().enabled = true;
+    //        Debug.Log("nohit!");
+    //        isInRange = !isInRange;
+    //        anim.SetBool("IsWalking", true);
+    //    }
+    //}
 	// Update is called once per frame
 	void Update ()
     {

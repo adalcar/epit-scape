@@ -38,12 +38,11 @@ public static class KeyboardQuest {
                 GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questUpdate);
         }
     }
-    public static void start()
+    public static void load(byte[] save, int pos)
     {
-        if (!queststarted)
-        {
-            queststarted = true;
-            GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().staticInfo(questStart);
-        }
+        queststarted = save[pos + 1] == 1;
+        questcompleted = save[pos + 2] == 1;
+        count = save[pos + 3];
     }
+
 }

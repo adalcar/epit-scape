@@ -36,11 +36,10 @@ public static class Penquest {
             }
         }
     }
-    public static void start()
+    public static void load(byte[] save, int pos)
     {
-        if (!queststarted)
-        {
-            queststarted = true;
-        }
+        queststarted = save[pos + 1] == 1;
+        questcompleted = save[pos + 2] == 1;
+        count = save[pos + 3];
     }
 }

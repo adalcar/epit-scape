@@ -235,12 +235,31 @@ public class Biblio : MonoBehaviour {
                 else
                     return "Sauvegarde";
 
+            case "outB":
+                if (english)
+                    return "First boss";
+                else
+                    return "la sortie";
+            case "boc":
+                if (english)
+                    return "fishtank";
+                else
+                    return "bocal";
             case "out":
                 if (english)
                     return "Outdoor";
                 else
-                    return "Cours";
-
+                    return "Cour";
+            case "lvl3":
+                if (english)
+                    return "Floor 4";
+                else
+                    return "Etage 3";
+            case "lvl2":
+                if (english)
+                    return "Floor 3";
+                else
+                    return "Etage 2";
             case "lvl1":
                 if (english)
                     return "Floor 2";

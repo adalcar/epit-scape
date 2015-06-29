@@ -28,10 +28,10 @@ public class EnemyAttackBoss1 : MonoBehaviour {
     void Update()
     {
         #region playerdetect
-        isInRange = Vector3.Distance(transform.position, player.transform.position) < 6.5F;
+        isInRange = Vector3.Distance(transform.position, player.transform.position) < 3.5F;
         GetComponent<Boss1IA>().enabled = !isInRange;
         #endregion
-
+        anim.SetBool("IsInRange", isInRange);
         timer += Time.deltaTime;
         if (timer > lapsTime && isInRange && enemyHealth.currentLife > 0)
         {
@@ -57,7 +57,7 @@ public class EnemyAttackBoss1 : MonoBehaviour {
         {
             Debug.Log("get hurt biatch");
             playerHealth.loseLife(damages);
-            anim.SetBool("IsInRange", isInRange);
+
             attacked = true;
         }
     }

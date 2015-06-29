@@ -16,12 +16,13 @@ public class portalzomb : MonoBehaviour {
     
     void OnTriggerEnter(Collider c)
     {
-        if (!done)
-        {
-            tested= true;
-        }
-        else
-            Application.LoadLevel(destination);
+        if (c.tag == "Player")
+            if (!done)
+            {
+                tested = true;
+            }
+            else
+                Application.LoadLevel(destination);
     }
 	
 	// Update is called once per frame

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
-
+using Assets.Scripts.questStuff;
 public class MainMenu : MonoBehaviour {
     private bool _isFirstMenu = true;
     private bool _isLevelSelectMenu = false;
@@ -139,17 +139,44 @@ public class MainMenu : MonoBehaviour {
     {
         if (_isLevelSelectMenu)
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 + 30, 300, 50), Biblio.Text("lvl1")))
-            {
-                Application.LoadLevel("Level 01");
-            }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 100, 300, 50), Biblio.Text("out")))
+            if (GUI.Button(new Rect(Screen.width / 2 - 300, Screen.height / 2 - 100, 150, 50), Biblio.Text("out")))
             {
                 Application.LoadLevel("level 0");
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 40, 300, 50), Biblio.Text("lvl0")))
+            if (GUI.Button(new Rect(Screen.width / 2 - 300, Screen.height / 2 - 30, 150, 50), Biblio.Text("lvl0")))
             {
                 Application.LoadLevel("level 1");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 300, Screen.height / 2 + 40, 150, 50), Biblio.Text("lvl1")))
+            {
+                Application.LoadLevel("Level 2");
+            }
+
+
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 100, 150, 50), Biblio.Text("lvl2")))
+            {
+                Application.LoadLevel("Etage2");
+                Penquest.questcompleted = true;
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 - 30, 150, 50), Biblio.Text("lvl3")))
+            {
+                Application.LoadLevel("etage3");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 - 100, Screen.height / 2 + 40, 150, 50), Biblio.Text("boc")))
+            {
+                Application.LoadLevel("Bocal");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 - 100, 150, 50), Biblio.Text("outB")))
+            {
+                Application.LoadLevel("level 0boss");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 - 30, 150, 50), "Pasteur"))
+            {
+                Application.LoadLevel("pasteur");
+            }
+            if (GUI.Button(new Rect(Screen.width / 2 + 100, Screen.height / 2 + 40, 150, 50),"Under"))
+            {
+                Application.LoadLevel("under");
             }
         }
     }
@@ -177,6 +204,9 @@ public class MainMenu : MonoBehaviour {
         Assets.Scripts.playerdata.loadedfromsave = true;
         Assets.Scripts.playerdata.load(loaded, 0);
         Assets.Scripts.questStuff.keyQuest.load(loaded, 5);
+        Bananalauncherquest.load(loaded, 17);
+        KeyboardQuest.load(loaded, 13);
+        Penquest.load(loaded, 9);
     }
     void OnApplicationQuit()
     {

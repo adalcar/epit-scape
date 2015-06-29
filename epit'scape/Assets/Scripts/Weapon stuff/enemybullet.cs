@@ -25,8 +25,10 @@ public class enemybullet : MonoBehaviour
             Debug.Log("i touched a player");
             Debug.Log("get hurt biatch");
             coll.GetComponent<playerHealth>().loseLife(degats);
-            Destroy(this.gameObject);
+
         }
+        if(coll.tag != "Enemy")
+            Destroy(gameObject);
 
     }
     private IEnumerator selfdestruct()

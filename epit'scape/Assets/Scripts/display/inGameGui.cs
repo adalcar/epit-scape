@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
-
+using Assets.Scripts.questStuff;
 public class inGameGui : MonoBehaviour {
     public GUISkin skin;
     public GameObject terrain, enemy;
@@ -196,8 +196,14 @@ public class inGameGui : MonoBehaviour {
         byte[] save = new byte[1024];
         Assets.Scripts.playerdata.toSave(ref k).CopyTo(save, pos);
         pos += k;
-        Assets.Scripts.questStuff.keyQuest.to_save(ref k).CopyTo(save, pos);
+        keyQuest.to_save(ref k).CopyTo(save, pos);
         pos += k;
+        Penquest.to_save().CopyTo(save, pos + k);
+        pos += k;
+        KeyboardQuest.to_save().CopyTo(save, pos);
+        pos += k;
+        Bananalauncherquest.to_save().CopyTo(save, pos);
+
             //todo: add other things to save? 
         File.WriteAllBytes(savename, save);
         Application.LoadLevel("MainMenu");

@@ -24,26 +24,17 @@ public static class Bananalauncherquest{
         b[3] = (byte)count;
         return b;
     }
-    public static void add()
+    public static void load(byte[] save, int pos)
     {
-        if (queststarted && !questcompleted)
-        {
-            count++;
-            if (count == target)
-            {
-                GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questfinish);
-                questcompleted = true;
-            }
-            else
-                GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().Info(questUpdate);
-        }
+        queststarted = save[pos + 1] == 1;
+        questcompleted = save[pos + 2] == 1;
+        count = save[pos + 3];
     }
     public static void start()
     {
         if (!queststarted)
         {
             queststarted = true;
-            GameObject.FindWithTag("MainCamera").GetComponent<inGameGui>().staticInfo(questStart);
         }
     }
 }

@@ -22,26 +22,16 @@ public class EnemyAttackBoss3 : MonoBehaviour {
         anim = GetComponent<Animator>();
         isInRange = false;
     }
-    void OnTriggerEnter(Collider coll)
-    {
-        Attack();
-    }
+
 
     void OnTriggerExit(Collider coll)
     {
-        if (coll.tag == "Player")
-        {
-            GetComponent<Boss3IA>().enabled = true;
-            Debug.Log("nohit!");
-            isInRange = !isInRange;
-            anim.SetBool("IsWalking", true);
-        }
     }
     // Update is called once per frame
     void Update()
     {
         #region playerdetect
-        isInRange = Vector3.Distance(transform.position, player.transform.position) < 2.5F;
+        isInRange = Vector3.Distance(transform.position, player.transform.position) < 5F;
         GetComponent<Boss3IA>().enabled = !isInRange;
 
         #endregion

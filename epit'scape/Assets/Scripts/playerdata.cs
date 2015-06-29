@@ -13,8 +13,8 @@ namespace Assets.Scripts
         public static bool loadedfromsave;
         public static byte[] toSave(ref int pos)
         {
-            pos = 7;
-            return new byte[7] { (byte)scene, (byte)(playerpos.x), (byte)(playerpos.y), (byte)(playerpos.z), (byte)life, (byte)penAmmo, (byte)gunAmmo };
+            pos = 5;
+            return new byte[5] { (byte)scene, (byte)(playerpos.x), (byte)(playerpos.y), (byte)(playerpos.z), (byte)gunAmmo };
         }
         public static void load(byte[] save, int pos)
         {
@@ -23,8 +23,6 @@ namespace Assets.Scripts
             playerpos.y = (sbyte)save[pos + 2];
             playerpos.z = (sbyte)save[pos + 3];
             Application.LoadLevel(scene);
-            penAmmo = save[pos + 5];
-            gunAmmo = save[pos + 6];
             life = save[pos + 4];
         }
     }
