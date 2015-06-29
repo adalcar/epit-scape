@@ -156,8 +156,6 @@
      <Compile Include="Assets\Photon Unity Networking\UtilityScripts\TimeKeeper.cs" />
      <Compile Include="Assets\Scripts\Biblio.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
-     <Compile Include="Assets\Scripts\EnemyAttackBoss1.cs" />
-     <Compile Include="Assets\Scripts\EnemyAttackBoss3.cs" />
      <Compile Include="Assets\Scripts\EnemyHealthZomb.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\Arme.cs" />
      <Compile Include="Assets\Scripts\Weapon stuff\KeyboardScript.cs" />
@@ -187,8 +185,11 @@
      <Compile Include="Assets\Scripts\enemies\Boss3IA.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyAttack.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyAttackBoss1.cs" />
+     <Compile Include="Assets\Scripts\enemies\EnemyAttackBoss3.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\enemies\EnemyMov.cs" />
+     <Compile Include="Assets\Scripts\enemies\microspawnscript.cs" />
      <Compile Include="Assets\Scripts\multi\MultiPlayerHealth.cs" />
      <Compile Include="Assets\Scripts\multi\NetworkManager.cs" />
      <Compile Include="Assets\Scripts\multi\ZombMouvMult.cs" />
@@ -203,6 +204,7 @@
      <Compile Include="Assets\Scripts\questStuff\consequences\penquestportal.cs" />
      <Compile Include="Assets\Scripts\questStuff\consequences\portal1.cs" />
      <Compile Include="Assets\Scripts\questStuff\keyQuest.cs" />
+     <Compile Include="Assets\Scripts\questStuff\targets\BananaLauncherQuestTarget.cs" />
      <Compile Include="Assets\Scripts\questStuff\targets\PenQuestTarget.cs" />
      <Compile Include="Assets\Scripts\questStuff\targets\keyQuestTarget.cs" />
      <Compile Include="Assets\Scripts\questStuff\targets\keyboardquesttarget.cs" />
@@ -212,6 +214,7 @@
      <Compile Include="Assets\Scripts\terrain\gate.cs" />
      <Compile Include="Assets\Scripts\terrain\interaction.cs" />
      <Compile Include="Assets\Scripts\terrain\portalzomb.cs" />
+     <Compile Include="Assets\Scripts\terrain\specialportal.cs" />
      <Compile Include="Assets\Scripts\tutos\movetuto.cs" />
      <Compile Include="Assets\Scripts\tutos\weapontuto.cs" />
      <Compile Include="Assets\animMult\Fin.cs" />

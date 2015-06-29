@@ -5,9 +5,11 @@ using Assets.Scripts.display;
 public class portalzomb : MonoBehaviour {
     public string destination;
     public string quest;
+    public string questdone = "clear1";
     bool tested, done;
+    public GameObject spawn;
 	// Use this for initialization
-	void Awake () 
+	void Start () 
     {
         QuestAffichage.str = quest;
 	}
@@ -35,7 +37,13 @@ public class portalzomb : MonoBehaviour {
                 else
                     QuestAffichage.str = "Restzomb";
             else
-                QuestAffichage.str = "clear1";
+                QuestAffichage.str = questdone;
         }
+        if (Application.loadedLevelName == "under" && quest == "")
+        {
+            if (Bananalauncherquest.questcompleted)
+                quest = "killallzomb6";
+        }
+
     }
 }

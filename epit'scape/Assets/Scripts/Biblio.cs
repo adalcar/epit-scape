@@ -18,6 +18,32 @@ public class Biblio : MonoBehaviour {
     {
         switch(word)
         {
+
+            case "bocal":
+                if (english)
+                    return "ugh... bocal zombies.. shooldn't be so far from the ordinary";
+                else
+                    return "brr... des bocaliens zombies, rien que l'idee me terrifie";
+            case "finalboss":
+                if (english)
+                    return "why did i ever hope it would end... alright now i'm mad this big guy's gonna eat it raw";
+                else
+                    return "evidemment, encore un, fallait s'y attendre";
+            case "underdone":
+                if (english)
+                    return "good, let's leave this god-forsaken place and go home, i'm getting tired of those jokes";
+                else
+                    return "bien, ca c'est fait, sortons d'ici avant que  d'autres ne rappliquent";
+            case "killallzomb6":
+                if (english)
+                    return "nice, a bunch of zombies just arrived, great timing to try out my new weapon!";
+                else
+                    return "parfait, un paquet de zombies vient d'arriver, pile poil pour tester ma mouvelle arme!";
+            case "findBL":
+                if (english)
+                    return "i swear... a banana... what the heck, come to think of it i heard the ing2 speak of bananas, it was  somewhere deep in the wtf world of the under";
+                else
+                    return "maintenant que j'y pense, j'avais entendu des ing2 parler de lance bananes, c'etait vers le fond de l'under";
             case "bananadone":
                 if (english)
                     return "that was... weird... Alright, let's go to the under, maybe we'll find the answer here";

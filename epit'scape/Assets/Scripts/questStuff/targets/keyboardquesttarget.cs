@@ -4,7 +4,7 @@ using System.Collections;
 public class keyboardquesttarget : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         QuestAffichage.str = "findkeyboard";
         KeyboardQuest.queststarted = true;
 	}
